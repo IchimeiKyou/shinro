@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>情報・データ科学 | 学部選び</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .story-box {
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 10px;
+      padding: 1.1rem 1.2rem;
+      margin: 1rem 0;
+      font-size: .92rem;
+      line-height: 1.85;
+    }
+    .story-box .story-title {
+      font-weight: 700;
+      color: #0369a1;
+      display: block;
+      margin-bottom: .4rem;
+      font-size: .88rem;
+      letter-spacing: .02em;
+    }
+    .analogy-arrow {
+      text-align: center;
+      font-size: 1.5rem;
+      color: #94a3b8;
+      margin: .25rem 0;
+    }
+    .topic-heading {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 1.75rem 0 .5rem;
+      padding-left: .75rem;
+      border-left: 4px solid var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>情報・データ科学系</h1>
+    <div class="subtitle">「コンピュータに何をさせるか」を学ぶ学問</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">← 進路ガイドに戻る</a></div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <section class="card">
+      <h2>一言で言うと</h2>
+      <p class="major-lead">スマホのアプリ、Google検索、ChatGPT、ネットバンキング、ゲーム——これらはすべて「プログラム」です。情報学部では<strong>「コンピュータに仕事をさせるための命令書を書く技術」とその裏側の仕組み</strong>を学びます。「プログラミングがすでに得意」な人だけが来る場所ではなく、<strong>入学時点でゼロでも全員スタートできる</strong>カリキュラムになっている大学がほとんどです。</p>
+    </section>
+
+    <section class="card">
+      <h2>科目ごとに「実際に何を学ぶか」</h2>
+      <p style="font-size:.88rem;color:var(--text-sub);margin-bottom:1rem">専門用語を先に出すのではなく、まず「なぜそれを学ぶのか」を日常の例で説明します。</p>
+
+      <!-- プログラミング -->
+      <p class="topic-heading">① プログラミング ——コンピュータへの「レシピ」を書く</p>
+      <div class="story-box">
+        <span class="story-title">🍛 たとえ話：カレーを作る「レシピ」</span>
+        あなたが友人に「カレーを作っておいて」と伝えても、友人が料理を知らなければ作れません。「玉ねぎを1個切る → 油を熱する → 玉ねぎを炒める → ルーを入れる…」と<strong>1ステップずつ正確に書いた指示書</strong>があれば、誰でも作れます。<br><br>
+        プログラムはまさにこれです。コンピュータは「それっぽい指示」を理解できません。「ボタンが押されたら」「点数が0以下になったら」「エラーが出たら」……すべてのパターンに対して1行1行、厳密な手順を書きます。この「レシピを書く行為」がプログラミングです。
+      </div>
+      <p style="font-size:.9rem;margin-top:.5rem"><strong>「じゃあPython・Java・Cって何？」</strong>——これらはレシピを書くときの「言語（方言）」です。日本語でレシピを書くか英語で書くかの違いと似ています。Pythonは文法がシンプルで最初の1週間で動くものが作れる。Cは速いが書くのが大変。大学に入ってから「どれか一つ」を使いながら覚えるので、今はゼロでも心配ありません。</p>
+
+      <!-- アルゴリズム -->
+      <p class="topic-heading">② アルゴリズム ——「正解への最短ルート」を考える</p>
+      <div class="story-box">
+        <span class="story-title">🗺️ たとえ話：Googleマップはなぜ最短ルートがわかるの？</span>
+        名古屋から東京まで高速道路で行くとして、途中の分岐は何百もあります。Googleマップはその全パターンを瞬時に調べて最短を出しています。でも「全パターンを一つずつ確認」していたら数時間かかるはず。<br><br>
+        なぜ一瞬で出るかというと、<strong>「絶対に遠回りにならないルートは飛ばせる」という賢い計算方法（アルゴリズム）</strong>を使っているからです。アルゴリズムの授業では、こういう「早く・正確に答えを出す方法」を設計・証明する力を身につけます。
+      </div>
+
+      <!-- データベース -->
+      <p class="topic-heading">③ データベース ——「膨大な情報」を一瞬で探せる仕組み</p>
+      <div class="story-box">
+        <span class="story-title">📚 たとえ話：図書館の検索端末</span>
+        図書館に本が50万冊あっても、タイトルや著者名を入れれば5秒で「3階の棚の右から2番目」と出てきます。Amazonでは3億点の商品が1秒以内に検索できます。<br><br>
+        これはデータが「うまい整理の仕方」で保存されているからです。データベースの授業では、<strong>大量のデータをどう整理し、どう素早く取り出せる構造にするか</strong>を学びます。銀行の残高管理も、病院のカルテも、SNSの投稿も、すべてデータベースの上に成り立っています。
+      </div>
+
+      <!-- ネットワーク -->
+      <p class="topic-heading">④ ネットワーク ——スマホはなぜWi-Fiにつながるのか</p>
+      <div class="story-box">
+        <span class="story-title">📶 あなたが「Google」を開くとき、何が起きているか</span>
+        スマホの画面でGoogleをタップした瞬間、次のようなことが0.5秒の間に起きています：<br><br>
+        <strong>1.</strong> スマホが電波でWi-Fiルーター（家にある白い箱）に「Googleのページを持ってきて」と送信<br>
+        <strong>2.</strong> ルーターが光ケーブルを通じて、プロバイダー（ドコモ、ソフトバンクなど）のサーバーへ転送<br>
+        <strong>3.</strong> プロバイダーが、世界中に張り巡らされた巨大なケーブル（太平洋の海底にも敷設）を通じてGoogleのサーバーへ<br>
+        <strong>4.</strong> Googleのサーバーが「はい、このページです」とデータを返す<br>
+        <strong>5.</strong> 逆の経路をたどって、スマホの画面に表示される<br><br>
+        このとき、データは<strong>「宅急便の荷物」のように小分けにされ、それぞれに届け先の住所（IPアドレス）が書かれて</strong>転送されます。途中の「配送センター（ルーター）」が住所を読んで次の場所へ送ります。ネットワーク工学では、この仕組みの設計・管理・高速化を学びます。
+      </div>
+
+      <!-- セキュリティ -->
+      <p class="topic-heading">⑤ セキュリティ ——あなたの情報が盗まれないための「鍵」</p>
+      <div class="story-box">
+        <span class="story-title">🔒 ハガキと封書の違い、そして「暗号」</span>
+        ネットワークを流れるデータは、基本的には「ハガキ」と同じで、途中の配送センター（ルーター）の管理者が読もうとすれば読めます。あなたがオンライン通販でクレジットカード番号を入力したとき、それが「ハガキ」のまま流れたら、悪意のある人に読まれる危険があります。<br><br>
+        だから「暗号化」をします。例えば「1234」という番号を「Xq#9」に変換して送り、<strong>受け取った相手（ショッピングサイトのサーバー）だけが元に戻せる「鍵」を持っている</strong>。これがWebブラウザの鍵マーク（HTTPS）の正体です。<br><br>
+        セキュリティの授業では「この暗号は何年かかっても解けないか」「どこからハッカーが侵入するか」「侵入されたらどう検知するか」を学びます。
+      </div>
+
+      <!-- AI -->
+      <p class="topic-heading">⑥ AI・機械学習 ——コンピュータはどうやって「猫」を見分けるのか</p>
+      <div class="story-box">
+        <span class="story-title">🐱 100万回練習させる「機械の学習」</span>
+        人間の赤ちゃんは「これが猫だよ」と何十回も見せてもらいながら「猫」を覚えます。AIも同じです。<strong>「猫」と書かれた写真100万枚と「猫ではない」写真100万枚を見せ続ける</strong>と、コンピュータが自動的に「耳がとがっている」「ひげがある」「目の形がこう」などのパターンを抽出します。これが機械学習です。<br><br>
+        ChatGPTも原理は同じで、インターネット上の大量の文章を読み込んで「この言葉の後には、どの言葉が来やすいか」を学習した結果、自然な文章が出てきます。AI・機械学習の授業では、この仕組みを数学（行列・確率・微積）で作り、改善する方法を学びます。
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4年間の流れ</h2>
+      <div class="year-block"><strong>1年生：</strong>プログラミング入門（全員ほぼゼロからスタート）＋数学（論理・集合・確率）。「はじめて書いたプログラムが動いた瞬間」が忘れられない、と言う先輩が多い。</div>
+      <div class="year-block"><strong>2年生：</strong>アルゴリズム・データベース・OS（コンピュータの管理システム）。チームで小さなアプリを作るグループ課題が始まる。</div>
+      <div class="year-block"><strong>3年生：</strong>ネットワーク・セキュリティ・AI。インターンシップに参加する学生も増える。就活もこの学年から本格化。</div>
+      <div class="year-block"><strong>4年生：</strong>卒業研究。自分でテーマを決めて開発 or 研究。例：「AIで農作物の病気を早期検出」「スマホで使えるセキュリティ診断ツール」など。</div>
+      <div class="week-sample">
+        <strong>1週間の例（2年生・秋学期）</strong><br>
+        月：プログラミング演習（PC室で2時間、課題コードを書く）<br>
+        火：アルゴリズム（紙で手順を図に書き、証明）<br>
+        水：数学（線形代数——行列の計算がAI設計の基礎）<br>
+        木：グループ開発（4人チームでWebアプリを開発中。コードをオンラインで共有）<br>
+        金：データベース演習（検索システムを実際に作る）
+      </div>
+    </section>
+
+    <h2>難しさはどこ？</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>観点</th><th>レベル</th><th>正直な説明</th></tr></thead>
+        <tbody>
+          <tr><td>プログラミングの壁</td><td class="level-mid">最初の2ヶ月</td><td>エラーが出続けて「向いていないかも」と感じる時期。全員が通る道。1つ動くと急に楽しくなる。</td></tr>
+          <tr><td>数学</td><td class="level-mid">中〜高</td><td>統計・線形代数がAIに必須。高校数学Bが土台。苦手でも努力で届くが、完全に無視はできない。</td></tr>
+          <tr><td>暗記</td><td class="level-base">少なめ</td><td>「覚える」より「考える・作る」が中心。答えは手を動かして確認できる。</td></tr>
+          <tr><td>技術の変化が速い</td><td class="level-mid">継続的</td><td>在学中に新しい言語やツールが登場する。卒業後も「自分で学び続ける習慣」が必要。</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>卒業後・年収</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>職種例</th><th>主な仕事内容</th><th>大卒初任〜30代目安</th></tr></thead>
+        <tbody>
+          <tr><td>Webエンジニア</td><td>サービスやアプリの機能を開発・改善</td><td>新卒 月25-28万→30代 600-800万（大手IT）</td></tr>
+          <tr><td>AIエンジニア</td><td>機械学習モデルを設計・運用</td><td>新卒 月27-32万→30代 700-1000万（需要大）</td></tr>
+          <tr><td>セキュリティエンジニア</td><td>企業のシステムを守る・脆弱性を調べる</td><td>新卒 月25-30万→30代 650-900万</td></tr>
+          <tr><td>ITコンサル・SIer</td><td>銀行・製造業などのシステム導入を支援</td><td>新卒 月24-28万→30代 600-900万</td></tr>
+          <tr><td>ゲーム開発</td><td>プログラミング＋デザイン融合</td><td>会社による差が大きい（300-900万）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.85rem;color:var(--text-sub)">情報通信業は全産業平均より賃金が高い傾向（厚労省「賃金構造基本統計調査」2025）。スキル次第で30代に転職・フリーランスで年収が大きく変わる分野。</p>
+
+    <section class="card">
+      <h2>向いている人・向いていない人</h2>
+      <div class="fit-grid">
+        <div class="fit-yes">
+          <strong>向いている</strong>
+          <ul style="padding-left:1.1rem;font-size:.9rem;margin-top:.5rem">
+            <li>「なぜつながるの？」「どうやって動いてるの？」と日常で思うタイプ</li>
+            <li>パズルや論理パズルが好き（数学の証明が楽しい）</li>
+            <li>高校「情報Ⅰ」で少しでもプログラムが動いて嬉しかった</li>
+            <li>ゲームやSNSが好き——作る側に回ってみたい</li>
+          </ul>
+        </div>
+        <div class="fit-no">
+          <strong>慎重に</strong>
+          <ul style="padding-left:1.1rem;font-size:.9rem;margin-top:.5rem">
+            <li>画面を長時間見ていると疲れる（PCに向かう時間が非常に長い）</li>
+            <li>手を動かす実習より、フィールドワークや人と話す仕事がしたい</li>
+            <li>「技術が変わり続ける」より「1つを極める」分野のほうが合う場合も</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2025/dl/14.pdf" target="_blank" rel="noopener">厚労省 賃金構造基本統計 2025（情報通信業）</a></li>
+        <li><a href="https://www.nitech.ac.jp/academics/dept/cs/" target="_blank" rel="noopener">名古屋工業大学 情報工学科（カリキュラム例）</a></li>
+        <li><a href="https://www.nagoya-u.ac.jp/" target="_blank" rel="noopener">名古屋大学 情報学部</a></li>
+      </ul>
+    </section>
+  </main>
+  <a class="feedback-btn" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener"><span class="fb-icon">💬</span>意見・修正を送る</a>
+</body>
+</html>
+
+

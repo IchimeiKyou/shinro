@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>大学進学ガイド</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .nav-tabs {
+      position: sticky; top: 0; z-index: 100;
+      display: flex; background: var(--card);
+      border-bottom: 2px solid var(--border); box-shadow: var(--shadow);
+    }
+    .nav-tabs button { flex: 1; padding: .75rem .25rem; border: none; background: none;
+      font-family: inherit; font-size: .72rem; font-weight: 600;
+      color: var(--text-sub); cursor: pointer;
+      border-bottom: 3px solid transparent;
+    }
+    .nav-tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
+    .page { display: none; }
+    .page.active { display: block; }
+    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+    .stat-box { background: var(--card); border-radius: var(--radius); padding: 1.2rem; text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border); }
+    .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--navy); }
+    .stat-box .label { font-size: .8rem; color: var(--text-sub); margin-top: .3rem; }
+    .bar-chart { margin: 1rem 0; }
+    .bar-row { display: flex; align-items: center; gap: .75rem; margin-bottom: .6rem; }
+    .bar-label { width: 36px; font-size: .8rem; text-align: right; color: var(--text-sub); }
+    .bar-track { flex: 1; height: 28px; background: var(--border); border-radius: 6px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 6px; display: flex; align-items: center; padding-left: .5rem; font-size: .75rem; font-weight: 600; color: #fff; }
+    .bar-fill.emp { background: var(--navy); }
+    .bar-fill.uni { background: var(--accent); }
+    .tier-card { border-radius: var(--radius); padding: 1.25rem; border: 2px solid; margin-bottom: 1.25rem; }
+    .tier-card.challenge { background: var(--challenge-bg); border-color: var(--challenge); }
+    .tier-card.match { background: var(--match-bg); border-color: var(--match); }
+    .tier-card.safe { background: var(--safe-bg); border-color: var(--safe); }
+    .tier-card h3 { margin-top: 0; font-size: 1.05rem; }
+    @media print { .nav-tabs { display: none; } .page { display: block !important; page-break-after: always; } }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <h1>大学進学ガイド（NZM専用）</h1>
+  <p class="subtitle">進路分析・大学選び・受験対策・学部選び・大学生活｜令和8年度版（2026年度）</p>
+</header>
+
+<nav class="nav-tabs" role="tablist">
+  <button class="active" data-page="analysis" role="tab">① 進路分析</button>
+  <button data-page="recommend" role="tab">② 進学提案</button>
+  <button data-page="prep" role="tab">③ 受験対策</button>
+  <button data-page="majors" role="tab">④ 学部選び</button>
+  <button data-page="life" role="tab">⑤ 大学生活</button>
+</nav>
+
+<main class="container">
+
+<!-- PAGE 1 -->
+<section id="page-analysis" class="page active" role="tabpanel">
+  <h2>分析対象：愛知県立衣台高等学校</h2>
+  <p>以下は同校の「過去3年間の進路状況」（令和5〜7年度）に基づく分析です。データ出典は同校配布資料および <a href="https://koromodai-h.aichi-c.ed.jp/cms/">衣台高等学校 公式サイト</a> です。</p>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="num">243</div><div class="label">就職者数（3年合計・製造建設系）</div></div>
+    <div class="stat-box"><div class="num">75</div><div class="label">4年制大学合格者（3年合計）</div></div>
+    <div class="stat-box"><div class="num">20〜34</div><div class="label">大学進学（年間）</div></div>
+  </div>
+
+  <div class="card">
+    <h3>進路の内訳（年間推移）</h3>
+    <div class="bar-chart">
+      <div class="bar-row"><span class="bar-label">R7</span><div class="bar-track"><div class="bar-fill emp" style="width:76%">就職 94名</div></div></div>
+      <div class="bar-row"><span class="bar-label"></span><div class="bar-track"><div class="bar-fill uni" style="width:17%">大学 21名</div></div></div>
+      <div class="bar-row"><span class="bar-label">R6</span><div class="bar-track"><div class="bar-fill emp" style="width:53%">就職 66名</div></div></div>
+      <div class="bar-row"><span class="bar-label"></span><div class="bar-track"><div class="bar-fill uni" style="width:16%">大学 20名</div></div></div>
+      <div class="bar-row"><span class="bar-label">R5</span><div class="bar-track"><div class="bar-fill emp" style="width:67%">就職 83名</div></div></div>
+      <div class="bar-row"><span class="bar-label"></span><div class="bar-track"><div class="bar-fill uni" style="width:27%">大学 34名</div></div></div>
+    </div>
+    <p style="font-size:.8rem;color:var(--text-sub)">※就職は製造・建設系の人数。専門学校・短大は別途。</p>
+  </div>
+
+  <h2>総合評価：先輩たちの進路をどう読むか</h2>
+  <div class="card">
+    <p><strong>結論：</strong>衣台高校の3年間データは、<strong>「地元製造業への就職が最も多い進路」</strong>である一方、<strong>4年制大学進学は年20〜34名（全校の約2〜3割規模）</strong>で、旧帝大・難関国公立の記載はありません。先輩の多くは高校卒業後すぐに働くルートを選んでおり、大学進学組は<strong>中堅私立大学・専門学校</strong>に分散しています。</p>
+    <h3 style="margin-top:1rem">就職組（約7割以上）の評価</h3>
+    <ul style="padding-left:1.2rem;font-size:.9rem">
+      <li><strong>強み：</strong>トヨタ自動車をはじめ、愛知・豊田の自動車クラスターと直結。高卒・製造系でも初任給月18〜21万円、入社1年目300〜400万円程度の待遇が期待できる企業が多い（下表参照）。</li>
+      <li><strong>注意点：</strong>交替勤務・残業・物理的負荷がある職場も。長期的には技能職ルート（30歳550万円前後）と大学卒ルート（初任月26.5万円・年収450万円〜）でキャリアの幅が異なる。</li>
+      <li><strong>先輩像：</strong>「地元で安定して働きたい」「早く稼ぎたい」層に合致。就職先の集中度が高く、学校とのパイプが強い。</li>
+    </ul>
+    <h3 style="margin-top:1rem">大学進学組（年20〜34名）の評価</h3>
+    <ul style="padding-left:1.2rem;font-size:.9rem">
+      <li><strong>実績：</strong>東海学園大学（3年14名）が最多。名城大学6名、名古屋商科大学8名、愛知東邦大学7名など、<strong>東海圏の中堅私大</strong>が中心。</li>
+      <li><strong>示唆：</strong>同級生の進学先は「確保校」レベルが多い。学力上位層が旧帝大・名古屋工業大を目指す場合、<strong>先輩の進路データは下限の参考</strong>であり、上限は別途チャレンジ校を検討可能（②進学提案参照）。</li>
+      <li><strong>専門・短大：</strong>中日本自動車短大（15/16/22名）など、自動車関連専門校への進路も厚い。</li>
+    </ul>
+  </div>
+
+  <h2>就職先ランキングと年収目安</h2>
+  <p style="font-size:.85rem;color:var(--text-sub)">年収は公開情報に基づく<strong>目安</strong>です。トヨタ自動車は2026卒高卒初任給月20.8万円（公式）。その他は製造業・愛知県の一般的水準を参考にした推計。手当・残業で変動します。</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>順位</th><th>事業所</th><th>3年合計</th><th>初任給目安</th><th>入社1年目</th><th>30歳前後</th><th>備考</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">1</td><td>トヨタ自動車</td><td class="num">17</td><td>月20.8万</td><td>300-400万</td><td>550-650万</td><td>高卒技能職。2026卒公式</td></tr>
+        <tr><td class="num">2</td><td>メイドー</td><td class="num">13</td><td>月18-19万</td><td>270-330万</td><td>400-500万</td><td>製造・物流</td></tr>
+        <tr><td class="num">3</td><td>三五</td><td class="num">10</td><td>月18-20万</td><td>280-350万</td><td>450-550万</td><td>部品メーカー</td></tr>
+        <tr><td class="num">4</td><td>豊田鉄工</td><td class="num">8</td><td>月19-21万</td><td>300-380万</td><td>500-600万</td><td>トヨタ系</td></tr>
+        <tr><td class="num">5</td><td>アイシン</td><td class="num">7</td><td>月20-22万</td><td>320-400万</td><td>550-650万</td><td>大手部品</td></tr>
+        <tr><td class="num">6</td><td>大岡技研/トヨタ車体/トヨタ紡織</td><td class="num">各6</td><td>月17-21万</td><td>260-380万</td><td>400-600万</td><td>グループ・中堅</td></tr>
+        <tr><td class="num">7</td><td>デンソー</td><td class="num">2</td><td>月21-23万</td><td>350-420万</td><td>600-700万</td><td>トップ部品</td></tr>
+        <tr><td class="num">—</td><td>大学卒（全国平均）</td><td class="num">—</td><td>月26.5万</td><td>400-500万</td><td>600-800万</td><td>比較用（2025統計）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>就職分析（詳細）</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>順位</th><th>事業所名</th><th>R7</th><th>R6</th><th>R5</th><th>合計</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td>トヨタ自動車</td><td class="num">6</td><td class="num">6</td><td class="num">5</td><td class="num">17</td></tr>
+        <tr><td class="num">2</td><td>三五</td><td class="num">3</td><td class="num">3</td><td class="num">4</td><td class="num">10</td></tr>
+        <tr><td class="num">3</td><td>メイドー</td><td class="num">3</td><td class="num">4</td><td class="num">6</td><td class="num">13</td></tr>
+        <tr><td class="num">4</td><td>豊田鉄工</td><td class="num">4</td><td class="num">2</td><td class="num">2</td><td class="num">8</td></tr>
+        <tr><td class="num">5</td><td>アイシン</td><td class="num">4</td><td class="num">2</td><td class="num">1</td><td class="num">7</td></tr>
+        <tr><td class="num">6</td><td>大岡技研 / トヨタ車体 / トヨタ紡織</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">各6</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>進学分析</h2>
+  <p>4年制私立大学への合格者は年20〜34名。旧帝大・難関国公立の合格者は当該3年間の資料に記載がありません。</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>大学名</th><th>R7</th><th>R6</th><th>R5</th><th>合計</th></tr></thead>
+      <tbody>
+        <tr><td>東海学園大学</td><td class="num">3</td><td class="num">2</td><td class="num">9</td><td class="num">14</td></tr>
+        <tr><td>名古屋商科大学</td><td class="num">3</td><td class="num">3</td><td class="num">2</td><td class="num">8</td></tr>
+        <tr><td>愛知東邦大学</td><td class="num">1</td><td class="num">6</td><td class="num">—</td><td class="num">7</td></tr>
+        <tr><td>名城大学</td><td class="num">1</td><td class="num">3</td><td class="num">2</td><td class="num">6</td></tr>
+        <tr><td>中部大学</td><td class="num">2</td><td class="num">1</td><td class="num">—</td><td class="num">3</td></tr>
+        <tr><td>愛知大学 / 愛知学院大学 / 大同大学 等</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">各2前後</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="5" style="font-size:.8rem">愛知医療学院大学、中京大学、名古屋学院大学、常葉大学、人間環境大学、愛知産業大学、愛知工業大学 ほか各1名</td></tr></tfoot>
+    </table>
+  </div>
+
+  <div class="insight">
+    <strong>進学を目指す場合の位置づけ</strong><br>
+    先輩データは「同校の平均的な進路」を示すものです。旧帝大・名古屋工業大は記載がありませんが、それは<strong>挑戦不可能</strong>ではなく<strong>実績がまだない</strong>ことを意味します。ランキング・定量データ付きの大学情報は②と各大学ページを参照してください。
+  </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page-recommend" class="page" role="tabpanel">
+  <h2>進学校選び（3段階）</h2>
+  <p><strong>チャレンジ校</strong>（合格は難しいが理想的）、<strong>適正校</strong>（実力相応の本命）、<strong>確保校</strong>（合格確度重視）に分けて計画します。各大学ページの<strong>冒頭にTHE日本ランキング</strong>を表示。就職率・学費・長所短所・世界ランキング詳細も掲載しています。</p>
+  <p><a href="universities/index.html"><strong>→ 大学一覧ページ（全36校）</strong></a></p>
+
+  <div class="tier-card challenge">
+    <h3><span class="badge challenge">チャレンジ</span> 旧帝大＋同レベル</h3>
+    <div class="uni-grid">
+      <a class="uni-link" href="universities/nagoya-u.html">名古屋大学<span class="sub">THE日本7位</span></a>
+      <a class="uni-link" href="universities/kyoto-u.html">京都大学<span class="sub">THE日本2-3位</span></a>
+      <a class="uni-link" href="universities/osaka-u.html">大阪大学<span class="sub">THE日本4-6位</span></a>
+      <a class="uni-link" href="universities/tohoku-u.html">東北大学<span class="sub">THE日本5-8位</span></a>
+      <a class="uni-link" href="universities/kyushu-u.html">九州大学<span class="sub">THE日本8-12位</span></a>
+      <a class="uni-link" href="universities/hokkaido-u.html">北海道大学<span class="sub">THE日本10-15位</span></a>
+      <a class="uni-link" href="universities/tokyo-u.html">東京大学<span class="sub">THE日本1位</span></a>
+      <a class="uni-link" href="universities/science-tokyo.html">東京科学大学<span class="sub">THE日本15-25位</span></a>
+      <a class="uni-link" href="universities/tsukuba-u.html">筑波大学<span class="sub">THE日本20-30位</span></a>
+      <a class="uni-link" href="universities/kobe-u.html">神戸大学<span class="sub">THE日本25-35位</span></a>
+      <a class="uni-link" href="universities/yokohama-nu.html">横浜国立大学<span class="sub">THE日本30-40位</span></a>
+      <a class="uni-link" href="universities/osaka-metropolitan-u.html">大阪公立大学<span class="sub">THE日本30-40位</span></a>
+      <a class="uni-link" href="universities/tus.html">東京理科大学<span class="sub">THE日本40-60位</span></a>
+      <a class="uni-link" href="universities/waseda.html">早稲田大学<span class="sub">THE日本20-30位</span></a>
+      <a class="uni-link" href="universities/keio.html">慶應義塾大学<span class="sub">THE日本15-25位</span></a>
+    </div>
+    <p class="tier-note">併願目安：2〜3校｜名古屋大学理学部物理：共通900点＋二次1500点（パスナビ2026年度）</p>
+  </div>
+
+  <div class="tier-card match">
+    <h3><span class="badge match">適正</span> 実力相応</h3>
+    <div class="uni-grid">
+      <a class="uni-link" href="universities/nitech.html">名古屋工業大学<span class="sub">THE日本49位</span></a>
+      <a class="uni-link" href="universities/gifu-u.html">岐阜大学<span class="sub">THE日本60-80位</span></a>
+      <a class="uni-link" href="universities/shizuoka-u.html">静岡大学<span class="sub">THE日本50-70位</span></a>
+      <a class="uni-link" href="universities/aichi-edu.html">愛知教育大学<span class="sub">THE日本80-100位</span></a>
+      <a class="uni-link" href="universities/meijo-u.html">名城大学<span class="sub">THE日本141-150位</span></a>
+      <a class="uni-link" href="universities/chukyo-u.html">中京大学<span class="sub">THE日本100-130位</span></a>
+      <a class="uni-link" href="universities/aichi-u.html">愛知大学<span class="sub">THE日本100-120位</span></a>
+      <a class="uni-link" href="universities/nanzan-u.html">南山大学<span class="sub">THE日本80-100位</span></a>
+      <a class="uni-link" href="universities/dormy-u.html">同志社大学<span class="sub">THE日本40-60位</span></a>
+      <a class="uni-link" href="universities/ritsumeikan.html">立命館大学<span class="sub">THE日本40-50位</span></a>
+      <a class="uni-link" href="universities/kansai-u.html">関西大学<span class="sub">THE日本50-70位</span></a>
+    </div>
+    <p class="tier-note">併願目安：4〜5校</p>
+  </div>
+
+  <div class="tier-card safe">
+    <h3><span class="badge safe">確保</span> 進路資料で合格者が継続</h3>
+    <div class="uni-grid">
+      <a class="uni-link" href="universities/tokai-gakuen-u.html">東海学園大学<span class="sub">THE日本150位以降｜先輩14名/3年</span></a>
+      <a class="uni-link" href="universities/aichi-toho-u.html">愛知東邦大学<span class="sub">THE日本150位以降｜先輩7名/3年</span></a>
+      <a class="uni-link" href="universities/ncu.html">名古屋商科大学<span class="sub">THE日本150位以降｜先輩8名/3年</span></a>
+      <a class="uni-link" href="universities/ngu.html">名古屋学院大学<span class="sub">THE日本150位以降｜先輩2名/3年</span></a>
+      <a class="uni-link" href="universities/aichi-gakuin-u.html">愛知学院大学<span class="sub">THE日本130-150位｜先輩2名/3年</span></a>
+      <a class="uni-link" href="universities/chubu-u.html">中部大学<span class="sub">THE日本100-120位｜先輩3名/3年</span></a>
+      <a class="uni-link" href="universities/daido-u.html">大同大学<span class="sub">THE日本150位以降｜先輩2名/3年</span></a>
+      <a class="uni-link" href="universities/tokoha-u.html">常葉大学<span class="sub">THE日本150位以降｜先輩2名/3年</span></a>
+      <a class="uni-link" href="universities/aichi-sangyo-u.html">愛知産業大学<span class="sub">THE日本150位以降｜先輩3名/3年</span></a>
+      <a class="uni-link" href="universities/aichi-tech-u.html">愛知工業大学<span class="sub">THE日本150位以降｜先輩2名/3年</span></a>
+    </div>
+    <p class="tier-note">併願目安：2〜3校｜共通テストのみ判定のC方式等を活用</p>
+  </div>
+
+  <h2>併願スケジュール</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>時期</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td>1月中旬</td><td>大学入学共通テスト</td></tr>
+        <tr><td>2月下旬</td><td>国公立大学 前期日程</td></tr>
+        <tr><td>3月</td><td>私立大学 前期・後期</td></tr>
+        <tr><td>3月中旬</td><td>国公立大学 後期日程</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page-prep" class="page" role="tabpanel">
+  <h2>受験対策（概要）</h2>
+  <p>ここでは「今すぐ何をすればよいか」を整理します。詳しい分野別対策・教材・解き方は科目別ページを参照してください。</p>
+
+  <div class="prep-grid">
+    <a class="prep-link" href="prep/nyushi-qa.html">❓ 入試の仕組み・Q&amp;A<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">共テ流れ・出願回数・費用 ← まずここ</span></a>
+    <a class="prep-link" href="prep/schedule.html">📅 学習スケジュール（高3）<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">4月〜3月・月別タスク・模試活用</span></a>
+    <a class="prep-link" href="prep/mathematics.html">📐 数学<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">ⅠA・ⅡBC・Ⅲ / 分野別目標</span></a>
+    <a class="prep-link" href="prep/physics.html">⚡ 物理<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">解き方の型・ありがちミス</span></a>
+    <a class="prep-link" href="prep/chemistry.html">🧪 化学<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">無機・有機・暗記法</span></a>
+    <a class="prep-link" href="prep/english.html">🌐 英語<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">単語帳戦略・毎日ルーティン</span></a>
+    <a class="prep-link" href="prep/kokugo.html">📖 国語・地歴公民・情報<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">最低限を効率よく</span></a>
+    <a class="prep-link" href="prep/niji-shiken.html">📝 二次試験・記述対策<span style="display:block;font-weight:400;font-size:.75rem;color:var(--text-sub)">答案の書き方・部分点戦略</span></a>
+  </div>
+
+  <h2>高3・今の時期からやること</h2>
+  <div class="card">
+    <p style="font-size:.9rem;margin-bottom:.75rem">今どの月にいるかで「最初にやること」が変わります。<a href="prep/schedule.html"><strong>→ 詳細はスケジュールページへ</strong></a></p>
+    <div class="table-wrap">
+      <table style="font-size:.88rem">
+        <thead><tr><th>時期</th><th>最初にやること</th></tr></thead>
+        <tbody>
+          <tr><td>高3の春（4〜6月）</td><td>問題集1冊を決めて毎日3〜5問進める。英語単語帳を毎日15分。6月の模試で現在地確認</td></tr>
+          <tr><td>高3の夏（7〜8月）</td><td>1日8時間が可能な唯一の期間。数学・物理に時間の40%以上を集中。英語は毎日継続</td></tr>
+          <tr><td>高3の秋（9〜11月）</td><td>共通テスト過去問演習スタート（時間計測）。志望校の二次過去問3〜5年分を解く</td></tr>
+          <tr><td>直前期（12〜1月）</td><td>新問題集は開かない。間違えた問題の見直しのみ。体調管理最優先</td></tr>
+          <tr><td>共通テスト後</td><td>即切り替え。自己採点→出願校確定→二次対策に全集中</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2>志望校別 共通テスト目標得点率</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>科目</th><th>旧帝大・東理</th><th>名古屋工業大</th><th>センター利用私大</th></tr></thead>
+      <tbody>
+        <tr><td>数学（200点）</td><td class="level-high">85〜95%</td><td class="level-mid">80〜90%</td><td class="level-mid">70〜80%</td></tr>
+        <tr><td>物理+化学（200点）</td><td class="level-high">85%</td><td class="level-mid">75〜85%</td><td class="level-mid">65〜75%</td></tr>
+        <tr><td>英語（250点）</td><td class="level-high">80〜85%</td><td class="level-mid">75%</td><td class="level-mid">65%</td></tr>
+        <tr><td>国語+地歴公+情報</td><td class="level-mid">70%前後</td><td class="level-mid">65%</td><td class="level-base">60%</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-sub)">※公開された受験体験記・予備校解説・入試要項に基づく参考値。必ず最新募集要項で確認してください。</p>
+
+  <div class="insight">
+    <strong>受験対策の3原則</strong><br>
+    ①<strong>毎日続けること</strong>が一番の戦略（英語は特に）。②<strong>二次試験対策を優先</strong>しつつ共通テストの足切りを確保。③<strong>間違えた問題だけ繰り返す</strong>——新しい問題集を増やすより、既存の間違いを潰すほうが点数につながる。
+  </div>
+</section>
+
+<!-- PAGE 4 -->
+<section id="page-majors" class="page" role="tabpanel">
+  <h2>学部・学科（専攻）選び</h2>
+  <p>大学名だけで決めると、入学後に「思っていたのと違う」が起きやすいです。<strong>4年間、毎日何をするか</strong>から逆算して選びましょう。あなたは高校で理科（物理・化学）を履修していますが、<strong>文系学部（経済・法学・文学・語学など）を受験することも可能</strong>です（大学ごとの入試要項で確認）。</p>
+
+  <h2>分野別ガイド（「何を学ぶ？」を平易に解説）</h2>
+  <p style="font-size:.88rem;color:var(--text-sub);margin-bottom:.75rem">各ページに「4年間の流れ」「1週間の授業イメージ」「向き不向き」を記載。専門用語は使わず説明しています。</p>
+
+  <h3 class="major-category" style="margin-top:1.25rem">工学・ものづくり</h3>
+  <div class="prep-grid">
+    <a class="prep-link" href="majors/mechanical.html">機械・自動車工学</a>
+    <a class="prep-link" href="majors/electrical.html">電気・電子工学</a>
+    <a class="prep-link" href="majors/informatics.html">情報・データ科学</a>
+    <a class="prep-link" href="majors/architecture.html">建築学・土木工学</a>
+  </div>
+
+  <h3 class="major-category">理学・生命科学</h3>
+  <div class="prep-grid">
+    <a class="prep-link" href="majors/physics.html">物理学</a>
+    <a class="prep-link" href="majors/chemistry.html">化学・材料</a>
+    <a class="prep-link" href="majors/biology.html">生命科学・生物学</a>
+  </div>
+
+  <h3 class="major-category">経済・経営／法学・政治／文学・語学</h3>
+  <div class="prep-grid">
+    <a class="prep-link" href="majors/economics.html">経済学・経営学</a>
+    <a class="prep-link" href="majors/law.html">法学・政治学</a>
+    <a class="prep-link" href="majors/literature.html">文学・人文科学</a>
+    <a class="prep-link" href="majors/language.html">語学・国際文化</a>
+  </div>
+
+  <h2>学部を決める手順（進路指導の現場で使われる考え方）</h2>
+  <p style="font-size:.9rem;margin-bottom:1rem">「物理が好きだから工学」だけでは不十分です。以下を<strong>紙に書き出して</strong>から、②の大学リストと照合してください。</p>
+
+  <div class="step-card">
+    <h3><span class="step-num">0</span>まず「迷い」を言語化する</h3>
+    <p style="font-size:.9rem;margin:0">ノートに3行書く：<strong>①親・先生が期待していること ②自分が本当に興味があること ③今の時点で絶対に避けたいこと</strong>（例：実験の匂い、毎日暗記、人前で話す）。3つがズレていても正常です。ズレを認めることが、後悔の少ない選択につながります。</p>
+  </div>
+
+  <div class="step-card">
+    <h3><span class="step-num">1</span>「好き」「得意」「我慢できる」を分ける</h3>
+    <p style="font-size:.9rem;margin-bottom:.5rem">よく混同されますが、別物です。</p>
+    <div class="table-wrap">
+      <table style="font-size:.85rem">
+        <thead><tr><th>区分</th><th>問い</th><th>例</th></tr></thead>
+        <tbody>
+          <tr><td>好き</td><td>テスト外でも調べたくなる？</td><td>車の仕組み動画を見てしまう</td></tr>
+          <tr><td>得意</td><td>テストで点が取れる？</td><td>化学の計算問題は速い</td></tr>
+          <tr><td>我慢できる</td><td>4年間、毎日続けられる？</td><td>レポート地獄でも実験は楽しい</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:.88rem;color:var(--text-sub);margin:0">工学は「得意」が重要、文学は「我慢できる（読書量）」が重要、経営は「好き（社会への興味）」が起点、など分野で重みが違います。</p>
+  </div>
+
+  <div class="step-card">
+    <h3><span class="step-num">2</span>5つの質問で方向を絞る</h3>
+    <p style="font-size:.9rem;margin-bottom:.5rem">当てはまるものに○をつけ、多いカテゴリの詳細ページを読む。</p>
+    <ul style="padding-left:1.2rem;font-size:.88rem;margin:0">
+      <li>□ ものを<strong>設計・製造</strong>したい → 工学（機械・電気・情報）</li>
+      <li>□ <strong>「なぜ？」</strong>を突き詰めたい → 理学（物理・化学・生物）</li>
+      <li>□ <strong>お金・ビジネス</strong>の仕組みが知りたい → 経済・経営</li>
+      <li>□ <strong>ルール・社会・正義</strong>に関心 → 法学・政治学</li>
+      <li>□ <strong>言葉・文化・人</strong>を深く学びたい → 文学・語学</li>
+    </ul>
+    <p style="font-size:.88rem;margin-top:.75rem;margin-bottom:0">2つ以上に○がある場合は<strong>複合型</strong>（例：経営＋IT、法学＋経済）を狙える大学・ダブルマジョアも検討。</p>
+  </div>
+
+  <div class="step-card">
+    <h3><span class="step-num">3</span>理系選択でも文系学部は可能か確認</h3>
+    <p style="font-size:.9rem;margin:0">共通テストは理科で受験し、<strong>経済・法学・文学等の学部を出願できる大学</strong>があります（私大・総合型入試が多い）。逆に、文系科目不足で受けられない大学もある。<strong>必ず志望校の最新募集要項</strong>で「受験科目」を確認。パスナビの「学問系統」検索も有効。</p>
+  </div>
+
+  <div class="step-card">
+    <h3><span class="step-num">4</span>志望校3校の「データ」を並べて比較</h3>
+    <p style="font-size:.9rem;margin-bottom:.5rem">②で選んだ大学について、同じ項目で埋める表を作る。</p>
+    <div class="table-wrap">
+      <table style="font-size:.82rem">
+        <thead><tr><th>比較項目</th><th>なぜ重要？</th></tr></thead>
+        <tbody>
+          <tr><td>1年生の時間割（シラバス）</td><td>実際の科目名が見える。オープンキャンパスで配布</td></tr>
+          <tr><td>就職率・主な就職先</td><td>大学HPの「進路状況」PDF</td></tr>
+          <tr><td>大学院進学率</td><td>高い＝研究志向。低い＝就職支援厚い、など</td></tr>
+          <tr><td>学費（4年総額）</td><td>国立約220万、私立理工約600-800万</td></tr>
+          <tr><td>先輩の合格者数（衣台）</td><td>①進路分析参照。リアルな難易度感</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="step-card">
+    <h3><span class="step-num">5</span>オープンキャンパスで「体感」する</h3>
+    <p style="font-size:.9rem;margin:0">説明会だけでなく、<strong>学生の時間割を見せてもらう・実験室・PC室を見学・在学生に「1週間で一番大変なこと」を聞く</strong>。夏（6-8月）のOC参加を強く推奨。親と一緒に行き、帰りに「合わないポイント」を話し合う時間を取る。</p>
+  </div>
+
+  <div class="insight">
+    <strong>進路指導者からのメッセージ</strong><br>
+    学部選びに「正解」はありません。ただし<strong>「大学名だけで選んだ結果、4年間つらい思いをする」</strong>は避けられます。上のステップは時間がかかりますが、受験勉強と並行して少しずつ進めてください。迷ったら、得意な先生（物理・化学・担任）に「この分野の大学では毎日何をしますか？」と具体質問すると、イメージが一気に湧きます。
+  </div>
+
+  <h2>分野別：難しさと年収のざっくり比較</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>系統</th><th>毎日の主な作業</th><th>難しさの核心</th><th>大卒初任目安</th><th>30代年収目安</th></tr></thead>
+      <tbody>
+        <tr><td>機械・電気</td><td>計算・CAD・工作</td><td>数学・物理の理解</td><td>月25-28万</td><td>550-800万</td></tr>
+        <tr><td>建築・土木</td><td>設計・製図・模型・構造計算</td><td>設計センス＋構造力学</td><td>月25-32万</td><td>600-1000万（ゼネコン）</td></tr>
+        <tr><td>情報</td><td>プログラミング</td><td>論理思考・継続学習</td><td>月25-30万</td><td>600-900万</td></tr>
+        <tr><td>物理・化学</td><td>講義・実験・レポート</td><td>数学 or 暗記+実験</td><td>月26万〜</td><td>450-700万</td></tr>
+        <tr><td>生物</td><td>実験・暗記</td><td>用語量・レポート</td><td>月26万〜</td><td>450-650万</td></tr>
+        <tr><td>経済・経営</td><td>講義・討論・レポート</td><td>議論・統計</td><td>月24-27万</td><td>450-700万</td></tr>
+        <tr><td>法学・政治</td><td>判例読解・論述</td><td>読書量・論理</td><td>月24-26万</td><td>400-600万（法曹は別）</td></tr>
+        <tr><td>文学・語学</td><td>読書・執筆・語学</td><td>国語力・継続</td><td>月23-26万</td><td>380-600万</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-sub)">年収：厚生労働省「賃金構造基本統計調査」2025（大学卒月26.49万）＋業界一般的レンジ。個人差・企業差は大きい。</p>
+</section>
+
+<!-- PAGE 5 -->
+<section id="page-life" class="page" role="tabpanel">
+  <h2>大学生活の過ごし方（本科卒業→就職）</h2>
+  <p>日本では理系でも<strong>学士卒業（4年）で就職する割合が高い</strong>大学が多い（旧帝大は院進も多い）。1〜4年で何をすべきか、就活・バイト・部活のバランスを整理します。</p>
+
+  <h2>学年別タイムライン</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>時期</th><th>学業</th><th>部活・サークル</th><th>アルバイト</th><th>就活・キャリア</th></tr></thead>
+      <tbody>
+        <tr><td>1年生</td><td>基礎科目（数学・物理・化学）に全力。単位落としは後がつらい</td><td>新歓で1つ選ぶ。続けられなければ1年で辞めてOK</td><td>週2-3日・10-15h以内。学業優先</td><td>業界研究だけ開始</td></tr>
+        <tr><td>2年生</td><td>専門科目開始。GPAを意識（就活で問われることも）</td><td>役員を任されることも。就活前に成果を</td><td>同左。就活資金（スーツ・交通費5-15万）を貯める</td><td>夏インターンに向け企業研究</td></tr>
+        <tr><td>3年生</td><td>ゼミ・研究室配属準備</td><td>就活本番期は活動量を調整</td><td>3月以降は単発・減らす選択も</td><td><strong>4月〜就活開始</strong>。夏・冬インターン</td></tr>
+        <tr><td>4年生</td><td>卒研・卒論が最優先</td><td>就活優先で調整</td><td>最小限</td><td>3月解禁→6月面接→10月内定</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>就活スケジュール（政府ルール＋実態）</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>時期</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td>3年4-5月</td><td>就活サイト登録、履歴書・自己分析、ガクチカ整理</td></tr>
+        <tr><td>3年6-9月</td><td>サマーインターンシップ（選考・参加）</td></tr>
+        <tr><td>3年10-2月</td><td>秋冬インターン、早期選考（一部企業）</td></tr>
+        <tr><td>3年3月1日〜</td><td>就活情報解禁。説明会・エントリー開始</td></tr>
+        <tr><td>4年4-5月</td><td>ES提出、筆記試験（SPI等）</td></tr>
+        <tr><td>4年6月〜</td><td>面接選考本格化</td></tr>
+        <tr><td>4年10月1日</td><td>内定式・正式内定</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:.85rem;color:var(--text-sub)">出典：ワンキャリア就活スケジュール、経済産業省・内閣府の就活ルール（面接解禁時期は年度で変動あり）</p>
+
+  <h2>アルバイトの注意</h2>
+  <div class="card">
+    <ul style="padding-left:1.2rem;font-size:.9rem">
+      <li><strong>週28時間以内</strong>（留学生でない場合も大学推奨）。就活期は就活を最優先</li>
+      <li>製造系バイトは地元メーカーで時給1100-1400円程度が多い</li>
+      <li>就活費用：スーツ2-5万、交通費、書籍（就活四季報等）を2年次から計画</li>
+      <li>すべての予定を1つのカレンダーで管理（授業・バイト・就活を分けない）</li>
+    </ul>
+  </div>
+
+  <h2>本科卒業即就職で知っておくこと</h2>
+  <div class="insight">
+    <ul style="padding-left:1.2rem;font-size:.9rem;margin:0">
+      <li>理系大卒の全国平均初任給：<strong>月26.49万円（2025）</strong>→ 賞与込み年収400-500万円スタート</li>
+      <li>旧帝大・東理・名古屋工業大はメーカー研究開発・大手ITへの就職が多い</li>
+      <li>中堅私大は<strong>地元・中堅企業の総合職・技術職</strong>が中心。先輩の東海学園大・名城大の進路が参考になる</li>
+      <li>大学院（2年）を挟むと研究職・年収アップの選択肢が増えるが、コスト（時間・学費）も増える</li>
+    </ul>
+  </div>
+
+  <section class="card">
+    <h2>参考リンク</h2>
+    <ul class="ref-list">
+      <li><a href="https://www.onecareer.jp/articles/3344" target="_blank" rel="noopener">ワンキャリア 就活スケジュール</a></li>
+      <li><a href="https://www.jil.go.jp/kokunai/statistics/shuyo/0303.html" target="_blank" rel="noopener">JILPT 新規学卒者の賃金</a></li>
+      <li><a href="https://toyota.jp/jobs/" target="_blank" rel="noopener">トヨタ自動車 採用情報（高卒初任給）</a></li>
+    </ul>
+  </section>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <section style="max-width:960px;margin:0 auto 1.5rem;text-align:left">
+    <h2 style="font-size:1rem;border:none;margin:0 0 .75rem">参考リンク一覧</h2>
+    <h3 style="font-size:.9rem;margin:.75rem 0 .35rem">ランキング・年収データ</h3>
+    <ul class="ref-list">
+      <li><a href="https://prtimes.jp/main/html/rd/p/000001351.000000120.html" target="_blank" rel="noopener">THE 日本大学ランキング2025（ベネッセ）</a></li>
+      <li><a href="https://www.epe.provost.nagoya-u.ac.jp/news/2025/" target="_blank" rel="noopener">名古屋大学 IR：QS/THEランキング</a></li>
+      <li><a href="https://www.jil.go.jp/kokunai/statistics/shuyo/0303.html" target="_blank" rel="noopener">JILPT 新規学卒者の賃金（2025）</a></li>
+      <li><a href="https://axxis.co.jp/magazine/54680" target="_blank" rel="noopener">トヨタ自動車 初任給・平均年収（2026卒要項引用）</a></li>
+    </ul>
+    <h3 style="font-size:.9rem;margin:.75rem 0 .35rem">就活・大学生活</h3>
+    <ul class="ref-list">
+      <li><a href="https://www.onecareer.jp/articles/3344" target="_blank" rel="noopener">ワンキャリア 就活スケジュール</a></li>
+    </ul>
+    <h3 style="font-size:.9rem;margin:.75rem 0 .35rem">進路データ・学校</h3>
+    <ul class="ref-list">
+      <li><a href="c7756db18cef1de990ac6493f318efa4.pdf">愛知県立衣台高等学校「過去3年間の進路状況」（本地PDF）</a></li>
+      <li><a href="https://koromodai-h.aichi-c.ed.jp/cms/" target="_blank" rel="noopener">衣台高等学校 公式サイト</a></li>
+    </ul>
+    <h3 style="font-size:.9rem;margin:.75rem 0 .35rem">共通テスト（大学入試センター）</h3>
+    <ul class="ref-list">
+      <li><a href="https://www.dnc.ac.jp/kyotsu/index.html" target="_blank" rel="noopener">大学入学共通テスト トップ</a></li>
+      <li><a href="https://www.dnc.ac.jp/albums/abm.php?d=646&f=abm00005359.pdf" target="_blank" rel="noopener">令和8年度 大学入学共通テスト実施要項（PDF）</a></li>
+      <li><a href="https://www.dnc.ac.jp/kyotsu/kakomondai/" target="_blank" rel="noopener">過去3年分の試験問題</a></li>
+    </ul>
+    <h3 style="font-size:.9rem;margin:.75rem 0 .35rem">大学入試情報</h3>
+    <ul class="ref-list">
+      <li><a href="https://passnavi.obunsha.co.jp/univ/0490/subject/?facultyID=030" target="_blank" rel="noopener">パスナビ 名古屋大学 理学部 入試科目</a></li>
+      <li><a href="https://passnavi.obunsha.co.jp/univ/0510/subject/?facultyID=005" target="_blank" rel="noopener">パスナビ 名古屋工業大学 工学部</a></li>
+      <li><a href="https://passnavi.obunsha.co.jp/univ/3850/subject/?facultyID=035" target="_blank" rel="noopener">パスナビ 名城大学 理工学部</a></li>
+      <li><a href="https://manabi.benesse.ne.jp/daigaku/school/1275/nyushi/hoshiki/kyotsu-test/" target="_blank" rel="noopener">マナビジョン 名古屋大学 共通テスト</a></li>
+      <li><a href="https://www.nagoya-u.ac.jp/admissions/" target="_blank" rel="noopener">名古屋大学 入試情報</a></li>
+      <li><a href="https://www.nitech.ac.jp/examination/" target="_blank" rel="noopener">名古屋工業大学 入試</a></li>
+      <li><a href="https://www.meijo-u.ac.jp/admissions/doc/" target="_blank" rel="noopener">名城大学 入学試験要項ダウンロード</a></li>
+    </ul>
+    <h3 style="font-size:.9rem;margin:.75rem 0 .35rem">学習法・対策解説</h3>
+    <ul class="ref-list">
+      <li><a href="https://note.com/yuni_893/n/n5c0195c03c14" target="_blank" rel="noopener">共通テスト9割戦略（受験体験記・note）</a></li>
+      <li><a href="https://kagakudai-juku.jp/toukoudai-taisaku/" target="_blank" rel="noopener">難関理工系 二次優先・足切り解説</a></li>
+      <li><a href="https://goukaku-suppli.com/archives/70198" target="_blank" rel="noopener">共通テスト物理・化学 時間配分</a></li>
+      <li><a href="https://mrstepup.jp/center-math-hiketsu/" target="_blank" rel="noopener">共通テスト数学 勉強法</a></li>
+    </ul>
+  </section>
+  <p>本資料は進路指導の参考用です。入試要項・配点は必ず各大学の最新公式情報で確認してください。</p>
+  <p>編集・作成：kyo</p>
+</footer>
+
+<script>
+(function(){
+  const tabs=document.querySelectorAll('.nav-tabs button');
+  const pages=document.querySelectorAll('.page');
+  tabs.forEach(tab=>tab.addEventListener('click',()=>{
+    const t=tab.dataset.page;
+    tabs.forEach(x=>x.classList.toggle('active',x===tab));
+    pages.forEach(p=>p.classList.toggle('active',p.id==='page-'+t));
+  }));
+})();
+</script>
+
+  <a class="feedback-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSckjz-1GKFXGcghQls6ETMzweXeuo-YSlS0ZSh7dXsFMQsWmw/viewform" target="_blank" rel="noopener"><span class="fb-icon">💬</span>意見・修正を送る</a>
+</body>
+</html>
+

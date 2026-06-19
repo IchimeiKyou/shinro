@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>化学 受験対策 | 進路ガイド</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .step-flow {
+      display: flex;
+      gap: .5rem;
+      align-items: flex-start;
+      margin: .75rem 0;
+      font-size: .9rem;
+    }
+    .step-num-round {
+      background: #7c3aed;
+      color: #fff;
+      border-radius: 50%;
+      width: 1.8rem;
+      height: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: .8rem;
+      flex-shrink: 0;
+      margin-top: .1rem;
+    }
+    .warn-box {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .ok-box {
+      background: #f0fdf4;
+      border-left: 4px solid #059669;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .tip-box {
+      background: #faf5ff;
+      border-left: 4px solid #9333ea;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .organic-row {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .88rem;
+      margin: .35rem 0;
+    }
+    .og-arrow { color: #9333ea; font-weight: 700; flex-shrink: 0; }
+    .mistake-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .75rem;
+      margin: .75rem 0;
+    }
+    .mistake-bad {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+      border-radius: 8px;
+      padding: .75rem;
+      font-size: .86rem;
+    }
+    .mistake-good {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+      border-radius: 8px;
+      padding: .75rem;
+      font-size: .86rem;
+    }
+    .mistake-bad::before { content: "❌ NG"; display: block; font-weight: 700; color: #dc2626; margin-bottom: .3rem; font-size: .8rem; }
+    .mistake-good::before { content: "✅ OK"; display: block; font-weight: 700; color: #059669; margin-bottom: .3rem; font-size: .8rem; }
+    @media (max-width: 600px) { .mistake-pair { grid-template-columns: 1fr; } }
+    .topic-h {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 1.75rem 0 .5rem;
+      padding-left: .75rem;
+      border-left: 4px solid #9333ea;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>化学 受験対策</h1>
+    <div class="subtitle">共通テスト 化学基礎・化学 ／ 二次試験</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">← 進路ガイドに戻る</a></div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <!-- ===== なぜ難しいか ===== -->
+    <section class="card">
+      <h2>化学が難しい「本当の理由」</h2>
+      <p style="font-size:.9rem;margin-bottom:.75rem">「化学は暗記科目」は半分正解で半分間違いです。<strong>「暗記すれば終わり」と思って勉強すると確実に詰まります。</strong>なぜか？</p>
+
+      <p style="font-size:.9rem"><strong>化学には3種類の難しさが混在しています。</strong></p>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>難しさの種類</th><th>代表的な分野</th><th>間違った勉強法</th><th>正しい対策</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>① 暗記の量が多い</strong></td>
+              <td>無機化学（金属の反応・気体の性質）</td>
+              <td>全部丸暗記しようとする→量が多すぎて頭に入らない</td>
+              <td>「なぜこの反応が起きるか（電子の動き）」で理解→覚える量が半分以下になる</td>
+            </tr>
+            <tr>
+              <td><strong>② 理解が必要</strong></td>
+              <td>理論化学（化学平衡・電池・電解）</td>
+              <td>公式だけ丸暗記→条件が変わると解けない</td>
+              <td>「なぜこの式になるか」を1回理解すると応用できる</td>
+            </tr>
+            <tr>
+              <td><strong>③ 暗記×理解×描く</strong></td>
+              <td>有機化学（構造式・合成経路）</td>
+              <td>名前だけ覚えて構造式を書かない→問題で手が止まる</td>
+              <td>「構造式を紙に書きながら」覚える。名前より形で理解</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tip-box"><strong>全体方針：</strong>まず「理論化学（計算）」→次に「無機化学（暗記）」→最後に「有機化学（構造）」の順番で仕上げると、後からつながりが見えてきます。</div>
+    </section>
+
+    <!-- ===== 目標得点 ===== -->
+    <section class="card">
+      <h2>目標得点（志望校別）</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>志望レベル</th><th>化学基礎（50点）</th><th>化学（100点）</th><th>合計目標</th></tr></thead>
+          <tbody>
+            <tr><td>旧帝大・東理大</td><td class="level-high">45点（90%）</td><td class="level-high">80〜85点</td><td class="level-high">165点以上</td></tr>
+            <tr><td>名古屋工業大・中堅国公立</td><td class="level-mid">40点（80%）</td><td class="level-mid">70点</td><td class="level-mid">140点以上</td></tr>
+            <tr><td>センター利用私大</td><td class="level-mid">35点（70%）</td><td class="level-mid">60点</td><td class="level-mid">120点以上</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.85rem;color:var(--text-sub)">共通テストは<strong>化学基礎（60分）と化学（60分）</strong>。化学は選択肢が多く時間切れになりやすい。1大問10〜12分が目安。</p>
+    </section>
+
+    <!-- ===== 理論化学 ===== -->
+    <section class="card">
+      <h2>① 理論化学——「計算の軸」を正しく立てる</h2>
+
+      <p class="topic-h">モル計算——全計算問題の土台</p>
+      <p style="font-size:.9rem">モル（mol）は「粒子を数える単位」です。「1mol = 6.02×10²³個 = 22.4L（標準状態の気体）= 原子量グラムの質量」——この3つの変換を反射的にできることが最初のハードルです。</p>
+
+      <div class="step-flow">
+        <div class="step-num-round">型</div>
+        <div>
+          <strong>計算問題を解く手順</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">
+            ① 「何の mol 数を求めるか」を決める<br>
+            ② 与えられた量（質量 g・体積 L・濃度 mol/L）を mol に変換する<br>
+            ③ 化学反応式の係数比で mol を比例させる<br>
+            ④ 求めたい量の単位に変換して答える
+          </span>
+        </div>
+      </div>
+
+      <div class="mistake-pair">
+        <div class="mistake-bad">「44gのCO₂は何mol？」→ とりあえず44÷6.02×10²³… と原子数で割ろうとする</div>
+        <div class="mistake-good">CO₂の分子量 = 12+16×2 = 44なので、44÷44 = <strong>1mol</strong>（質量÷分子量が mol の基本）</div>
+      </div>
+
+      <p class="topic-h">化学平衡——Le Chatelier の原理を「ロジック」で使う</p>
+      <p style="font-size:.9rem">「圧力を上げると平衡はどちらに移動するか」——丸暗記より「理由を理解する」と確実に解けます。</p>
+      <div class="ok-box">
+        <strong>考え方：</strong>圧力を上げる ＝ 体積を小さくする ＝ 分子数を減らしたい → <strong>気体分子の数が少ない側</strong>に平衡が移動する。<br>
+        例：N₂ + 3H₂ ⇌ 2NH₃（左辺4mol・右辺2mol）→ 圧力を上げると右（NH₃側）に移動。
+      </div>
+
+      <p class="topic-h">電池・電解——「電子の流れ」を矢印で追う</p>
+      <div class="step-flow">
+        <div class="step-num-round">型</div>
+        <div>
+          <strong>電池問題の手順</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">
+            ① 負極（酸化・電子を放出）と正極（還元・電子を受取）を特定する<br>
+            ② 電子は外部回路を「負極→正極」へ流れる（電流の向きと逆）<br>
+            ③ イオンは溶液中を移動する（正イオンは正極側、負イオンは負極側へ）
+          </span>
+        </div>
+      </div>
+      <div class="warn-box"><strong>よくある混同：</strong>「電流の向き」と「電子の向き」は逆。電流は「＋→−」、電子は「−→＋」。試験で問われることが多い。</div>
+    </section>
+
+    <!-- ===== 無機化学 ===== -->
+    <section class="card">
+      <h2>② 無機化学——「丸暗記」を卒業する</h2>
+      <p style="font-size:.9rem;margin-bottom:.75rem">無機化学で挫折する最大の原因は「全部丸暗記しようとする」ことです。<strong>「電子の動き（酸化・還元・錯体形成）」を軸にすると暗記量が激減します。</strong></p>
+
+      <p class="topic-h">気体の製法——「酸＋弱酸の塩」の法則</p>
+      <div class="ok-box">
+        <strong>法則：</strong>強酸 ＋ 弱酸の塩 → 強酸が弱酸を追い出す<br>
+        例：濃H₂SO₄（強酸）＋ NaCl（弱酸HClの塩）→ HCl↑ ← 塩酸は弱酸？と思うかもしれないが「揮発性」のため強酸でも追い出される<br>
+        例：HCl（強酸）＋ CaCO₃（弱酸H₂CO₃の塩）→ CO₂↑
+      </div>
+
+      <p class="topic-h">金属イオンの沈殿色——グループで覚える</p>
+      <div class="table-wrap">
+        <table style="font-size:.86rem">
+          <thead><tr><th>沈殿の色</th><th>代表的なイオン・試薬</th><th>覚え方</th></tr></thead>
+          <tbody>
+            <tr><td><span style="color:#fff;background:#3b82f6;padding:.1rem .4rem;border-radius:4px">青白</span></td><td>Cu(OH)₂（銅イオン＋塩基）</td><td>銅＝青（硫酸銅の色）</td></tr>
+            <tr><td><span style="color:#fff;background:#dc2626;padding:.1rem .4rem;border-radius:4px">赤褐</span></td><td>Fe(OH)₃（鉄(Ⅲ)イオン＋塩基）</td><td>錆の色（Fe₂O₃）と同じ</td></tr>
+            <tr><td><span style="color:#fff;background:#1e293b;padding:.1rem .4rem;border-radius:4px">黒</span></td><td>CuS・PbS・FeS・Ag₂S（硫化物）</td><td>「硫化物は黒」（CuS・PbSは特に試験に出る）</td></tr>
+            <tr><td><span style="background:#fef9c3;padding:.1rem .4rem;border-radius:4px">白</span></td><td>BaSO₄・AgCl・AgBr（部分的に）</td><td>BaSO₄は塩酸にも溶けない→確認反応に使う</td></tr>
+            <tr><td><span style="color:#fff;background:#15803d;padding:.1rem .4rem;border-radius:4px">緑〜青</span></td><td>Cu²⁺のアンモニア錯体（深青）</td><td>Cu²⁺はNH₃過剰で[Cu(NH₃)₄]²⁺（テトラアンミン錯体）</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="topic-h">錯体・配位結合——「提供する側」を見る</p>
+      <p style="font-size:.9rem">錯体が出てきたとき「どの原子がどこに結合しているか」を確認するだけで十分です。<strong>「NH₃はNで金属に配位する」「H₂OはOで配位する」など、配位原子を確認する習慣</strong>をつければ、主要な錯体はすぐに書けます。</p>
+    </section>
+
+    <!-- ===== 有機化学 ===== -->
+    <section class="card">
+      <h2>③ 有機化学——「分子の形を見る目」を鍛える</h2>
+      <p style="font-size:.9rem;margin-bottom:.75rem">有機化学の問題は「構造式が書けるかどうか」で9割決まります。<strong>名前を先に覚えようとせず、「骨格（炭素鎖）＋官能基（反応の中心）」を組み合わせる考え方</strong>で整理してください。</p>
+
+      <p class="topic-h">有機化学ロードマップ——この順番で習得する</p>
+      <div class="organic-row">
+        <div class="step-num-round" style="background:#7c3aed">1</div>
+        <div><strong>炭素の結合とアルカン</strong>（CH₄→C₂H₆→プロパン）: 炭素は4本の手。飽和炭化水素は全て「C₍ₙ₎H₍₂ₙ₊₂₎」で表せる</div>
+      </div>
+      <div class="organic-row">
+        <div class="step-num-round" style="background:#7c3aed">2</div>
+        <div><strong>不飽和結合（二重・三重結合）</strong>: アルケン・アルキン。二重結合があると付加反応が起きる</div>
+      </div>
+      <div class="organic-row">
+        <div class="step-num-round" style="background:#7c3aed">3</div>
+        <div><strong>官能基を1つずつ</strong>覚える: ヒドロキシ基（−OH）→アルコール・フェノール / カルボキシ基（−COOH）→カルボン酸 / アミノ基（−NH₂）→アミン</div>
+      </div>
+      <div class="organic-row">
+        <div class="step-num-round" style="background:#7c3aed">4</div>
+        <div><strong>反応パターンを「何が起きているか」で分類</strong>: 付加・置換・脱水縮合・エステル化——反応の名前より「OH+Hが消えてH₂Oができる」など変化で覚える</div>
+      </div>
+      <div class="organic-row">
+        <div class="step-num-round" style="background:#7c3aed">5</div>
+        <div><strong>合成経路問題</strong>: 「どんな試薬を使えば目的の官能基に変換できるか」を逆算する（例：ベンゼン→ニトロベンゼン→アニリンの経路）</div>
+      </div>
+
+      <p class="topic-h">異性体——「数え漏れ」を防ぐ方法</p>
+      <p style="font-size:.9rem">異性体の問題でよくあるのは「書き出せていない構造がある」ことです。</p>
+      <div class="step-flow">
+        <div class="step-num-round">型</div>
+        <div>
+          <strong>異性体の系統的な数え方</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">
+            ① 一番長い炭素鎖を先に決める（主鎖）<br>
+            ② 主鎖が同じものでは、枝分かれ（側鎖）の位置を全パターン書く<br>
+            ③ 主鎖を1つ短くして同じことを繰り返す<br>
+            ④ 最後に「これと同じ構造を書いていないか」を確認する
+          </span>
+        </div>
+      </div>
+
+      <div class="mistake-pair">
+        <div class="mistake-bad">C₅H₁₂の異性体を「思いついた順」に書く→重複や書き漏れが発生、3つしか見つからない</div>
+        <div class="mistake-good">主鎖C5→C4→C3と系統的に書く→ペンタン/2-メチルブタン/2,2-ジメチルプロパン の3つが確実に見つかる</div>
+      </div>
+
+      <p class="topic-h">高分子——「繰り返し単位」だけ覚える</p>
+      <p style="font-size:.9rem">ナイロン66・PET・ポリエチレンなど高分子の問題は「繰り返し単位のモノマーに戻せるか」が問われます。<strong>「−[繰り返し単位]−ₙ」の形を確認→開いてモノマーを書く</strong>だけです。数平均分子量・重合度の計算は「分子量 ÷ 繰り返し単位の式量」で求めます。</p>
+    </section>
+
+    <!-- ===== 共通テスト特有の対策 ===== -->
+    <section class="card">
+      <h2>共通テスト特有の対策</h2>
+      <p style="font-size:.9rem;margin-bottom:.75rem">共通テストの化学は<strong>「計算×実験×選択肢の読み方」</strong>の3つが高得点の鍵です。</p>
+
+      <div class="step-flow">
+        <div class="step-num-round">1</div>
+        <div>
+          <strong>時間配分を決める（化学 60分）</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">共通テストの化学は大問5問構成（年度により変動）。1大問10〜12分が目安。わからない問題は2分で見切りをつけて次へ進む。残り10分で戻る。</span>
+        </div>
+      </div>
+
+      <div class="step-flow">
+        <div class="step-num-round">2</div>
+        <div>
+          <strong>実験問題の解き方</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">「なぜこの操作をするか」を先に確認する（例：「ろ過」→不溶物を除く、「蒸留」→沸点の違いで分離）。「操作の誤りを選べ」問題は「手順の目的に反する操作を選ぶ」。</span>
+        </div>
+      </div>
+
+      <div class="step-flow">
+        <div class="step-num-round">3</div>
+        <div>
+          <strong>「最も適当でないもの」問題の解き方</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">選択肢を全部読む。「確実に正しいもの」から消去して、最後に残った疑わしいものが答えになることが多い。全部自信を持って答えようとすると時間が足りなくなる。</span>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>化学の時間切れを防ぐ練習法：</strong>過去問を解くとき「計算問題だけ先に解く」順番でやってみる。計算問題（モル計算・平衡計算）を先に片付けてから知識問題に戻ると、時間配分が安定します。
+      </div>
+    </section>
+
+    <!-- ===== 分野別到達目標 ===== -->
+    <section class="card">
+      <h2>分野別 到達目標と頻出ミス</h2>
+      <div class="table-wrap">
+        <table style="font-size:.86rem">
+          <thead><tr><th>分野</th><th>到達レベル</th><th>共テでの出方</th><th>頻出ミス</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>モル計算</td>
+              <td class="level-high">計算完璧</td>
+              <td>毎回必出。計算量が多い</td>
+              <td>質量→mol変換で分子量を間違える。単位を追わずに計算する</td>
+            </tr>
+            <tr>
+              <td>化学平衡・pH</td>
+              <td class="level-high">原理の理解</td>
+              <td>Le Chatelier・Henderson-Hasselbalch式</td>
+              <td>圧力と体積の関係を逆にする。弱酸の電離度を1と置く</td>
+            </tr>
+            <tr>
+              <td>酸化還元・電池</td>
+              <td class="level-high">酸化数の読み取り</td>
+              <td>半反応式・ファラデー計算</td>
+              <td>酸化数の変化を追わずに「なんとなく」書く。電子の向きを混同する</td>
+            </tr>
+            <tr>
+              <td>無機化学（金属）</td>
+              <td class="level-mid">反応グループで整理</td>
+              <td>気体の製法・沈殿反応の色</td>
+              <td>色の暗記が曖昧で全滅。「なぜその色か」の理解なしで詰め込む</td>
+            </tr>
+            <tr>
+              <td>有機化学（基本）</td>
+              <td class="level-high">構造式を書ける</td>
+              <td>官能基の反応・異性体</td>
+              <td>異性体の数え漏れ。「CH₃COO−は何の官能基か」等の基本が曖昧</td>
+            </tr>
+            <tr>
+              <td>有機化学（芳香族）</td>
+              <td class="level-mid">反応の向きを覚える</td>
+              <td>ニトロ化・スルホン化・置換基の位置</td>
+              <td>「オルト・パラ配向性」を混同する。アニリンの塩基性を忘れる</td>
+            </tr>
+            <tr>
+              <td>高分子</td>
+              <td class="level-mid">繰り返し単位→モノマー</td>
+              <td>重合度計算・天然高分子（糖・タンパク質）</td>
+              <td>糖の還元性（フルクトースは還元糖だが環状構造では反応しない等）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== 二次試験 ===== -->
+    <section class="card">
+      <h2>二次試験の化学——「記述で書く」ための準備</h2>
+      <p style="font-size:.9rem">国公立の二次試験では<strong>化学反応式・構造式・理由説明の記述</strong>が求められます。共通テストの「選ぶ」から「書く」への切り替えが必要です。</p>
+
+      <div class="step-flow">
+        <div class="step-num-round">型</div>
+        <div>
+          <strong>化学反応式を正確に書く手順</strong><br>
+          <span style="font-size:.88rem;color:var(--text-sub)">
+            ① 反応物と生成物を確認する（何が変わるか）<br>
+            ② 各物質の化学式を書く（構造式でなくてよい）<br>
+            ③ 係数を合わせる（まずH・O以外の原子から、最後にH→O）<br>
+            ④ 状態記号（↑ ↓）と条件（加熱・光）が必要な場合は書く
+          </span>
+        </div>
+      </div>
+
+      <div class="mistake-pair">
+        <div class="mistake-bad">「酢酸とエタノールのエステル化」の反応式を「CH₃COOH + C₂H₅OH → CH₃COOC₂H₅ + H₂O」だけ書いて終わり→可逆反応なのに⇌を書かない</div>
+        <div class="mistake-good">CH₃COOH + C₂H₅OH <strong>⇌</strong> CH₃COOC₂H₅ + H₂O（可逆反応の記号と、必要なら触媒「濃H₂SO₄、加熱」を補記）</div>
+      </div>
+
+      <div class="tip-box"><strong>名古屋大学 化学二次のポイント（情報から推測）：</strong>理科2科目で600点。有機化学の構造決定問題（「化合物Aは〇〇の性質を示す…」から構造式を求める）が頻出。「なぜその構造になるか」の根拠を書く記述力が必要。過去問3年分を実際に「書く」練習が不可欠。</div>
+    </section>
+
+    <!-- ===== 勉強ルーティン ===== -->
+    <section class="card">
+      <h2>具体的な勉強ルーティン（高3夏〜秋）</h2>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>フェーズ</th><th>時期</th><th>内容</th><th>1日の目安</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>基礎固め</td>
+              <td>〜8月</td>
+              <td>教科書の例題を全て自力で解ける状態に。理論→無機→有機の順。化学基礎は1週間で終わらせる</td>
+              <td>1〜1.5時間</td>
+            </tr>
+            <tr>
+              <td>標準問題</td>
+              <td>9〜10月</td>
+              <td>重要問題集（数研出版）or セミナー化学の標準問題。解けなかった問題にチェック→翌週解き直す</td>
+              <td>1.5時間</td>
+            </tr>
+            <tr>
+              <td>共テ過去問</td>
+              <td>10〜12月</td>
+              <td>直近5年分を時間計測で解く。時間配分のシミュレーション。間違えた問題の分野を記録</td>
+              <td>週2〜3回（1回60分）</td>
+            </tr>
+            <tr>
+              <td>二次対策</td>
+              <td>1月以降</td>
+              <td>志望校の過去問3〜5年分を「実際に書く」。答案を書いて採点基準と照合</td>
+              <td>1日1問（丁寧に）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ok-box">
+        <strong>毎日の短時間習慣（5〜10分）：</strong>前日に間違えた問題の反応式・構造式を1回書き直す。これだけで「わかった気になって書けない」を防げます。
+      </div>
+    </section>
+
+    <!-- ===== 教材 ===== -->
+    <section class="card">
+      <h2>教材の使い方</h2>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>段階</th><th>おすすめ教材</th><th>使い方</th></tr></thead>
+          <tbody>
+            <tr><td>基礎</td><td>教科書＋セミナー化学（基礎問題）</td><td>1テーマずつ。問題文の数値を変えても解けるか確認</td></tr>
+            <tr><td>標準</td><td>重要問題集（数研出版）、または化学の新演習（基本問題のみ）</td><td>A問題を全部解く→B問題は志望校レベルに合わせて選ぶ</td></tr>
+            <tr><td>共テ対策</td><td>大学入試センター 過去問（無料）＋各予備校の共テ問題集</td><td>実際の試験形式で時間計測して解く。終わったら「なぜ間違えたか」の分類</td></tr>
+            <tr><td>二次（難関）</td><td>化学の新演習（三省堂）、志望校過去問</td><td>答案を紙に書いて見直す。「正解していても途中の根拠が書けているか」を確認</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.dnc.ac.jp/kyotsu/kakomondai/" target="_blank" rel="noopener">大学入試センター 過去問題（化学・化学基礎）</a></li>
+        <li><a href="https://passnavi.obunsha.co.jp/univ/0490/subject/?facultyID=030" target="_blank" rel="noopener">名古屋大学 理学部 入試科目（パスナビ）</a></li>
+        <li><a href="https://www.nagoya-u.ac.jp/admissions/exam/" target="_blank" rel="noopener">名古屋大学 一般選抜 実施要項</a></li>
+        <li><a href="https://www.nitech.ac.jp/examination/gakubu/test.html" target="_blank" rel="noopener">名古屋工業大学 過去問題・出題意図</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">反応式・構造式は「書くことで覚える」。眺めるだけでなく手を動かすことが化学の近道です。</footer>
+  <a class="feedback-btn" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener"><span class="fb-icon">💬</span>意見・修正を送る</a>
+</body>
+</html>

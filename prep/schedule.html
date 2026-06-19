@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学習スケジュール（高3向け） | 受験対策</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .phase-card {
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin-bottom: 1.25rem;
+      border: 2px solid;
+    }
+    .phase-card h3 { margin-top: 0; font-size: 1.05rem; }
+    .phase-a { background: #f0fdf4; border-color: #4ade80; }
+    .phase-b { background: #fef9c3; border-color: #facc15; }
+    .phase-c { background: #fff7ed; border-color: #ea580c; }
+    .phase-d { background: #fef2f2; border-color: #dc2626; }
+    .phase-e { background: #f5f3ff; border-color: #7c3aed; }
+    .daily-bar {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      margin: .35rem 0;
+      font-size: .88rem;
+    }
+    .daily-label {
+      width: 5rem;
+      font-weight: 600;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+    .daily-block {
+      height: 1.6rem;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 0 .5rem;
+      font-size: .75rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .blk-math  { background: #2563eb; }
+    .blk-phys  { background: #059669; }
+    .blk-chem  { background: #7c3aed; }
+    .blk-eng   { background: #b45309; }
+    .blk-other { background: #6b7280; }
+    .blk-niji  { background: #dc2626; }
+    .warn-box {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .ok-box {
+      background: #f0fdf4;
+      border-left: 4px solid #059669;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .month-row { font-size: .88rem; margin: .4rem 0; padding-left: 1rem; border-left: 3px solid var(--border); }
+    .month-row strong { color: var(--navy); }
+    .month-badge {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: .1rem .45rem;
+      margin-right: .3rem;
+    }
+    .checklist { list-style: none; padding: 0; margin: .5rem 0; }
+    .checklist li { font-size: .9rem; padding: .2rem 0; padding-left: 1.4rem; position: relative; }
+    .checklist li::before { content: '☐'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .checklist li.done::before { content: '☑'; color: #059669; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>学習スケジュール（高3向け）</h1>
+    <div class="subtitle">高3の4月〜翌年3月——月別タスクと1日の使い方</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">← 進路ガイドに戻る</a></div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <!-- ========== フェーズ選択 ========== -->
+    <section class="card">
+      <h2>今の月から自分のフェーズを確認する</h2>
+      <p>高3の受験勉強は「月ごとにやることが変わる」のが特徴です。今の時期に合ったフェーズを選んで読んでください。</p>
+
+      <div class="phase-card phase-a">
+        <h3>🌱 フェーズ1 ——4〜6月（高3前半・土台固め）</h3>
+        <p style="margin:0;font-size:.9rem">学校の授業が一番密度が高い時期。二次試験レベルまでの<strong>基礎〜標準問題を1科目ずつ固める</strong>。焦らず確実に。</p>
+      </div>
+      <div class="phase-card phase-b">
+        <h3>🔥 フェーズ2 ——7〜8月（夏休み・最大の追い込み）</h3>
+        <p style="margin:0;font-size:.9rem">受験勉強の最大の山場。1日8時間の長期戦が可能な唯一の期間。<strong>ここで差がつく。苦手を潰して得意をさらに伸ばす。</strong></p>
+      </div>
+      <div class="phase-card phase-c">
+        <h3>📊 フェーズ3 ——9〜11月（共通テスト対策・仕上げ）</h3>
+        <p style="margin:0;font-size:.9rem">共通テストの過去問演習開始。<strong>二次対策を軸にしながら共通テストの時間配分を固める。</strong>模試で出願戦略を確認。</p>
+      </div>
+      <div class="phase-card phase-d">
+        <h3>🎯 フェーズ4 ——12〜1月中旬（直前期）</h3>
+        <p style="margin:0;font-size:.9rem">共通テストまで残り1〜2ヶ月。<strong>新しい問題集は絶対に開かない。</strong>間違えた問題の見直しと体調管理のみ。</p>
+      </div>
+      <div class="phase-card phase-e">
+        <h3>🏁 フェーズ5 ——1月中旬以降（共通テスト後〜3月）</h3>
+        <p style="margin:0;font-size:.9rem">共通テスト後は即切り替え。<strong>国公立の二次試験・私立一般入試に全集中。</strong>自己採点から出願校を最終決定。</p>
+      </div>
+    </section>
+
+    <!-- ========== フェーズ1 ========== -->
+    <section class="card">
+      <h2>フェーズ1（4〜6月）：授業と並行して基礎を固める</h2>
+      <p style="font-size:.9rem">高3前半は学校の授業カリキュラムが最も密度が高い時期です。「授業でわからなかったことをその日のうちに解決する」——これだけで十分な時期です。</p>
+
+      <div class="month-row"><span class="month-badge">4月</span>志望校・受験科目を学校の進路面談で確認。昨年度の共通テスト1年分を「実力確認」として解く（点数は気にしない）。数学・物理・化学の問題集を1冊決める（変えない）。</div>
+      <div class="month-row"><span class="month-badge">5月</span>問題集を1日3〜5問ずつ進める。解けなかった問題に印をつけ、翌週に解き直す。全統模試（5月）を受験して現在地を確認。</div>
+      <div class="month-row"><span class="month-badge">6月</span>模試の成績表で「どの分野で何点落としたか」を確認。夏休みの計画（どの科目に何時間使うか）を仮決めする。英語：1冊の単語帳を毎日15分。</div>
+
+      <h3>平日（学校がある日）の時間配分例</h3>
+      <div class="daily-bar"><span class="daily-label">数学</span><div class="daily-block blk-math" style="width:40%">1.5h（例題・演習）</div></div>
+      <div class="daily-bar"><span class="daily-label">物理 / 化学</span><div class="daily-block blk-phys" style="width:27%">1h（交互）</div></div>
+      <div class="daily-bar"><span class="daily-label">英語</span><div class="daily-block blk-eng" style="width:20%">45m（単語+英文）</div></div>
+      <div class="daily-bar"><span class="daily-label">国語・社会</span><div class="daily-block blk-other" style="width:10%">30m</div></div>
+
+      <div class="ok-box"><strong>6月末の到達目標：</strong>数学の問題集（基礎レベル）を1周した。物理・化学の教科書の例題を自力で解ける。英語の単語帳を400語以上覚えた。</div>
+      <div class="warn-box"><strong>この時期のNG：</strong>難問集・過去問を焦って始める。1つの科目だけに偏る（英語ゼロなど）。参考書を何冊も買って全部中途半端にする。</div>
+    </section>
+
+    <!-- ========== フェーズ2 ========== -->
+    <section class="card">
+      <h2>フェーズ2（7〜8月）：夏休み・受験の分岐点</h2>
+      <p style="font-size:.9rem">夏休みは唯一「1日8時間以上勉強できる」期間です。<strong>受験の合否は夏で決まる</strong>と言われるほど重要。ここで二次試験レベルまで力を伸ばすことが目標です。</p>
+
+      <h3>夏の優先順位の決め方</h3>
+      <ol style="padding-left:1.2rem;font-size:.9rem;margin:.5rem 0 1rem">
+        <li>5〜6月の模試の結果を見る。<strong>一番差がつく科目（数学・物理）に時間の40%以上</strong>を集中させる</li>
+        <li>英語は「毎日やらないと落ちる」科目——どんなに忙しくても<strong>1日30分は離さない</strong></li>
+        <li>国語・社会は共通テストのみ使う科目なら1日30〜40分で十分。深追いしない</li>
+        <li>総合型選抜（旧AO）に挑戦する人は志望理由書・面接準備も並行</li>
+      </ol>
+
+      <h3>夏休みの1日（8時間勉強の配分例）</h3>
+      <div class="daily-bar"><span class="daily-label">数学</span><div class="daily-block blk-math" style="width:37%">3h（標準〜応用問題）</div></div>
+      <div class="daily-bar"><span class="daily-label">物理</span><div class="daily-block blk-phys" style="width:25%">2h（二次レベル演習）</div></div>
+      <div class="daily-bar"><span class="daily-label">化学</span><div class="daily-block blk-chem" style="width:19%">1.5h</div></div>
+      <div class="daily-bar"><span class="daily-label">英語</span><div class="daily-block blk-eng" style="width:12%">1h</div></div>
+      <div class="daily-bar"><span class="daily-label">国語・社会</span><div class="daily-block blk-other" style="width:7%">30m</div></div>
+
+      <div class="month-row"><span class="month-badge">7月</span>夏期講習（予備校・学校）の受講科目を絞る。全てに参加しようとしない。数学・物理：問題集の2周目開始（1周目で×をつけた問題だけ）。</div>
+      <div class="month-row"><span class="month-badge">8月前半</span>志望校の過去問を1〜2年分「解いてみる」（点数より形式・傾向を知る）。英語長文を週3本読む（共通テスト過去問の大問4〜6を使う）。</div>
+      <div class="month-row"><span class="month-badge">8月後半</span>夏の成果確認：数学・物理の標準問題を時間通りに解けるか？ 解けない分野を特定して9月に持ち越す。</div>
+
+      <div class="ok-box"><strong>夏終了時の目標：</strong>①数学の問題集（標準レベル）を1〜2周完了 ②物理・化学の全範囲の基礎〜標準問題を解いた経験がある ③英語を毎日続けた</div>
+      <div class="warn-box"><strong>夏によくある失敗：</strong>「夏に10時間やって燃え尽き、9月はゼロ」。1日8時間でも無理なら6時間でいい。<strong>9月以降も続けられる量に抑えることが最重要。</strong>量より継続。</div>
+    </section>
+
+    <!-- ========== フェーズ3 ========== -->
+    <section class="card">
+      <h2>フェーズ3（9〜11月）：共通テスト対策と仕上げ</h2>
+      <p style="font-size:.9rem">9月から共通テストの過去問演習を本格的に始めます。<strong>二次試験の対策を軸にしながら、共通テストで時間通りに解くための練習を並行</strong>して進めます。</p>
+
+      <div class="month-row"><span class="month-badge">9月</span>共通テスト出願手続き（学校経由で申請）。共通テスト過去問（直近3年）の演習開始。時間計測しながら解き、時間配分を確認。模試（9月・全統）で判定と分野別弱点を確認。</div>
+      <div class="month-row"><span class="month-badge">10月</span>私立の出願情報収集（一般入試の日程・科目を確認）。志望校の二次試験過去問（3〜5年分）を本格演習。「どんな問題が出るか・どのくらいの記述量か」を把握する。</div>
+      <div class="month-row"><span class="month-badge">11月</span>全統プレ共通テスト・各予備校のプレ模試を受験。「当日に近い緊張感」で時間配分を練習。弱点の最終確認とピンポイント補強。</div>
+
+      <h3>9〜11月の1日配分例（平日）</h3>
+      <div class="daily-bar"><span class="daily-label">二次対策</span><div class="daily-block blk-niji" style="width:42%">数学・物理 計2.5h</div></div>
+      <div class="daily-bar"><span class="daily-label">共テ演習</span><div class="daily-block blk-chem" style="width:27%">1.5h（時間計測）</div></div>
+      <div class="daily-bar"><span class="daily-label">英語</span><div class="daily-block blk-eng" style="width:20%">1h（毎日継続）</div></div>
+      <div class="daily-bar"><span class="daily-label">国語・社会</span><div class="daily-block blk-other" style="width:10%">30m</div></div>
+
+      <div class="ok-box"><strong>11月末チェック：</strong>共通テストの英語・数学が時間内に終わるようになった。志望校の二次問題を見て「解けそうかどうか」の判断がつくようになった。</div>
+    </section>
+
+    <!-- ========== フェーズ4 ========== -->
+    <section class="card">
+      <h2>フェーズ4（12〜1月中旬）：直前期——「守りの戦略」</h2>
+      <p style="font-size:.9rem">共通テストまで残り1〜2ヶ月。この時期に最も大切なのは<strong>「新しいことを始めない」</strong>という決断です。今まで積み上げたものを最大限に引き出す時期です。</p>
+
+      <div class="month-row"><span class="month-badge">12月</span>受験票が届いたら試験会場・時間割を確認。新問題集は開かない（例外なし）。共通テスト過去問（直近5年）を1日1〜2教科のペースで見直す。間違えた問題のみ解き直す。</div>
+      <div class="month-row"><span class="month-badge">12月末</span>年末年始もペースを落とさない（むしろライバルが緩む時期）。1日の勉強量を少し減らしてでも「毎日継続」を優先。睡眠7時間必須。</div>
+      <div class="month-row"><span class="month-badge">1月1〜2週</span>共通テスト当日のシミュレーション（何時に起きる→何を食べる→何時に会場着）を決める。時間配分の最終確認。新しい暗記事項は入れない。</div>
+
+      <ul class="checklist">
+        <li>間違えた問題に印をつけて解き直した（新問題集は開いていない）</li>
+        <li>時間配分が安定した（英語80分で大問6まで終わる など）</li>
+        <li>試験会場への行き方を事前に確認した</li>
+        <li>体調管理（7時間睡眠・手洗い・夜12時前就寝）を習慣にした</li>
+      </ul>
+
+      <div class="warn-box"><strong>直前期のNG：</strong>「まだ不安だから新しい参考書を買う」——直前に新しいことを始めると、今まで覚えたことが上書きされて混乱します。今できることを完璧にする方が確実に点数につながります。</div>
+    </section>
+
+    <!-- ========== フェーズ5 ========== -->
+    <section class="card">
+      <h2>フェーズ5（1月中旬以降）：共通テスト後〜3月</h2>
+      <p style="font-size:.9rem">共通テストが終わったらすぐに<strong>切り替えが大切</strong>です。燃え尽きている場合ではありません。共通テストから国公立前期試験まで約40日あります。</p>
+
+      <div class="month-row"><span class="month-badge">共テ翌日</span>自己採点を行う。各予備校の「自己採点集計」に入力し、合否ラインとの比較をする。担任の先生と相談し、前期・後期の出願校を確認する。</div>
+      <div class="month-row"><span class="month-badge">1月末</span>国公立大学の出願（前期・後期）を締め切りまでに提出。私立一般入試の出願も並行して確認。共通テストのことは忘れて二次対策に集中。</div>
+      <div class="month-row"><span class="month-badge">2月</span>私立一般入試が始まる（各大学の日程で異なる）。本番に慣れるためにも積極的に受験する。体力と集中力を維持する。国公立前期（2月25日前後）に向けた二次対策を最優先。</div>
+      <div class="month-row"><span class="month-badge">3月</span>国公立前期合格発表（3月上旬）。不合格の場合は後期試験（3月12日前後）へ。合格後は入学手続き（期限厳守）。</div>
+
+      <h3>共通テスト後の1日配分例</h3>
+      <div class="daily-bar"><span class="daily-label">数学</span><div class="daily-block blk-math" style="width:37%">3h（二次対策）</div></div>
+      <div class="daily-bar"><span class="daily-label">物理</span><div class="daily-block blk-phys" style="width:25%">2h（記述演習）</div></div>
+      <div class="daily-bar"><span class="daily-label">英語</span><div class="daily-block blk-eng" style="width:19%">1.5h（英作文）</div></div>
+      <div class="daily-bar"><span class="daily-label">化学・国語</span><div class="daily-block blk-chem" style="width:10%">1h</div></div>
+
+      <div class="ok-box"><strong>共通テスト後は「二次の人間」になる。</strong>共通テストの点数（良くても悪くても）を引きずらない。前期試験の当日まで毎日続ける人が最後に笑います。</div>
+    </section>
+
+    <!-- ========== 模試の使い方 ========== -->
+    <section class="card">
+      <h2>模試の正しい使い方</h2>
+      <p style="font-size:.9rem">模試は「受けっぱなし」では意味がありません。<strong>成績表が来てからが本番</strong>です。</p>
+      <ol style="padding-left:1.2rem;font-size:.9rem">
+        <li><strong>受ける前：</strong>今どこができてどこができないかを予測してから受ける（仮説を立てる習慣）</li>
+        <li><strong>受けた直後（当日）：</strong>解けなかった問題の原因を4分類でメモ——「①知識がない」「②解法を知らない」「③時間不足」「④ケアレスミス」</li>
+        <li><strong>成績表が来たら：</strong>偏差値・判定より<strong>「分野別で何点落としたか」</strong>を見る。伸びしろが大きい分野を次週の勉強に反映</li>
+        <li><strong>翌週：</strong>①②に分類した問題を解き直す。解法を知らなかった問題は該当分野の問題集に戻る</li>
+        <li><strong>記録：</strong>模試ごとの得点・偏差値・分野別成績をノートに記録。3ヶ月単位でトレンドを見る</li>
+      </ol>
+      <div class="warn-box"><strong>「E判定=諦める」は間違いです。</strong>模試の判定はその時点の実力の目安。9月E判定から前期合格した例は多くあります。「判定」ではなく「どこが伸ばせるか」を読む視点を持ちましょう。</div>
+    </section>
+
+    <!-- ========== 勉強場所 ========== -->
+    <section class="card">
+      <h2>勉強場所・環境の選び方</h2>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>場所</th><th>向いている勉強</th><th>注意点</th></tr></thead>
+          <tbody>
+            <tr><td>学校の自習室</td><td>演習・過去問（集中が必要な問題）</td><td>夏は競争率が高い。朝早めに確保</td></tr>
+            <tr><td>図書館</td><td>長時間の読み込み・暗記系</td><td>飲食不可が多い。疲れたら外に出る</td></tr>
+            <tr><td>家の自室</td><td>ノートまとめ・英語リスニング</td><td>スマホを別部屋に置く。15分おきに立つ</td></tr>
+            <tr><td>塾・予備校の自習室</td><td>わからない問題をその場で質問できる</td><td>週3〜4回が現実的。費用も考慮</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.88rem;color:var(--text-sub);margin-top:.5rem"><strong>睡眠7時間以上は絶対に守る。</strong>睡眠不足で勉強しても記憶に定着しない。夜12時以降の勉強は効率が半分以下と言われています。体を壊したら全てが終わりです。</p>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="nyushi-qa.html">入試の仕組み・よくある疑問（共通テスト流れ・出願回数Q&A）</a></li>
+        <li><a href="https://www.dnc.ac.jp/kyotsu/index.html" target="_blank" rel="noopener">大学入試センター（共通テスト公式・日程・出願）</a></li>
+        <li><a href="https://passnavi.obunsha.co.jp/univ/0490/subject/" target="_blank" rel="noopener">名古屋大学 入試科目（パスナビ）</a></li>
+        <li><a href="https://www.nitech.ac.jp/examination/gakubu/test.html" target="_blank" rel="noopener">名古屋工業大学 過去問題</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">スケジュールは個人の状況・学校行事に合わせて調整。担任・進路指導の先生とも相談してください。</footer>
+  <a class="feedback-btn" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener"><span class="fb-icon">💬</span>意見・修正を送る</a>
+</body>
+</html>
+
+

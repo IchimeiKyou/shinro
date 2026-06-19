@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>二次試験対策 | 進路ガイド</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .warn-box {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .ok-box {
+      background: #f0fdf4;
+      border-left: 4px solid #059669;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .answer-box {
+      background: var(--accent-light);
+      border: 1px solid #93c5fd;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      font-size: .88rem;
+      margin: .75rem 0;
+      font-family: 'Noto Sans JP', monospace;
+      line-height: 2;
+    }
+    .answer-box .good { color: #059669; font-weight: 600; }
+    .answer-box .bad  { color: #dc2626; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>二次試験（個別学力検査）対策</h1>
+    <div class="subtitle">国公立前期・記述答案の書き方</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">← 進路ガイドに戻る</a></div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <section class="card">
+      <h2>二次試験と共通テストの根本的な違い</h2>
+      <p style="font-size:.95rem;line-height:1.85">共通テストは「答えを選ぶ」マーク式です。二次試験は<strong>「解いた過程を文章で書く」記述式</strong>です。同じ答えでも、途中の式や論理が正しく書けていないと部分点しか入らない——あるいは0点になる。逆に、最終答えが間違っていても途中式が正しければ<strong>部分点で大きく稼げます</strong>。</p>
+      <div class="ok-box"><strong>二次試験で大切な考え方：</strong>「答えを出す」より「採点官に解き方を伝える」。自分だけが理解できる式ではなく、見ている人が追える答案を書く。</div>
+    </section>
+
+    <section class="card">
+      <h2>記述答案の書き方——数学・物理の場合</h2>
+      <p style="font-size:.9rem;margin-bottom:.75rem">「答えだけ書いて正解」は記述式ではほぼありません。以下のルールを守ってください。</p>
+
+      <h3>悪い答案 vs 良い答案（例：速度を求める問題）</h3>
+      <div class="answer-box">
+        <div class="bad">❌ 悪い例：</div>
+        v = √(2×10×5) = 10 m/s<br><br>
+        <div class="good">✅ 良い例：</div>
+        エネルギー保存則より：<br>
+        &nbsp;&nbsp;mgh = ½mv²<br>
+        &nbsp;&nbsp;gh = ½v²<br>
+        &nbsp;&nbsp;v² = 2gh = 2 × 10 × 5 = 100<br>
+        &nbsp;&nbsp;<strong>v = 10 [m/s]</strong><br>
+        <em style="color:var(--text-sub);font-size:.82rem">（高さ h = 5 m、g = 10 m/s² として）</em>
+      </div>
+
+      <p style="font-size:.88rem">良い答案のポイント：</p>
+      <ul style="padding-left:1.2rem;font-size:.88rem">
+        <li><strong>使った法則・公式を言葉で書く</strong>（「エネルギー保存則より」など）</li>
+        <li><strong>文字を定義してから使う</strong>（「高さをhとおく」）</li>
+        <li><strong>式変形の各行を1行ずつ書く</strong>（2行以上飛ばさない）</li>
+        <li><strong>最終答えに単位を書く</strong>（[m/s] [N] [J] など）</li>
+        <li><strong>問われているものを最後に明示する</strong>（「よって v = 10 m/s」）</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>部分点を最大限に取る戦略</h2>
+      <p style="font-size:.9rem">二次試験では「部分点」が存在します。解けない問題でも<strong>途中まで書くことで10〜30%の点数が入ることがある</strong>ため、空白のまま提出するのが一番もったいない。</p>
+
+      <h3>部分点の狙い方</h3>
+      <ul style="padding-left:1.2rem;font-size:.9rem">
+        <li><strong>立式だけでも書く：</strong>計算ができなくても「方程式を正しく立てる」だけで部分点が入ることがある</li>
+        <li><strong>使う公式を書く：</strong>「F = ma を使う」「運動量保存則より」と書いてから詰まっても、方針が正しければ評価される</li>
+        <li><strong>文字で途中まで進める：</strong>数値が計算できなくても「v = √(2gh)」まで正しく書ければ評価対象になる</li>
+        <li><strong>後ろの小問が前に依存していない場合：</strong>詰まったら前の小問を飛ばして後ろから解く。(2)が(1)の答えを使わない場合は独立して解ける</li>
+      </ul>
+
+      <div class="warn-box"><strong>やってはいけないこと：</strong>「わからない = 空白」で提出。どんなに見当違いな式でも、何か書いてあれば採点官が部分点を判断できます。まったくわからなくても「わかっていること（例：物理量の定義式）」を書く。</div>
+    </section>
+
+    <section class="card">
+      <h2>主要大学の理系二次科目（2026年度目安）</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>大学・学部</th><th>二次科目</th><th>配点</th><th>特徴</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><a href="../universities/nagoya-u.html">名古屋大学 理学部</a></td>
+              <td>数学・理科2・英語</td>
+              <td>600+600+300<br>=1500点</td>
+              <td>数学は問題数が少なく1問あたりの配点が大きい。理科は物理+化学が定番。英語は和訳・読解中心。</td>
+            </tr>
+            <tr>
+              <td><a href="../universities/nitech.html">名古屋工業大学 工学部</a></td>
+              <td>数学・理科1・英語</td>
+              <td>400+400+200<br>=1000点</td>
+              <td>理科は物理 or 化学から1科目選択。共通テストの得点も併用（950点→450点換算）。出題意図を公式公開しているため参照必須。</td>
+            </tr>
+            <tr>
+              <td><a href="../universities/meijo-u.html">名城大学 理工学部</a></td>
+              <td>共通テストのみ（C方式）または個別あり</td>
+              <td>方式による</td>
+              <td>C方式は二次なし。個別あり方式は数学・理科。出願方式の確認が最優先。</td>
+            </tr>
+            <tr>
+              <td>早稲田・慶應 理工</td>
+              <td>数学・理科・英語</td>
+              <td>大学による</td>
+              <td>記述比重が高い。英作文あり。私大の中で最難関。共通テストは不使用。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>過去問の使い方——3つのステップ</h2>
+      <p style="font-size:.9rem">過去問は「解けるかどうかを試す」ためだけに使うと損です。<strong>「何を求められているかを把握する」教材</strong>として使いましょう。</p>
+      <ol style="padding-left:1.2rem;font-size:.9rem">
+        <li><strong>1年目（最初）：時間無制限で解く</strong><br>
+          目的：「この大学はどんな問題を出すか」を知る。解けなくて当然。解説を読んで、「どの教材で補強すべきか」を特定する。</li>
+        <li><strong>2年目：本番と同じ時間で解く</strong><br>
+          目的：「どの問題に何分かけるか」を決める練習。「捨てる問題」を見極める力を鍛える。</li>
+        <li><strong>3年目（直前）：間違えた問題だけ再演習</strong><br>
+          目的：同じミスを本番でしない。記述の書き方を見直す。</li>
+      </ol>
+
+      <h3>時間配分の目安（名古屋大学 数学の例）</h3>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>大問</th><th>目安時間</th><th>方針</th></tr></thead>
+          <tbody>
+            <tr><td>大問1（得点しやすい）</td><td>30〜35分</td><td>完答を狙う。途中式を丁寧に</td></tr>
+            <tr><td>大問2（標準〜難）</td><td>35〜40分</td><td>解けるところまで進む。後半で詰まったら次へ</td></tr>
+            <tr><td>大問3（難）</td><td>残り時間</td><td>部分点狙い。立式だけでも書く</td></tr>
+            <tr><td>見直し</td><td>10分</td><td>単位・符号・問いの確認</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>足切り・第一次選抜について</h2>
+      <div class="insight insight-warn">
+        <p>国公立大学では共通テストの得点が一定以下だと二次試験を受けられない「第一次選抜（足切り）」があります。名古屋工業大学では「募集人員の約4倍」で足切りを行う場合があります（募集要項PDF参照）。共通テストで大きく失点すると、どれだけ二次が得意でも受験すらできません。<strong>共通テスト対策を疎かにしないこと。</strong></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.nagoya-u.ac.jp/admissions/exam/" target="_blank" rel="noopener">名古屋大学 一般選抜 実施要項（PDF）</a></li>
+        <li><a href="https://www.nitech.ac.jp/examination/gakubu/test.html" target="_blank" rel="noopener">名古屋工業大学 過去問題・出題意図（公式）</a></li>
+        <li><a href="https://passnavi.obunsha.co.jp/univ/0490/subject/" target="_blank" rel="noopener">名古屋大学 理学部 入試科目（パスナビ）</a></li>
+        <li><a href="https://passnavi.obunsha.co.jp/univ/0510/subject/" target="_blank" rel="noopener">名古屋工業大学 入試科目（パスナビ）</a></li>
+      </ul>
+    </section>
+  </main>
+  <a class="feedback-btn" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener"><span class="fb-icon">💬</span>意見・修正を送る</a>
+</body>
+</html>
+
+

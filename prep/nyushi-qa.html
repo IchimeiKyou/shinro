@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>入試の仕組み・よくある疑問 | 受験対策</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    /* タイムライン */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      margin: 1.25rem 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: .65rem;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+    .tl-item {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -1.4rem;
+      top: .35rem;
+      width: .7rem;
+      height: .7rem;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+    .tl-month {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: .88rem;
+    }
+    .tl-desc {
+      font-size: .88rem;
+      color: var(--text);
+      margin-top: .1rem;
+      line-height: 1.7;
+    }
+    .tl-item.important::before { background: #dc2626; box-shadow: 0 0 0 2px #dc2626; }
+    .tl-item.important .tl-month { color: #dc2626; }
+
+    /* Q&A */
+    .qa-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: .85rem;
+      overflow: hidden;
+    }
+    .qa-q {
+      background: #eff6ff;
+      padding: .9rem 1.1rem;
+      font-weight: 700;
+      font-size: .93rem;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+    }
+    .qa-q::before {
+      content: 'Q';
+      background: var(--accent);
+      color: #fff;
+      border-radius: 4px;
+      font-size: .8rem;
+      font-weight: 700;
+      padding: .05rem .42rem;
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+    .qa-a {
+      padding: .9rem 1.1rem;
+      font-size: .9rem;
+      line-height: 1.85;
+      border-top: 1px solid var(--border);
+      background: var(--card);
+    }
+    .qa-a::first-line { font-weight: 600; }
+    .qa-tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 700;
+      border-radius: 999px;
+      padding: .1rem .5rem;
+      margin-bottom: .65rem;
+    }
+    .tag-kyo { background: #dbeafe; color: #1d4ed8; }
+    .tag-deme { background: #fef3c7; color: #92400e; }
+    .tag-niko { background: #dcfce7; color: #166534; }
+    .tag-ato  { background: #fce7f3; color: #9d174d; }
+    .tag-ryuu { background: #ede9fe; color: #5b21b6; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>入試の仕組み・よくある疑問</h1>
+    <div class="subtitle">共通テストの流れ・出願回数・合否後の選択肢</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">← 進路ガイドに戻る</a></div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <!-- ========== 全体の流れ ========== -->
+    <section class="card">
+      <h2>日本の大学受験——全体の流れ（高3の1年間）</h2>
+      <p style="font-size:.9rem;margin-bottom:1rem">日本の大学入試は<strong>「共通テスト（1月）→ 各大学の個別試験（2〜3月）」</strong>の2段階が基本です。国公立と私立では仕組みが大きく違います。</p>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-month">4〜6月（高3前半）</div>
+          <div class="tl-desc">通常授業継続。学校で受験科目と出願校の確認。全国模試（5〜6月）で現在地を把握する。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-month">7〜8月（夏休み）</div>
+          <div class="tl-desc">受験勉強の山場。二次試験レベルまで力を伸ばす最後の大きな時間。苦手科目の集中対策。<br>
+          <span style="color:#b45309;font-weight:600">総合型選抜（旧AO入試）：</span>志望理由書・面接の準備。早い大学は8月に出願開始。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-month">9月（共通テスト出願）</div>
+          <div class="tl-desc"><strong>共通テストの出願手続きが始まります（学校経由）。</strong> 例年9月下旬〜10月中旬が出願受付期間（年度により変動）。受験料18,000円（令和7年度実績）を支払い、受験科目を申告。<br>
+          総合型選抜の結果が出始める（早い学校）。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-month">10〜11月</div>
+          <div class="tl-desc">私立の学校推薦型選抜（学校長推薦・指定校推薦）の出願・試験。<br>共通テストの直前対策が本格化。模試（全統プレ・共通テスト本番レベル模試）で時間配分を確認。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-month">12月（最終対策）</div>
+          <div class="tl-desc">新しい問題集を開かない。間違えた問題の復習と時間配分の確認のみ。受験票が届く（12月中旬以降）。体調管理が最優先。</div>
+        </div>
+        <div class="tl-item important">
+          <div class="tl-month">1月中旬——共通テスト本番（2日間）</div>
+          <div class="tl-desc"><strong>令和8年度（2026年度）の試験は2027年1月中旬に実施予定。</strong>例年1月の第3土日が本番（参考：令和7年度は1月17日・18日）。正確な日程は必ず<a href="https://www.dnc.ac.jp/kyotsu/index.html" target="_blank" rel="noopener">大学入試センター公式サイト</a>で確認。<br>
+          1日目：国語・地歴公民・英語　2日目：数学・理科・情報<br>
+          終了後すぐ<strong>自己採点</strong>を行い、国公立の出願戦略を確認する。</div>
+        </div>
+        <div class="tl-item important">
+          <div class="tl-month">1月下旬——国公立大学への出願</div>
+          <div class="tl-desc">共通テストの点数を見て、国公立大学の前期・後期に出願（各1校ずつ）。出願締切は1月末〜2月上旬。<strong>ここで出願する大学・学部を最終決定します。</strong></div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-month">2月（私立一般入試・国公立前期）</div>
+          <div class="tl-desc">私立大学の一般入試が順次始まる（各大学で日程が異なる）。<br>
+          <strong>国公立大学 前期試験：2月25日前後</strong>（各大学の試験日程は要確認）。</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-month">3月上旬——国公立前期合格発表</div>
+          <div class="tl-desc">前期合格者は入学手続きへ。<br>不合格の場合→後期試験（3月12日前後）または私立の合格校へ。</div>
+        </div>
+        <div class="tl-item important">
+          <div class="tl-month">3月下旬——最終確定</div>
+          <div class="tl-desc">国公立後期合格発表（3月21日前後）。4月入学に向けて入学手続き完了。<br>
+          ここまでに合格した大学がなければ、次年度への浪人または進路変更を検討。</div>
+        </div>
+      </div>
+      <p style="font-size:.82rem;color:var(--text-sub)">※日程は年度によって変わります。正確な日程は<a href="https://www.dnc.ac.jp/kyotsu/index.html" target="_blank" rel="noopener">大学入試センター公式サイト</a>と各大学の募集要項で必ず確認してください。</p>
+    </section>
+
+    <!-- ========== 共テ当日 ========== -->
+    <section class="card">
+      <h2>共通テスト当日——2日間のスケジュール</h2>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>日程</th><th>科目（理系典型例）</th><th>時間・点数</th></tr></thead>
+          <tbody>
+            <tr>
+              <td rowspan="4"><strong>1日目</strong></td>
+              <td>地歴・公民（公共・政治経済など）</td>
+              <td>60〜70分</td>
+            </tr>
+            <tr>
+              <td>国語</td>
+              <td>90分 200点</td>
+            </tr>
+            <tr>
+              <td>英語（リーディング）</td>
+              <td>80分 200点</td>
+            </tr>
+            <tr>
+              <td>英語（リスニング）</td>
+              <td>解答30分 / 100点<br><span style="font-size:.82rem;color:var(--text-sub)">※大学により50点に換算する場合あり</span></td>
+            </tr>
+            <tr>
+              <td rowspan="4"><strong>2日目</strong></td>
+              <td>数学Ⅰ・A</td>
+              <td>70分 100点</td>
+            </tr>
+            <tr>
+              <td>数学Ⅱ・B・C</td>
+              <td>70分 100点</td>
+            </tr>
+            <tr>
+              <td>物理・化学（各60分）</td>
+              <td>各60分 各100点</td>
+            </tr>
+            <tr>
+              <td>情報Ⅰ</td>
+              <td>60分 100点（1000点換算では50点など大学により異なる）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.85rem;color:var(--text-sub)">受験する科目・時間は選択科目と大学によって異なります。事前に「自分が何の科目を受けるか」を確認し、当日の時間割を把握しておく。</p>
+    </section>
+
+    <!-- ========== Q&A ========== -->
+    <section class="card">
+      <h2>よくある疑問——Q&A</h2>
+
+      <!-- 共テ -->
+      <h3 style="font-size:.92rem;color:var(--text-sub);margin:1.25rem 0 .75rem;font-weight:600">共通テストについて</h3>
+
+      <div class="qa-item">
+        <div class="qa-q">共通テストは何回受けられますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-kyo">共通テスト</span><br>
+          <strong>1年に1回だけです。</strong>毎年1月に全国で同じ日に実施され、浪人して翌年再受験することはできますが、同じ年に2回受けることはできません。「1回で勝負が決まる」という認識で準備してください。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">共通テストは何点満点ですか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-kyo">共通テスト</span><br>
+          科目の組み合わせによって異なりますが、理系国公立の典型例では<strong>900〜1000点満点</strong>（大学・学部によって扱い方が違う）。例：名古屋大学理学部は共通テスト900点＋二次1500点の合計2400点満点。共通テストだけで合否は決まらず、二次と合算されます。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">共通テストの結果が悪かったらどうなりますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-kyo">共通テスト</span><br>
+          <strong>①志望校を下げて出願する</strong>か、<strong>②共通テストの比率が低い大学に切り替える</strong>選択肢があります。また、共通テストの結果を使わない私立大学（一般入試のみ）に絞ることも可能。国公立の出願は共通テスト後に確定するので、点数を見てから戦略を立てられます。
+        </div>
+      </div>
+
+      <!-- 出願回数 -->
+      <h3 style="font-size:.92rem;color:var(--text-sub);margin:1.5rem 0 .75rem;font-weight:600">出願と受験回数について</h3>
+
+      <div class="qa-item">
+        <div class="qa-q">国公立大学は何校受けられますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-deme">出願回数</span><br>
+          <strong>前期1校・後期1校の最大2校（＋公立中期1校）です。</strong><br>
+          同じ大学の前後期に出願することも、異なる大学に出願することも可能。前期で合格すれば後期は自動的に受験しません。国公立は「2回チャンスがある」と覚えてください。<br>
+          ただし前期・後期ともに不合格だった場合、その年は国公立に入れません。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">私立大学は何校受けられますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-deme">出願回数</span><br>
+          <strong>制限なし——受験料と体力・日程が許す限り何校でも。</strong><br>
+          一般的に3〜8校程度出願する人が多いです。受験料は1校につき3〜3.5万円程度。同じ大学の複数の学科や複数の日程（A日程・B日程など）にそれぞれ出願することも可能です。「安全校」「実力相応校」「チャレンジ校」のバランスで出願校を決めましょう（②進学提案参照）。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">国公立と私立は両方受けられますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-deme">出願回数</span><br>
+          <strong>はい、ほとんどの受験生が両方受けます。</strong><br>
+          2月の私立一般入試を受けながら、2月25日の国公立前期試験も受けるのが標準的な流れです。「国公立が第一志望・私立は滑り止め」という戦略が多い。私立だけに絞る場合もあります（私立専願）。
+        </div>
+      </div>
+
+      <!-- 入試の種類 -->
+      <h3 style="font-size:.92rem;color:var(--text-sub);margin:1.5rem 0 .75rem;font-weight:600">入試の種類について</h3>
+
+      <div class="qa-item">
+        <div class="qa-q">「総合型選抜（旧AO入試）」とは何ですか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-niko">入試種類</span><br>
+          学力試験だけでなく、<strong>志望理由書・小論文・面接・活動実績</strong>で総合的に評価する入試です。夏〜秋（9〜11月）に実施されるため、一般入試より早く合否がわかります。<br>
+          <strong>こんな人に向いている：</strong>「なぜこの学部で学びたいか」を具体的に語れる、部活・研究・ボランティアなどの実績がある、学力だけでなく意欲を評価してほしい。<br>
+          ただし全ての大学に設定があるわけではなく、学部・定員も限られています。担任の先生に相談を。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">「指定校推薦」とは何ですか？選べますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-niko">入試種類</span><br>
+          大学が特定の高校に「〇名の枠」を付与する入試です。校内選考で選ばれれば<strong>ほぼ確実に合格できる</strong>一方、選ばれなければ受験できません。高校の成績（評定）が重視され、3年1学期までの成績で校内選考が行われます（10月頃）。評定平均4.0以上が条件の大学が多い。
+        </div>
+      </div>
+
+      <!-- 合否後 -->
+      <h3 style="font-size:.92rem;color:var(--text-sub);margin:1.5rem 0 .75rem;font-weight:600">合否・その後について</h3>
+
+      <div class="qa-item">
+        <div class="qa-q">複数の大学に合格したらどうすればいいですか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-ato">合否後</span><br>
+          <strong>入学手続き（入学金・授業料の支払い）の締切日を確認</strong>することが最優先です。私立大学の入学金は10〜30万円程度で、手続きを忘れると合格が無効になります。<br>
+          国公立の発表（3月上旬）を待ちたい場合は、私立の入学手続き延長制度（補欠繰り上げを待つ期限延長）を活用できる場合も。ただし入学金は返ってこない大学がほとんどです。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">全部落ちたらどうなりますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-ato">合否後</span><br>
+          選択肢は主に3つです：<br>
+          <strong>① 浪人（もう1年受験勉強）：</strong>予備校に通い、翌年の入試に再挑戦。費用は予備校代で年間50〜100万円程度。<br>
+          <strong>② 別の大学・学部に進学：</strong>後期試験や追加合格で入れる大学に進む。<br>
+          <strong>③ 専門学校・短期大学：</strong>進路を変更する。<br>
+          担任の先生や保護者と相談して早めに決断することが大切です。
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <div class="qa-q">浪人すると何が変わりますか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-ryuu">浪人</span><br>
+          <strong>1年間受験勉強を続け、翌年の入試に再挑戦します。</strong><br>
+          メリット：基礎からやり直せる時間がある。第一志望を諦めずに挑める。<br>
+          デメリット：大学入学が1年遅れる。費用（予備校・生活費）がかかる。精神的にきつい時期がある。<br>
+          現役合格率は年々上昇していますが、難関国公立では浪人生の比率が依然高い。「現役でどこかの大学に入るか」「浪人して上位校を目指すか」は家族とよく相談を。
+        </div>
+      </div>
+
+      <!-- 費用 -->
+      <h3 style="font-size:.92rem;color:var(--text-sub);margin:1.5rem 0 .75rem;font-weight:600">費用について</h3>
+
+      <div class="qa-item">
+        <div class="qa-q">受験にかかる費用はどのくらいですか？</div>
+        <div class="qa-a">
+          <span class="qa-tag tag-niko">費用</span><br>
+          <strong>受験料（目安）：</strong><br>
+          共通テスト：18,000円（3教科以上・令和7年度実績。令和8年度は大学入試センターで確認）<br>
+          国公立大学：個別試験 17,000円（前期・後期 各）<br>
+          私立大学：1校あたり 30,000〜35,000円程度<br><br>
+          <strong>5校受験する場合の目安：</strong>共通テスト18,000＋国公立前後期34,000＋私立3校90,000〜105,000 = <strong>合計約15〜16万円</strong>。交通費・宿泊費（他県受験の場合）が別途かかります。事前に家族と予算を確認してください。
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.dnc.ac.jp/kyotsu/index.html" target="_blank" rel="noopener">大学入試センター（共通テスト公式・日程・出願情報）</a></li>
+        <li><a href="https://passnavi.obunsha.co.jp/" target="_blank" rel="noopener">パスナビ（旺文社・大学・入試科目検索）</a></li>
+        <li><a href="https://manabi.benesse.ne.jp/daigaku/" target="_blank" rel="noopener">マナビジョン（ベネッセ・大学・学部・入試情報）</a></li>
+        <li><a href="https://www.nagoya-u.ac.jp/admissions/exam/" target="_blank" rel="noopener">名古屋大学 一般選抜 実施要項</a></li>
+        <li><a href="https://www.nitech.ac.jp/examination/gakubu/index.html" target="_blank" rel="noopener">名古屋工業大学 入試情報</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">日程・費用・制度は年度によって変わります。必ず大学公式・大学入試センターで確認してください。</footer>
+  <a class="feedback-btn" href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener"><span class="fb-icon">💬</span>意見・修正を送る</a>
+</body>
+</html>
+
+

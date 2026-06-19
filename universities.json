@@ -1,0 +1,1183 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "updated_at": "2026-06-19",
+    "description": "理系進路向け大学データ（受験情報は必ず最新募集要項で確認）"
+  },
+  "universities": [
+    {
+      "id": "nagoya-u",
+      "name": "名古屋大学",
+      "name_en": "Nagoya University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "愛知県名古屋市",
+      "official_url": "https://www.nagoya-u.ac.jp/",
+      "admissions_url": "https://www.nagoya-u.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0490/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "理学部",
+          "departments": ["数学科", "物理学科", "化学科", "生命理学科", "地球惑星科学科"],
+          "description": "基礎科学を重視し、少人数教育と研究室配属で理論と実験を深く学ぶ。"
+        },
+        {
+          "name": "工学部",
+          "departments": ["機械・航空宇宙工学科", "電気電子情報工学科", "化学・生物工学科", "環境土木・建築学科"],
+          "description": "東海圏の産業基盤と連動し、研究開発志向の工学教育を展開。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "理学部物理学科（前期）の代表例は6教科8科目900点。国語・地歴公民・数学2・理科2・外国語・情報が基本。",
+        "second_exam": "名古屋大学理学部物理：数学600点＋理科600点＋英語300点＝1500点（目安）。",
+        "ratio": "共通テスト900：個別1500（学科・方式で差あり）。",
+        "notes": "配点や科目は年度更新されるため、必ず最新募集要項を確認。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（前期・後期）", "description": "共通テストと個別試験で総合判定。理系は数学・理科の比重が高い。" },
+        { "name": "学校推薦型選抜", "description": "共通テストを課す方式が中心。学部ごとに条件が異なる。" }
+      ],
+      "features": "旧帝大の中核大学で、理学・工学ともに研究環境が非常に充実している。学部段階から研究室活動に触れやすく、探究型学習との相性が良い。東山キャンパスは理系学部が集積していて連携しやすい。",
+      "career": "大学院進学率が高く、メーカー・研究開発職・データサイエンス職への就職が強い。",
+      "references": [
+        { "title": "名古屋大学 公式サイト", "url": "https://www.nagoya-u.ac.jp/" },
+        { "title": "名古屋大学 入試情報", "url": "https://www.nagoya-u.ac.jp/admissions/" },
+        { "title": "パスナビ 名古屋大学", "url": "https://passnavi.obunsha.co.jp/univ/0490/top/" }
+      ]
+    },
+    {
+      "id": "kyoto-u",
+      "name": "京都大学",
+      "name_en": "Kyoto University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "京都府京都市",
+      "official_url": "https://www.kyoto-u.ac.jp/",
+      "admissions_url": "https://www.kyoto-u.ac.jp/ja/admissions/undergrad",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0560/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["理学科"], "description": "入学後に専門を深める自由度が高く、理論系研究も強い。" },
+        { "name": "工学部", "departments": ["地球工学科", "建築学科", "物理工学科", "電気電子工学科", "情報学科", "工業化学科"], "description": "学科横断の研究が多く、大学院接続が強い。" }
+      ],
+      "exam_general": {
+        "common_test": "理系は6〜7教科8〜9科目型が中心。",
+        "second_exam": "数学・理科・英語を核に、学科により国語等を課す。",
+        "ratio": "共通テストは一次選抜・配点調整で使用、個別配点比率が高い学部が多い。",
+        "notes": "自由記述中心で思考力重視。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（前期）", "description": "共通テスト＋二次記述。最難関水準。" },
+        { "name": "特色入試", "description": "学部により活動実績・探究実績を評価。" }
+      ],
+      "features": "研究第一の文化が強く、理系でも学問的な深さを重視する学生に向く。基礎科学から応用まで層が厚く、ノーベル賞級の研究基盤がある。自律的に学ぶ姿勢が求められる大学。",
+      "career": "大学院進学と研究職比率が高く、理系は研究開発・IT・コンサルに幅広く進む。",
+      "references": [
+        { "title": "京都大学 公式", "url": "https://www.kyoto-u.ac.jp/" },
+        { "title": "京都大学 学部入試", "url": "https://www.kyoto-u.ac.jp/ja/admissions/undergrad" },
+        { "title": "パスナビ 京都大学", "url": "https://passnavi.obunsha.co.jp/univ/0560/top/" }
+      ]
+    },
+    {
+      "id": "osaka-u",
+      "name": "大阪大学",
+      "name_en": "Osaka University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "大阪府吹田市・豊中市",
+      "official_url": "https://www.osaka-u.ac.jp/",
+      "admissions_url": "https://www.osaka-u.ac.jp/ja/admissions",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0590/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物科学科"], "description": "基礎科学に強く、研究室での実践機会が多い。" },
+        { "name": "工学部", "departments": ["応用自然科学科", "応用理工学科", "電子情報工学科", "環境・エネルギー工学科", "地球総合工学科"], "description": "産学連携と研究設備が豊富。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型が中心。",
+        "second_exam": "数学・理科・英語中心。学部で国語・小論文の有無が異なる。",
+        "ratio": "共通テストと個別の併用。個別比重が高い学科が多い。",
+        "notes": "記述対策と計算力の両立が必要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期中心で高配点の記述試験。" },
+        { "name": "総合型・学校推薦型選抜", "description": "学部により実施。活動歴と学力双方を見る。" }
+      ],
+      "features": "理学・工学・基礎工学の層が厚く、研究分野の選択肢が広い。関西圏で研究・医工連携・企業連携を同時に体験しやすい。難関だが学習環境は非常に整っている。",
+      "career": "大学院進学が多く、大手メーカー・インフラ・IT研究職に強い。",
+      "references": [
+        { "title": "大阪大学 公式", "url": "https://www.osaka-u.ac.jp/" },
+        { "title": "大阪大学 入試案内", "url": "https://www.osaka-u.ac.jp/ja/admissions" },
+        { "title": "パスナビ 大阪大学", "url": "https://passnavi.obunsha.co.jp/univ/0590/top/" }
+      ]
+    },
+    {
+      "id": "tohoku-u",
+      "name": "東北大学",
+      "name_en": "Tohoku University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "宮城県仙台市",
+      "official_url": "https://www.tohoku.ac.jp/",
+      "admissions_url": "https://www.tnc.tohoku.ac.jp/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0100/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学系", "物理系", "化学系", "地球科学系", "生物系"], "description": "研究第一の伝統で基礎科学を深く学べる。" },
+        { "name": "工学部", "departments": ["機械知能・航空工学科", "電気情報物理工学科", "化学・バイオ工学科", "材料科学総合学科", "建築・社会環境工学科"], "description": "材料・機械・情報分野に特に強い。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目（700点満点例）を課す方式が中心。",
+        "second_exam": "理系は数学・理科・英語中心。学科で配点差あり。",
+        "ratio": "共通テスト＋個別の総合点方式。",
+        "notes": "理科2科目の完成度が重要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期で実施。後期は募集人数が少ない。" },
+        { "name": "AO入試（総合型）", "description": "学部別に実施し、探究活動を重視。" }
+      ],
+      "features": "研究第一・門戸開放の理念があり、理系の研究志向に非常に適した大学。理工系の研究設備が充実し、材料・半導体・情報系の実績が高い。大学院を見据えた学習設計がしやすい。",
+      "career": "大学院進学率が高く、技術系総合職・研究開発職・公的研究機関への進路が太い。",
+      "references": [
+        { "title": "東北大学 公式", "url": "https://www.tohoku.ac.jp/" },
+        { "title": "東北大学 入試センター", "url": "https://www.tnc.tohoku.ac.jp/" },
+        { "title": "パスナビ 東北大学", "url": "https://passnavi.obunsha.co.jp/univ/0100/top/" }
+      ]
+    },
+    {
+      "id": "kyushu-u",
+      "name": "九州大学",
+      "name_en": "Kyushu University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "福岡県福岡市",
+      "official_url": "https://www.kyushu-u.ac.jp/",
+      "admissions_url": "https://www.kyushu-u.ac.jp/ja/admission",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0820/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["物理学科", "化学科", "地球惑星科学科", "数学科", "生物学科"], "description": "理学基礎と先端研究の接続が強い。" },
+        { "name": "工学部", "departments": ["機械工学科", "電気情報工学科", "物質科学工学科", "地球環境工学科", "建築学科"], "description": "伊都キャンパスで分野横断の学びが可能。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型を基本に学部で配点設定。",
+        "second_exam": "理系は数学・理科・英語の記述中心。",
+        "ratio": "共通テストと個別の合算方式。",
+        "notes": "出願前に学部別配点表の確認が必須。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期主体。後期や特色方式は学部限定。" },
+        { "name": "総合型選抜", "description": "学部により面接・書類・課題を実施。" }
+      ],
+      "features": "指定国立大学で、工学・情報・理学の研究基盤が厚い。伊都キャンパスへの集約が進み、学際連携がしやすい。地方中核ながら全国・海外志向の学生に向く。",
+      "career": "大学院進学後にメーカー・インフラ・IT・公的機関へ進む流れが強い。",
+      "references": [
+        { "title": "九州大学 公式", "url": "https://www.kyushu-u.ac.jp/" },
+        { "title": "九州大学 入試情報", "url": "https://www.kyushu-u.ac.jp/ja/admission" },
+        { "title": "パスナビ 九州大学", "url": "https://passnavi.obunsha.co.jp/univ/0820/top/" }
+      ]
+    },
+    {
+      "id": "hokkaido-u",
+      "name": "北海道大学",
+      "name_en": "Hokkaido University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "北海道札幌市",
+      "official_url": "https://www.hokudai.ac.jp/",
+      "admissions_url": "https://www.hokudai.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0010/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物科学科", "地球惑星科学科"], "description": "総合入試からの進級で適性を見極めやすい。" },
+        { "name": "工学部", "departments": ["応用理工系", "情報エレクトロニクス系", "機械知能工学系", "環境社会工学系"], "description": "幅広い工学分野を北海道の拠点で学べる。" }
+      ],
+      "exam_general": {
+        "common_test": "総合入試理系は6〜7教科8〜9科目型が主流。",
+        "second_exam": "数学・理科・英語の記述中心。",
+        "ratio": "共通テスト＋個別試験の合算。",
+        "notes": "総合入試の仕組みと進級条件の確認が重要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（総合入試）", "description": "文系・理系枠で入学し、後に学部移行。" },
+        { "name": "学校推薦型選抜", "description": "一部学部で実施。" }
+      ],
+      "features": "総合入試制度で、入学後に進路を柔軟に決めたい理系生徒に向く。基礎科学・農学・工学の連携が強く、広いキャンパスで研究に集中できる。生活コスト面でも首都圏より抑えやすい。",
+      "career": "大学院進学率が高く、北海道内外の企業研究職や公務技術職に強い。",
+      "references": [
+        { "title": "北海道大学 公式", "url": "https://www.hokudai.ac.jp/" },
+        { "title": "北海道大学 入試", "url": "https://www.hokudai.ac.jp/admission/" },
+        { "title": "パスナビ 北海道大学", "url": "https://passnavi.obunsha.co.jp/univ/0010/top/" }
+      ]
+    },
+    {
+      "id": "tokyo-u",
+      "name": "東京大学",
+      "name_en": "The University of Tokyo",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "東京都文京区・目黒区",
+      "official_url": "https://www.u-tokyo.ac.jp/",
+      "admissions_url": "https://www.u-tokyo.ac.jp/ja/admissions/index.html",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0220/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学科", "情報科学科", "物理学科", "天文学科", "地球惑星物理学科", "地球惑星環境学科", "化学科", "生物化学科", "生物学科"], "description": "進学振分け後に専門を選び、研究密度が高い。" },
+        { "name": "工学部", "departments": ["機械工学科", "電気電子工学科", "計数工学科", "物理工学科", "化学システム工学科", "建築学科"], "description": "基礎力と先端分野を両立した教育が特徴。" }
+      ],
+      "exam_general": {
+        "common_test": "文理とも6〜7教科8〜9科目。第一段階選抜に活用。",
+        "second_exam": "理科一類等は数学・理科・英語・国語の記述中心。",
+        "ratio": "共通テスト1000点を圧縮、二次配点比率が高い。",
+        "notes": "最難関のため高完成度の総合学力が必要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（前期）", "description": "共通テスト＋二次記述の一発勝負型。" },
+        { "name": "学校推薦型選抜", "description": "学部別に実施。活動実績と学術適性を重視。" }
+      ],
+      "features": "国内最高峰の研究環境で、基礎から最先端まで学習資源が圧倒的に多い。教養課程から専門課程へ移る制度により、広い視野で理系進路を設計できる。学問への主体性が求められる。",
+      "career": "大学院進学、研究職、外資・コンサル・官公庁など進路の幅が非常に広い。",
+      "references": [
+        { "title": "東京大学 公式", "url": "https://www.u-tokyo.ac.jp/" },
+        { "title": "東京大学 入試", "url": "https://www.u-tokyo.ac.jp/ja/admissions/index.html" },
+        { "title": "パスナビ 東京大学", "url": "https://passnavi.obunsha.co.jp/univ/0220/top/" }
+      ]
+    },
+    {
+      "id": "science-tokyo",
+      "name": "東京科学大学",
+      "name_en": "Institute of Science Tokyo",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "東京都目黒区・文京区ほか",
+      "official_url": "https://www.isct.ac.jp/",
+      "admissions_url": "https://www.isct.ac.jp/ja/admissions",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0280/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学院", "departments": ["数学系", "物理学系", "化学系", "地球惑星科学系"], "description": "旧東工大の理学教育を継承し基礎科学が強い。" },
+        { "name": "工学院", "departments": ["機械系", "システム制御系", "電気電子系", "情報通信系", "経営工学系"], "description": "理工融合と産学連携を重視。" }
+      ],
+      "exam_general": {
+        "common_test": "理工系は共通テスト＋個別試験の組み合わせ。",
+        "second_exam": "数学・理科・英語中心の高難度記述。",
+        "ratio": "理工系は個別比重が高い傾向。",
+        "notes": "統合後の制度変更があるため年度要項必須。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "学院ごとに選抜。理工系は記述力重視。" },
+        { "name": "総合型選抜", "description": "理工探究や課題研究経験を評価する方式あり。" }
+      ],
+      "features": "旧東京工業大学と旧東京医科歯科大学の統合で、理工・医工連携の新しい環境が強み。数学・物理ベースの工学を深めたい生徒に向く。研究志向の高い学習者に適した大学。",
+      "career": "大学院進学後に研究開発・IT・半導体・医工連携分野で高い就職実績。",
+      "references": [
+        { "title": "東京科学大学 公式", "url": "https://www.isct.ac.jp/" },
+        { "title": "東京科学大学 入試情報", "url": "https://www.isct.ac.jp/ja/admissions" },
+        { "title": "パスナビ 東京科学大学", "url": "https://passnavi.obunsha.co.jp/univ/0280/top/" }
+      ]
+    },
+    {
+      "id": "tsukuba-u",
+      "name": "筑波大学",
+      "name_en": "University of Tsukuba",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "茨城県つくば市",
+      "official_url": "https://www.tsukuba.ac.jp/",
+      "admissions_url": "https://www.tsukuba.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0160/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学群", "departments": ["数学類", "物理学類", "化学類", "応用理工学類", "工学システム学類", "社会工学類"], "description": "学群制で専門選択の幅が広い。" },
+        { "name": "生命環境学群", "departments": ["生物学類", "生物資源学類", "地球学類"], "description": "理学と応用分野の橋渡しがしやすい。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目を基本に学群別設定。",
+        "second_exam": "理工学群は数学・理科・英語中心。",
+        "ratio": "共通テスト＋個別で総合判定。",
+        "notes": "総合選抜区分の条件確認が重要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（前期・後期）", "description": "学群・学類ごとに試験内容が異なる。" },
+        { "name": "総合選抜", "description": "入学後の進路選択に柔軟性がある方式。" }
+      ],
+      "features": "研究学園都市の立地を活かし、理系分野の外部連携が非常に豊富。学群・学類制度により、進路を段階的に絞れる点が理系高校生に好相性。情報・理工・生命分野のバランスが良い。",
+      "career": "大学院進学と企業就職の両ルートが強く、情報系・研究職への接続が良い。",
+      "references": [
+        { "title": "筑波大学 公式", "url": "https://www.tsukuba.ac.jp/" },
+        { "title": "筑波大学 入試情報", "url": "https://www.tsukuba.ac.jp/admission/" },
+        { "title": "パスナビ 筑波大学", "url": "https://passnavi.obunsha.co.jp/univ/0160/top/" }
+      ]
+    },
+    {
+      "id": "kobe-u",
+      "name": "神戸大学",
+      "name_en": "Kobe University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "兵庫県神戸市",
+      "official_url": "https://www.kobe-u.ac.jp/",
+      "admissions_url": "https://www.kobe-u.ac.jp/ja/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0620/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物学科", "惑星学科"], "description": "基礎科学教育と少人数指導に定評。" },
+        { "name": "工学部", "departments": ["建築学科", "市民工学科", "電気電子工学科", "機械工学科", "応用化学科"], "description": "都市・社会課題に近い工学教育が特色。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型中心。",
+        "second_exam": "理系は数学・理科・英語中心の記述。",
+        "ratio": "共通テスト＋二次配点の総合評価。",
+        "notes": "後期の募集は限定的。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期主体。学部で科目・配点差あり。" },
+        { "name": "総合型選抜", "description": "学部別に実施し、学力と適性を総合評価。" }
+      ],
+      "features": "旧商大系の強みを持ちながら理工・海洋・情報まで幅広い総合大学。都市圏で研究と実社会接続を同時に学びやすい。理系でも社会実装志向の学びを取り入れやすい。",
+      "career": "大学院進学後のメーカー・インフラ・IT就職に強く、関西圏ネットワークが太い。",
+      "references": [
+        { "title": "神戸大学 公式", "url": "https://www.kobe-u.ac.jp/" },
+        { "title": "神戸大学 入試情報", "url": "https://www.kobe-u.ac.jp/ja/admissions/" },
+        { "title": "パスナビ 神戸大学", "url": "https://passnavi.obunsha.co.jp/univ/0620/top/" }
+      ]
+    },
+    {
+      "id": "yokohama-nu",
+      "name": "横浜国立大学",
+      "name_en": "Yokohama National University",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "神奈川県横浜市",
+      "official_url": "https://www.ynu.ac.jp/",
+      "admissions_url": "https://www.ynu.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0340/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学部", "departments": ["機械・材料・海洋系学科群", "化学・生命系学科群", "数物・電子情報系学科群"], "description": "学科群制で分野選択の柔軟性がある。" },
+        { "name": "都市科学部", "departments": ["建築学科", "都市基盤学科", "環境リスク共生学科"], "description": "都市課題と工学を結び付けた教育。"}
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型を中心に学部で設定。",
+        "second_exam": "理工は数学・理科・英語の記述中心。",
+        "ratio": "共通テスト1000点換算方式など学部別ルールあり。",
+        "notes": "出願時に学科群ごとの条件確認が必須。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期で実施。後期は高倍率になりやすい。" },
+        { "name": "学校推薦型選抜", "description": "理工で実施区分あり。" }
+      ],
+      "features": "首都圏国立の中で理工学部の評価が高く、難易度も高い。情報・電子・材料系に強く、都市系との接続もある。研究と就職のバランスを取りたい理系に向く。",
+      "career": "大学院進学、首都圏メーカー・IT・インフラ企業への就職実績が高い。",
+      "references": [
+        { "title": "横浜国立大学 公式", "url": "https://www.ynu.ac.jp/" },
+        { "title": "横浜国立大学 入試", "url": "https://www.ynu.ac.jp/admission/" },
+        { "title": "パスナビ 横浜国立大学", "url": "https://passnavi.obunsha.co.jp/univ/0340/top/" }
+      ]
+    },
+    {
+      "id": "osaka-metropolitan-u",
+      "name": "大阪公立大学",
+      "name_en": "Osaka Metropolitan University",
+      "tier": "CHALLENGE",
+      "type": "公立",
+      "location": "大阪府大阪市・堺市",
+      "official_url": "https://www.omu.ac.jp/",
+      "admissions_url": "https://www.omu.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/1205/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物学科", "地球学科"], "description": "公立大として研究規模が大きく理系教育が手厚い。" },
+        { "name": "工学部", "departments": ["航空宇宙工学科", "海洋システム工学科", "機械工学科", "電子物理工学科", "情報工学科", "化学工学科", "建築学科", "都市学科"], "description": "旧大阪市立大・府立大の工学資源を統合。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型を基本。",
+        "second_exam": "数学・理科・英語を中心に学科別配点。",
+        "ratio": "共通テスト＋個別の合算方式。",
+        "notes": "公立大のため共通テスト比率が高い学部もある。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期で実施。学部により科目差あり。" },
+        { "name": "学校推薦型選抜", "description": "一部学部で実施。" }
+      ],
+      "features": "統合後の大型公立大で、理系分野の選択肢が非常に広い。学費面の優位性と研究規模を両立できる点が魅力。関西でコストを抑えつつ高水準を狙う受験生に適している。",
+      "career": "大学院進学や関西圏メーカー・自治体技術職への進路が強い。",
+      "references": [
+        { "title": "大阪公立大学 公式", "url": "https://www.omu.ac.jp/" },
+        { "title": "大阪公立大学 入試", "url": "https://www.omu.ac.jp/admissions/" },
+        { "title": "パスナビ 大阪公立大学", "url": "https://passnavi.obunsha.co.jp/univ/1205/top/" }
+      ]
+    },
+    {
+      "id": "tus",
+      "name": "東京理科大学",
+      "name_en": "Tokyo University of Science",
+      "tier": "CHALLENGE",
+      "type": "私立",
+      "location": "東京都・千葉県",
+      "official_url": "https://www.tus.ac.jp/",
+      "admissions_url": "https://www.tus.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2880/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部第一部", "departments": ["数学科", "物理学科", "化学科", "応用数学科", "応用化学科"], "description": "理学教育の伝統が強く、学力要求水準が高い。" },
+        { "name": "工学部・創域理工学部・先進工学部", "departments": ["機械工学科", "電気工学科", "情報工学科", "建築学科", "生命システム工学科"], "description": "私大理工系の中で研究志向が強い。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式（A方式）と個別試験（B方式）を併用。",
+        "second_exam": "B方式は学部別に数学・理科・英語等を課す。",
+        "ratio": "方式ごとに独立判定。",
+        "notes": "方式が多いため併願設計が重要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜B方式", "description": "個別学力試験中心の方式。" },
+        { "name": "共通テスト利用A方式", "description": "共テ成績で判定する方式。" }
+      ],
+      "features": "私立理工系の中でも学修密度が高く、基礎学力を厳しく鍛える大学として有名。理系科目で勝負したい受験生に向く。研究室配属後の伸びが大きい。",
+      "career": "大学院進学率が高く、技術職・研究職での企業評価が安定して高い。",
+      "references": [
+        { "title": "東京理科大学 公式", "url": "https://www.tus.ac.jp/" },
+        { "title": "東京理科大学 入試情報", "url": "https://www.tus.ac.jp/admissions/" },
+        { "title": "パスナビ 東京理科大学", "url": "https://passnavi.obunsha.co.jp/univ/2880/top/" }
+      ]
+    },
+    {
+      "id": "waseda",
+      "name": "早稲田大学",
+      "name_en": "Waseda University",
+      "tier": "CHALLENGE",
+      "type": "私立",
+      "location": "東京都新宿区ほか",
+      "official_url": "https://www.waseda.jp/",
+      "admissions_url": "https://www.waseda.jp/inst/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3190/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "基幹理工学部", "departments": ["数学科", "応用数理学科", "情報理工学科", "機械科学・航空宇宙学科", "電子物理システム学科", "表現工学科"], "description": "理論から情報・機械まで幅広く高水準。" },
+        { "name": "創造理工学部・先進理工学部", "departments": ["建築学科", "総合機械工学科", "電気・情報生命工学科", "応用化学科", "生命医科学科"], "description": "理工系3学部体制で選択肢が非常に多い。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式と一般方式を併用。",
+        "second_exam": "一般方式は学部ごとに科目が大きく異なる。",
+        "ratio": "方式ごと独立判定。",
+        "notes": "理工は数学・理科・英語の完成度が鍵。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "学部独自問題で合否判定。" },
+        { "name": "共通テスト利用入試", "description": "共通テスト＋学部条件で判定。" }
+      ],
+      "features": "私立難関として理工系の研究規模が大きく、学部数が多い。首都圏の産業界との接続が強く、就職ネットワークも広い。学際領域に関心がある理系生徒にも適する。",
+      "career": "大学院進学と大手企業就職の双方に強く、IT・メーカー・コンサル進路が目立つ。",
+      "references": [
+        { "title": "早稲田大学 公式", "url": "https://www.waseda.jp/" },
+        { "title": "早稲田大学 入学センター", "url": "https://www.waseda.jp/inst/admission/" },
+        { "title": "パスナビ 早稲田大学", "url": "https://passnavi.obunsha.co.jp/univ/3190/top/" }
+      ]
+    },
+    {
+      "id": "keio",
+      "name": "慶應義塾大学",
+      "name_en": "Keio University",
+      "tier": "CHALLENGE",
+      "type": "私立",
+      "location": "東京都・神奈川県",
+      "official_url": "https://www.keio.ac.jp/",
+      "admissions_url": "https://www.keio.ac.jp/ja/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2370/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学部", "departments": ["機械工学科", "電気情報工学科", "応用化学科", "管理工学科", "物理情報工学科", "生命情報学科"], "description": "理工融合型で研究・産業接続が強い。" },
+        { "name": "薬学部", "departments": ["薬学科", "薬科学科"], "description": "医療系・創薬系進路に強み。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用は学部限定。一般は学部独自。",
+        "second_exam": "理工一般は数学・理科・英語中心。",
+        "ratio": "独自試験配点比率が高い。",
+        "notes": "方式ごと傾向差が大きい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "学部別問題で判定。" },
+        { "name": "学校推薦型・総合型", "description": "学部によって実施。" }
+      ],
+      "features": "私学トップ層として理工・経済・医学系の連携が強い。学部横断で実践プロジェクトに参加しやすく、研究と社会実装を同時に経験できる。難易度は高いが、進路の広さが魅力。",
+      "career": "理工系は大学院進学と大手企業就職の双方で高実績を維持。",
+      "references": [
+        { "title": "慶應義塾大学 公式", "url": "https://www.keio.ac.jp/" },
+        { "title": "慶應義塾大学 入試情報", "url": "https://www.keio.ac.jp/ja/admissions/" },
+        { "title": "パスナビ 慶應義塾大学", "url": "https://passnavi.obunsha.co.jp/univ/2370/top/" }
+      ]
+    },
+    {
+      "id": "nitech",
+      "name": "名古屋工業大学",
+      "name_en": "Nagoya Institute of Technology",
+      "tier": "MATCH",
+      "type": "国立",
+      "location": "愛知県名古屋市昭和区",
+      "official_url": "https://www.nitech.ac.jp/",
+      "admissions_url": "https://www.nitech.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0510/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "工学部", "departments": ["生命・応用化学科", "物理工学科", "電気・機械工学科", "情報工学科", "社会工学科"], "description": "工学特化型で理系に集中しやすい。" }
+      ],
+      "exam_general": {
+        "common_test": "6教科8科目（450点換算例）を課す方式が中心。",
+        "second_exam": "数学・理科・英語の記述試験。",
+        "ratio": "共通テスト＋個別。後期は共テ比率が高め。",
+        "notes": "愛知県内理系志望の第一志望・併願先として人気。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（前期・後期）", "description": "前期は個別比重、後期は共テ重視傾向。" },
+        { "name": "学校推薦型選抜", "description": "共テを課す方式中心。" }
+      ],
+      "features": "工学単科系のため、理系科目で勝負しやすい。研究室配属後の実践機会が多く、ものづくり志向に向く。地元企業との連携も非常に強い。",
+      "career": "大学院進学率が高く、自動車・電機・素材系への就職実績が安定。",
+      "references": [
+        { "title": "名古屋工業大学 公式", "url": "https://www.nitech.ac.jp/" },
+        { "title": "名古屋工業大学 入試", "url": "https://www.nitech.ac.jp/admission/" },
+        { "title": "パスナビ 名古屋工業大学", "url": "https://passnavi.obunsha.co.jp/univ/0510/top/" }
+      ]
+    },
+    {
+      "id": "gifu-u",
+      "name": "岐阜大学",
+      "tier": "MATCH",
+      "type": "国立",
+      "location": "岐阜県岐阜市",
+      "official_url": "https://www.gifu-u.ac.jp/",
+      "admissions_url": "https://www.gifu-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0460/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "工学部", "departments": ["社会基盤工学科", "機械工学科", "電気電子・情報工学科", "化学・生命工学科"], "description": "地域課題と連動した実学志向。" },
+        { "name": "応用生物科学部", "departments": ["応用生命化学科", "食農生命科学科", "生物圏環境科学科"], "description": "生物・化学系の進路に適する。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型中心。",
+        "second_exam": "数学・理科・英語中心。",
+        "ratio": "共テ＋個別の合算方式。",
+        "notes": "後期募集は人数が少ない。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期で実施。" },
+        { "name": "学校推薦型選抜", "description": "学部ごとに条件が異なる。" }
+      ],
+      "features": "東海圏の国立としてバランスが良く、学費と教育水準の両立がしやすい。工学・生物系の進路選択肢が豊富で、地元志向の理系受験生に向く。落ち着いた学習環境がある。",
+      "career": "東海圏企業・公務技術職・大学院進学の実績が安定。",
+      "references": [
+        { "title": "岐阜大学 公式", "url": "https://www.gifu-u.ac.jp/" },
+        { "title": "岐阜大学 入試", "url": "https://www.gifu-u.ac.jp/admission/" },
+        { "title": "パスナビ 岐阜大学", "url": "https://passnavi.obunsha.co.jp/univ/0460/top/" }
+      ]
+    },
+    {
+      "id": "shizuoka-u",
+      "name": "静岡大学",
+      "tier": "MATCH",
+      "type": "国立",
+      "location": "静岡県静岡市・浜松市",
+      "official_url": "https://www.shizuoka.ac.jp/",
+      "admissions_url": "https://www.shizuoka.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0470/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物科学科", "地球科学科"], "description": "理学基礎を体系的に学べる。" },
+        { "name": "工学部", "departments": ["機械工学科", "電気電子工学科", "電子物質科学科", "化学バイオ工学科", "数理システム工学科"], "description": "浜松地域の産業と連携が強い。" }
+      ],
+      "exam_general": {
+        "common_test": "6〜7教科8科目型。",
+        "second_exam": "数学・理科・英語中心。",
+        "ratio": "共通テストと個別の合算。",
+        "notes": "学部により後期実施あり。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期の複数方式。" },
+        { "name": "学校推薦型選抜", "description": "学科別に実施。" }
+      ],
+      "features": "理学部と工学部の距離が近く、基礎と応用の往復がしやすい。浜松の工学教育は実践色が強く、就職にも直結しやすい。地方国立としてコストパフォーマンスが高い。",
+      "career": "製造業・インフラ・情報系の就職に強く、大学院進学も一定数ある。",
+      "references": [
+        { "title": "静岡大学 公式", "url": "https://www.shizuoka.ac.jp/" },
+        { "title": "静岡大学 入試", "url": "https://www.shizuoka.ac.jp/admissions/" },
+        { "title": "パスナビ 静岡大学", "url": "https://passnavi.obunsha.co.jp/univ/0470/top/" }
+      ]
+    },
+    {
+      "id": "aichi-edu",
+      "name": "愛知教育大学",
+      "tier": "MATCH",
+      "type": "国立",
+      "location": "愛知県刈谷市",
+      "official_url": "https://www.aichi-edu.ac.jp/",
+      "admissions_url": "https://www.aichi-edu.ac.jp/exam/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0500/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "教育学部（理科・数学系）", "departments": ["義務教育専攻 理科専修", "義務教育専攻 算数・数学専修", "高等学校教育専攻 理科専修", "高等学校教育専攻 数学専修"], "description": "理科・数学の教員養成に特化した学び。" }
+      ],
+      "exam_general": {
+        "common_test": "教員養成課程で6教科型中心。",
+        "second_exam": "面接・実技・小論文・教科試験を専攻別に課す。",
+        "ratio": "共通テスト＋個別で総合評価。",
+        "notes": "教員志望の明確さが重要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "専攻別試験で選抜。" },
+        { "name": "学校推薦型選抜", "description": "面接・書類中心の方式あり。" }
+      ],
+      "features": "教員養成に強い大学で、理科・数学教員を目指す理系生徒に適している。教育実習・学校現場連携が豊富で、教職志望に必要な経験を積みやすい。研究より教育実践寄りの環境。",
+      "career": "教員採用試験への進路が中心。自治体学校現場への就職実績が高い。",
+      "references": [
+        { "title": "愛知教育大学 公式", "url": "https://www.aichi-edu.ac.jp/" },
+        { "title": "愛知教育大学 入試", "url": "https://www.aichi-edu.ac.jp/exam/" },
+        { "title": "パスナビ 愛知教育大学", "url": "https://passnavi.obunsha.co.jp/univ/0500/top/" }
+      ]
+    },
+    {
+      "id": "meijo-u",
+      "name": "名城大学",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "愛知県名古屋市",
+      "official_url": "https://www.meijo-u.ac.jp/",
+      "admissions_url": "https://www.meijo-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3850/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学部", "departments": ["数学科", "電気電子工学科", "材料機能工学科", "機械工学科", "交通機械工学科", "メカトロニクス工学科", "社会基盤デザイン工学科", "環境創造工学科", "建築学科"], "description": "私大理工系として学科数が多い。" },
+        { "name": "情報工学部", "departments": ["情報工学科"], "description": "情報系を集中的に学べる。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式あり。",
+        "second_exam": "一般A方式で数学・英語・理科などを課す。",
+        "ratio": "方式ごと独立判定。",
+        "notes": "方式数が多いため受験戦略を立てやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期中心で複数日程。" },
+        { "name": "共通テスト利用", "description": "科目型を選択して判定。" }
+      ],
+      "features": "東海私大理工系の中核で、理工・情報の規模が大きい。実験設備や就職支援が充実し、地元就職にも強い。現実的な難易度で理系学部を狙える。",
+      "career": "地元メーカー・建設・情報系企業への就職実績が高い。",
+      "references": [
+        { "title": "名城大学 公式", "url": "https://www.meijo-u.ac.jp/" },
+        { "title": "名城大学 入試", "url": "https://www.meijo-u.ac.jp/admission/" },
+        { "title": "パスナビ 名城大学", "url": "https://passnavi.obunsha.co.jp/univ/3850/top/" }
+      ]
+    },
+    {
+      "id": "chukyo-u",
+      "name": "中京大学",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "愛知県名古屋市・豊田市",
+      "official_url": "https://www.chukyo-u.ac.jp/",
+      "admissions_url": "https://nc.chukyo-u.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3690/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "工学部", "departments": ["機械システム工学科", "電気電子工学科", "情報工学科", "メディア工学科"], "description": "情報系・工学系の実践教育を重視。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式あり。",
+        "second_exam": "前期A方式は3教科型・2教科型など複数。",
+        "ratio": "方式ごと判定。",
+        "notes": "併願しやすい制度設計。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（A/M方式）", "description": "教科型を選んで受験できる。" },
+        { "name": "共通テスト利用", "description": "2〜5科目型など複数。"}
+      ],
+      "features": "私立総合大の中で工学分野の選択肢があり、文理混在環境で幅広い刺激を受けられる。情報工学・メディア工学を志望する受験生に向く。通学圏内で現実的に狙える難易度帯。",
+      "career": "情報・製造・サービス業へ広く就職。資格支援や就職支援が手厚い。",
+      "references": [
+        { "title": "中京大学 公式", "url": "https://www.chukyo-u.ac.jp/" },
+        { "title": "中京大学 入試情報", "url": "https://nc.chukyo-u.ac.jp/admissions/" },
+        { "title": "パスナビ 中京大学", "url": "https://passnavi.obunsha.co.jp/univ/3690/top/" }
+      ]
+    },
+    {
+      "id": "aichi-u",
+      "name": "愛知大学",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "愛知県名古屋市・豊橋市",
+      "official_url": "https://www.aichi-u.ac.jp/",
+      "admissions_url": "https://www.aichi-u.ac.jp/examination",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3600/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "社会情報学部", "departments": ["社会情報学科"], "description": "データ・情報活用を社会科学と接続して学ぶ。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式は2〜5科目型。",
+        "second_exam": "一般は2科目・3科目等の方式を実施。",
+        "ratio": "方式別判定。",
+        "notes": "理工色は弱く、情報活用寄り。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "最高得点重視方式など複数方式。" },
+        { "name": "共通テスト利用", "description": "科目数を選択して受験。" }
+      ],
+      "features": "純粋理工系よりは社会情報系に強く、情報活用を実務につなげたい受験生に向く。名古屋立地で通学しやすい。併願しやすい入試制度が整っている。",
+      "career": "一般企業の情報職・企画職・営業職への就職実績が中心。",
+      "references": [
+        { "title": "愛知大学 公式", "url": "https://www.aichi-u.ac.jp/" },
+        { "title": "愛知大学 入試", "url": "https://www.aichi-u.ac.jp/examination" },
+        { "title": "パスナビ 愛知大学", "url": "https://passnavi.obunsha.co.jp/univ/3600/top/" }
+      ]
+    },
+    {
+      "id": "nanzan-u",
+      "name": "南山大学",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "愛知県名古屋市昭和区",
+      "official_url": "https://www.nanzan-u.ac.jp/",
+      "admissions_url": "https://www.nanzan-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3820/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学部", "departments": ["ソフトウェア工学科", "データサイエンス学科", "電子情報工学科", "機械システム工学科"], "description": "近年の再編で情報系を強化。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ併用型あり。",
+        "second_exam": "全学統一個別方式・学部一般方式を実施。",
+        "ratio": "方式別判定。",
+        "notes": "英語重視型が多いが理工は数学重要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "全学統一と学部個別を併用。" },
+        { "name": "共テ併用", "description": "共テ得点を加味する方式。" }
+      ],
+      "features": "語学系イメージが強いが、理工学部は情報・工学分野をしっかり学べる。都市型キャンパスで学習環境が整っている。私大中堅上位として併願価値が高い。",
+      "career": "IT・メーカー・サービス業へ幅広く就職。語学力を活かす進路も取りやすい。",
+      "references": [
+        { "title": "南山大学 公式", "url": "https://www.nanzan-u.ac.jp/" },
+        { "title": "南山大学 入試", "url": "https://www.nanzan-u.ac.jp/admission/" },
+        { "title": "パスナビ 南山大学", "url": "https://passnavi.obunsha.co.jp/univ/3820/top/" }
+      ]
+    },
+    {
+      "id": "dormy-u",
+      "name": "同志社大学",
+      "name_en": "Doshisha University",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "京都府京都市・京田辺市",
+      "official_url": "https://www.doshisha.ac.jp/",
+      "admissions_url": "https://www.doshisha.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3990/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学部", "departments": ["インテリジェント情報工学科", "情報システムデザイン学科", "電気工学科", "機械理工学科", "機能分子・生命化学科"], "description": "関関同立の中でも理工系の評価が高い。" },
+        { "name": "生命医科学部", "departments": ["医情報学科", "医工学科", "医生命システム学科"], "description": "医工連携を学べる。"}
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式あり。",
+        "second_exam": "全学部日程・学部個別日程で科目設定が異なる。",
+        "ratio": "方式別判定。",
+        "notes": "理工は数学・理科の安定得点が必要。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜（全学部・学部個別）", "description": "複数日程で受験機会を確保しやすい。" },
+        { "name": "共通テスト利用", "description": "共テ成績で出願可能。" }
+      ],
+      "features": "関西私大上位で理工・生命医科学の研究環境が整う。大学のブランド力と理系教育のバランスが良く、上位私大志望の本命・併願に適している。キャンパス設備が新しい。",
+      "career": "大学院進学と大手企業就職の両方で実績。関西圏就職に特に強い。",
+      "references": [
+        { "title": "同志社大学 公式", "url": "https://www.doshisha.ac.jp/" },
+        { "title": "同志社大学 入試", "url": "https://www.doshisha.ac.jp/admissions/" },
+        { "title": "パスナビ 同志社大学", "url": "https://passnavi.obunsha.co.jp/univ/3990/top/" }
+      ]
+    },
+    {
+      "id": "ritsumeikan",
+      "name": "立命館大学",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "京都府・大阪府・滋賀県",
+      "official_url": "https://www.ritsumei.ac.jp/",
+      "admissions_url": "https://www.ritsumei.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/4050/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "理工学部", "departments": ["数学物理系", "電気電子工学系", "機械工学系", "建築都市デザイン系"], "description": "びわこ・くさつキャンパスを中心に理工教育を展開。" },
+        { "name": "情報理工学部", "departments": ["情報理工学科"], "description": "情報系の人気が高い。"},
+        { "name": "生命科学部", "departments": ["応用化学科", "生物工学科", "生命情報学科"], "description": "生命系研究に強い。"}
+      ],
+      "exam_general": {
+        "common_test": "共テ方式・共テ併用方式あり。",
+        "second_exam": "全学統一・学部個別で科目が異なる。",
+        "ratio": "方式別判定。",
+        "notes": "受験方式が非常に多い。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "全学統一と学部個別を併用。" },
+        { "name": "共通テスト利用・併用", "description": "共テ結果を活用した方式が豊富。" }
+      ],
+      "features": "関西私大大規模校で、理工・情報・生命の3軸が揃う。受験方式が多く、実力に合わせた受験戦略を立てやすい。研究・就職の両面で安定した実績がある。",
+      "career": "情報・メーカー・インフラ・公務分野まで幅広い就職実績。",
+      "references": [
+        { "title": "立命館大学 公式", "url": "https://www.ritsumei.ac.jp/" },
+        { "title": "立命館大学 入試", "url": "https://www.ritsumei.ac.jp/admission/" },
+        { "title": "パスナビ 立命館大学", "url": "https://passnavi.obunsha.co.jp/univ/4050/top/" }
+      ]
+    },
+    {
+      "id": "kansai-u",
+      "name": "関西大学",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "大阪府吹田市ほか",
+      "official_url": "https://www.kansai-u.ac.jp/",
+      "admissions_url": "https://www.kansai-u.ac.jp/nyushi/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/4240/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        { "name": "システム理工学部", "departments": ["数学科", "物理・応用物理学科", "機械工学科", "電気電子情報工学科"], "description": "基礎理学と工学を一体的に学べる。" },
+        { "name": "環境都市工学部", "departments": ["建築学科", "都市システム工学科", "エネルギー環境・化学工学科"], "description": "都市・環境課題に強い。" },
+        { "name": "化学生命工学部", "departments": ["化学・物質工学科", "生命・生物工学科"], "description": "化学・バイオ系進路に対応。"}
+      ],
+      "exam_general": {
+        "common_test": "共テ併用型・利用型あり。",
+        "second_exam": "一般3教科型・同一配点方式など複数。",
+        "ratio": "方式別判定。",
+        "notes": "科目型選択の自由度が高い。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期中心で複数方式。" },
+        { "name": "共通テスト併用", "description": "共テ得点を活用して合格可能性を広げる。" }
+      ],
+      "features": "関関同立の中で受験方式が多く、戦略的に受けやすい。理工系3学部で分野が明確に分かれ、志望に合わせやすい。大阪圏で通学利便性も高い。",
+      "career": "関西圏のメーカー・建設・IT・公務への就職実績が豊富。",
+      "references": [
+        { "title": "関西大学 公式", "url": "https://www.kansai-u.ac.jp/" },
+        { "title": "関西大学 入試情報", "url": "https://www.kansai-u.ac.jp/nyushi/" },
+        { "title": "パスナビ 関西大学", "url": "https://passnavi.obunsha.co.jp/univ/4240/top/" }
+      ]
+    },
+    {
+      "id": "tokai-gakuen-u",
+      "name": "東海学園大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市・みよし市",
+      "official_url": "https://www.tokaigakuen-u.ac.jp/",
+      "admissions_url": "https://www.tokaigakuen-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3715/top/",
+      "koromodai_record": { "r7": 5, "r6": 4, "r5": 5, "total": 14 },
+      "science_faculties": [
+        { "name": "スポーツ健康科学部", "departments": ["スポーツ健康科学科"], "description": "健康科学やスポーツ科学を実践的に学ぶ。" },
+        { "name": "健康栄養学部", "departments": ["管理栄養学科"], "description": "理科系基礎を活かせる医療・栄養分野。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テストプラス方式を含む。",
+        "second_exam": "一般前期・中期・後期で2〜3教科型を実施。",
+        "ratio": "方式別判定。",
+        "notes": "基礎学力型で受験しやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・中期・後期で複数方式。" },
+        { "name": "学校推薦型選抜", "description": "指定校・公募推薦を実施。" }
+      ],
+      "features": "地元私大として受験しやすく、学習支援が丁寧。スポーツ・健康分野への進路を考える理系生徒に適している。通学負担を抑えながら大学進学を確保しやすい。",
+      "career": "地元企業就職と資格系進路が中心。教職・健康関連の進路もある。",
+      "references": [
+        { "title": "東海学園大学 公式", "url": "https://www.tokaigakuen-u.ac.jp/" },
+        { "title": "東海学園大学 入試", "url": "https://www.tokaigakuen-u.ac.jp/admission/" },
+        { "title": "パスナビ 東海学園大学", "url": "https://passnavi.obunsha.co.jp/univ/3715/top/" }
+      ]
+    },
+    {
+      "id": "aichi-toho-u",
+      "name": "愛知東邦大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市名東区",
+      "official_url": "https://www.aichi-toho.ac.jp/",
+      "admissions_url": "https://www.aichi-toho.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3717/top/",
+      "koromodai_record": { "r7": 2, "r6": 2, "r5": 3, "total": 7 },
+      "science_faculties": [
+        { "name": "経営学部", "departments": ["ビジネス学科", "コミュニケーション・デザイン学科"], "description": "データ活用やデザインを含む実践教育。"},
+        { "name": "人間健康学部", "departments": ["人間健康学科"], "description": "健康分野で理科基礎を活かせる。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式あり。",
+        "second_exam": "一般A〜F方式で2〜3教科中心。",
+        "ratio": "方式別判定。",
+        "notes": "基礎重視で受験しやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・中期・後期の分散日程。" },
+        { "name": "総合型選抜", "description": "面接・課題型中心。" }
+      ],
+      "features": "少人数教育で学習フォローが厚く、基礎から学び直しやすい。通学しやすい立地で、地元進学の安全校として機能する。実務系科目が多い。",
+      "career": "地元企業就職、公務員対策、資格取得支援を活用した進路が中心。",
+      "references": [
+        { "title": "愛知東邦大学 公式", "url": "https://www.aichi-toho.ac.jp/" },
+        { "title": "愛知東邦大学 入試情報", "url": "https://www.aichi-toho.ac.jp/admissions/" },
+        { "title": "パスナビ 愛知東邦大学", "url": "https://passnavi.obunsha.co.jp/univ/3717/top/" }
+      ]
+    },
+    {
+      "id": "ncu",
+      "name": "名古屋商科大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県日進市・名古屋市",
+      "official_url": "https://www.nucba.ac.jp/",
+      "admissions_url": "https://www.nucba.ac.jp/ug/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3790/top/",
+      "koromodai_record": { "r7": 3, "r6": 2, "r5": 3, "total": 8 },
+      "science_faculties": [
+        { "name": "経営学部・経済学部", "departments": ["経営学科", "経済学科"], "description": "ケースメソッド型授業で実践力を重視。" }
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式あり。",
+        "second_exam": "一般は2〜3教科型が中心。",
+        "ratio": "方式別判定。",
+        "notes": "英語・数学を使える方式を選びやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "学部・方式別で複数日程。" },
+        { "name": "学校推薦型選抜", "description": "公募推薦・指定校推薦あり。" }
+      ],
+      "features": "経営系が中心で理工色は弱いが、データ活用やビジネス志向には適している。英語教育や国際プログラムを活用しやすい。安全校として進学先を確保しやすい。",
+      "career": "営業・企画・金融・サービス業などビジネス系就職が中心。",
+      "references": [
+        { "title": "名古屋商科大学 公式", "url": "https://www.nucba.ac.jp/" },
+        { "title": "名古屋商科大学 学部入試", "url": "https://www.nucba.ac.jp/ug/admission/" },
+        { "title": "パスナビ 名古屋商科大学", "url": "https://passnavi.obunsha.co.jp/univ/3790/top/" }
+      ]
+    },
+    {
+      "id": "ngu",
+      "name": "名古屋学院大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市・瀬戸市",
+      "official_url": "https://www.ngu.jp/",
+      "admissions_url": "https://www.ngu.jp/exam/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3760/top/",
+      "koromodai_record": { "r7": 1, "r6": 0, "r5": 1, "total": 2 },
+      "science_faculties": [
+        { "name": "スポーツ健康学部", "departments": ["スポーツ健康学科"], "description": "健康・スポーツ科学寄りの学び。" },
+        { "name": "リハビリテーション学部", "departments": ["理学療法学科", "作業療法学科"], "description": "医療系志向に対応。" }
+      ],
+      "exam_general": {
+        "common_test": "共テプラス方式を実施。",
+        "second_exam": "一般は2教科型・3教科型中心。",
+        "ratio": "方式別判定。",
+        "notes": "受験方式が多い。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・中期・後期を実施。" },
+        { "name": "総合型選抜", "description": "自己推薦型などを実施。" }
+      ],
+      "features": "基礎から学びやすい環境で、地元進学の安全校として使いやすい。医療・健康系学部では理科基礎を活かせる。入試方式の自由度が高い。",
+      "career": "地域企業就職や資格系進路が中心。",
+      "references": [
+        { "title": "名古屋学院大学 公式", "url": "https://www.ngu.jp/" },
+        { "title": "名古屋学院大学 入試", "url": "https://www.ngu.jp/exam/" },
+        { "title": "パスナビ 名古屋学院大学", "url": "https://passnavi.obunsha.co.jp/univ/3760/top/" }
+      ]
+    },
+    {
+      "id": "aichi-gakuin-u",
+      "name": "愛知学院大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県日進市・名古屋市",
+      "official_url": "https://www.agu.ac.jp/",
+      "admissions_url": "https://www.agu.ac.jp/examination/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3620/top/",
+      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "science_faculties": [
+        { "name": "健康科学部", "departments": ["健康科学科"], "description": "健康・心理・医療周辺領域に対応。" },
+        { "name": "薬学部", "departments": ["医療薬学科"], "description": "薬学志望向け（難易度は別途確認）。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式を実施。",
+        "second_exam": "一般方式は2〜3教科中心。",
+        "ratio": "方式別判定。",
+        "notes": "学部ごとに難易度差が大きい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "学部別の日程・方式。" },
+        { "name": "学校推薦型選抜", "description": "公募・指定校を実施。" }
+      ],
+      "features": "総合大学として学部数が多く、進路変更がしやすい。理工系志望には直接学部が少ないため、健康・薬系を検討する際に有効。地元通学型の安全校として活用しやすい。",
+      "career": "医療・福祉系、一般企業、公務員など学部に応じた進路。",
+      "references": [
+        { "title": "愛知学院大学 公式", "url": "https://www.agu.ac.jp/" },
+        { "title": "愛知学院大学 入試情報", "url": "https://www.agu.ac.jp/examination/" },
+        { "title": "パスナビ 愛知学院大学", "url": "https://passnavi.obunsha.co.jp/univ/3620/top/" }
+      ]
+    },
+    {
+      "id": "chubu-u",
+      "name": "中部大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県春日井市",
+      "official_url": "https://www.chubu.ac.jp/",
+      "admissions_url": "https://www.chubu.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3710/top/",
+      "koromodai_record": { "r7": 1, "r6": 1, "r5": 1, "total": 3 },
+      "science_faculties": [
+        { "name": "工学部", "departments": ["機械工学科", "電気電子システム工学科", "応用化学科", "情報工学科", "ロボット理工学科"], "description": "私大工学として学科の幅が広い。" },
+        { "name": "理工学部", "departments": ["数理・物理サイエンス学科", "AIロボティクス学科", "宇宙航空学科"], "description": "理工融合分野を扱う。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式あり。",
+        "second_exam": "一般前期は2〜3教科型中心。",
+        "ratio": "方式別判定。",
+        "notes": "奨学生入試なども併用可能。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "複数日程で実施。" },
+        { "name": "学校推薦型選抜", "description": "公募推薦を実施。" }
+      ],
+      "features": "工学・理工分野の学科が多く、理系進学先として扱いやすい。学習支援・資格支援が比較的手厚い。地元通学で工学系を確保したい場合の安全校候補。",
+      "career": "東海圏メーカー・IT・インフラ企業への就職が中心。",
+      "references": [
+        { "title": "中部大学 公式", "url": "https://www.chubu.ac.jp/" },
+        { "title": "中部大学 入試", "url": "https://www.chubu.ac.jp/admissions/" },
+        { "title": "パスナビ 中部大学", "url": "https://passnavi.obunsha.co.jp/univ/3710/top/" }
+      ]
+    },
+    {
+      "id": "daido-u",
+      "name": "大同大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市南区",
+      "official_url": "https://www.daido-it.ac.jp/",
+      "admissions_url": "https://www.daido-it.ac.jp/exam/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3680/top/",
+      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "science_faculties": [
+        { "name": "工学部", "departments": ["機械工学科", "機械システム工学科", "電気電子工学科"], "description": "実習重視の工学教育。" },
+        { "name": "情報学部", "departments": ["情報システム学科", "情報デザイン学科", "総合情報学科"], "description": "情報系を多面的に学べる。" },
+        { "name": "建築学部", "departments": ["建築学科"], "description": "建築系進路に対応。"}
+      ],
+      "exam_general": {
+        "common_test": "共通テスト利用方式あり。",
+        "second_exam": "一般A方式等で数学・英語・理科を課す。",
+        "ratio": "方式別判定。",
+        "notes": "基礎学力で合格を狙いやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期中心に複数方式。" },
+        { "name": "総合型選抜", "description": "面接・課題方式あり。" }
+      ],
+      "features": "実学主義を掲げ、工学・情報の基礎を実践的に学べる。設備利用機会が多く、ものづくり志向に向く。安全校として工学系進学先を確保しやすい。",
+      "career": "製造業・設備・IT運用系への就職が中心。",
+      "references": [
+        { "title": "大同大学 公式", "url": "https://www.daido-it.ac.jp/" },
+        { "title": "大同大学 入試", "url": "https://www.daido-it.ac.jp/exam/" },
+        { "title": "パスナビ 大同大学", "url": "https://passnavi.obunsha.co.jp/univ/3680/top/" }
+      ]
+    },
+    {
+      "id": "tokoha-u",
+      "name": "常葉大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "静岡県静岡市・浜松市",
+      "official_url": "https://www.tokoha-u.ac.jp/",
+      "admissions_url": "https://www.tokoha-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3580/top/",
+      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "science_faculties": [
+        { "name": "社会環境学部", "departments": ["社会環境学科"], "description": "環境・防災系を扱う実践学習。" },
+        { "name": "健康科学部・保健医療学部", "departments": ["看護学科", "理学療法学科", "作業療法学科"], "description": "医療系理科基礎を活かせる。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式あり。",
+        "second_exam": "一般は2〜3教科型中心。",
+        "ratio": "方式別判定。",
+        "notes": "基礎力型で受験しやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期で実施。" },
+        { "name": "学校推薦型選抜", "description": "公募・指定校を実施。" }
+      ],
+      "features": "静岡県内で進学を完結させたい場合の有力な安全校。キャンパス分散だが学部選択肢は多い。健康・環境系の進路を検討する理系に適している。",
+      "career": "地域医療・教育・一般企業への就職が中心。",
+      "references": [
+        { "title": "常葉大学 公式", "url": "https://www.tokoha-u.ac.jp/" },
+        { "title": "常葉大学 入試情報", "url": "https://www.tokoha-u.ac.jp/admission/" },
+        { "title": "パスナビ 常葉大学", "url": "https://passnavi.obunsha.co.jp/univ/3580/top/" }
+      ]
+    },
+    {
+      "id": "aichi-sangyo-u",
+      "name": "愛知産業大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県岡崎市",
+      "official_url": "https://www.asu.ac.jp/",
+      "admissions_url": "https://www.asu.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3645/top/",
+      "koromodai_record": { "r7": 1, "r6": 1, "r5": 1, "total": 3 },
+      "science_faculties": [
+        { "name": "造形学部", "departments": ["スマートデザイン学科", "建築学科"], "description": "デザインと工学基礎を横断する学び。" },
+        { "name": "経営学部", "departments": ["総合経営学科"], "description": "実務寄り経営教育。"}
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式あり。",
+        "second_exam": "一般は2教科中心で受験可能。",
+        "ratio": "方式別判定。",
+        "notes": "建築系志望の安全校として使いやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "前期・後期で実施。" },
+        { "name": "総合型選抜", "description": "面接や作品・課題評価方式あり。" }
+      ],
+      "features": "造形・建築系を地元で学びたい受験生に向く。少人数指導で学習支援を受けやすい。入試難易度は比較的穏やかで安全校として機能しやすい。",
+      "career": "建築・デザイン関連、地域企業、一般事務系への就職が中心。",
+      "references": [
+        { "title": "愛知産業大学 公式", "url": "https://www.asu.ac.jp/" },
+        { "title": "愛知産業大学 入試", "url": "https://www.asu.ac.jp/admission/" },
+        { "title": "パスナビ 愛知産業大学", "url": "https://passnavi.obunsha.co.jp/univ/3645/top/" }
+      ]
+    },
+    {
+      "id": "aichi-tech-u",
+      "name": "愛知工業大学",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県豊田市・名古屋市",
+      "official_url": "https://www.ait.ac.jp/",
+      "admissions_url": "https://www.ait.ac.jp/examination/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3640/top/",
+      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "science_faculties": [
+        { "name": "工学部", "departments": ["機械学科", "電気学科", "応用化学科", "建築学科", "土木工学系"], "description": "工学基礎を広く学べる。" },
+        { "name": "情報科学部", "departments": ["情報科学科"], "description": "情報系の人気が高い。" }
+      ],
+      "exam_general": {
+        "common_test": "共テ利用方式あり。",
+        "second_exam": "一般A・M方式等で数学・理科・英語中心。",
+        "ratio": "方式別判定。",
+        "notes": "工学系私大として受験戦略を立てやすい。"
+      },
+      "exam_methods": [
+        { "name": "一般選抜", "description": "複数方式で実施。" },
+        { "name": "共通テスト利用", "description": "共テ＋独自加点方式あり。" }
+      ],
+      "features": "東海圏私立工大として実績があり、工学・情報進学先として安定。学科選択肢が多く、理系の安全校として使いやすい。実験実習設備も比較的充実している。",
+      "career": "製造業・建設業・IT企業への就職が中心。地元企業ネットワークが強い。",
+      "references": [
+        { "title": "愛知工業大学 公式", "url": "https://www.ait.ac.jp/" },
+        { "title": "愛知工業大学 入試情報", "url": "https://www.ait.ac.jp/examination/" },
+        { "title": "パスナビ 愛知工業大学", "url": "https://passnavi.obunsha.co.jp/univ/3640/top/" }
+      ]
+    }
+  ]
+}
