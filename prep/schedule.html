@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学習スケジュール（高3向け） | 受験対策</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .phase-card {
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+      margin-bottom: 1.25rem;
+      border: 2px solid;
+    }
+    .phase-card h3 { margin-top: 0; font-size: 1.05rem; }
+    .phase-a { background: #f0fdf4; border-color: #4ade80; }
+    .phase-b { background: #fef9c3; border-color: #facc15; }
+    .phase-c { background: #fff7ed; border-color: #ea580c; }
+    .phase-d { background: #fef2f2; border-color: #dc2626; }
+    .phase-e { background: #f5f3ff; border-color: #7c3aed; }
+    .daily-bar {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      margin: .35rem 0;
+      font-size: .88rem;
+    }
+    .daily-label {
+      width: 5rem;
+      font-weight: 600;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+    .daily-block {
+      height: 1.6rem;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 0 .5rem;
+      font-size: .75rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .blk-math  { background: #2563eb; }
+    .blk-phys  { background: #059669; }
+    .blk-chem  { background: #7c3aed; }
+    .blk-eng   { background: #b45309; }
+    .blk-other { background: #6b7280; }
+    .blk-niji  { background: #dc2626; }
+    .warn-box {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .ok-box {
+      background: #f0fdf4;
+      border-left: 4px solid #059669;
+      padding: .85rem 1rem;
+      border-radius: 0 8px 8px 0;
+      font-size: .9rem;
+      margin: 1rem 0;
+    }
+    .month-row { font-size: .88rem; margin: .4rem 0; padding-left: 1rem; border-left: 3px solid var(--border); }
+    .month-row strong { color: var(--navy); }
+    .month-badge {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: .1rem .45rem;
+      margin-right: .3rem;
+    }
+    .checklist { list-style: none; padding: 0; margin: .5rem 0; }
+    .checklist li { font-size: .9rem; padding: .2rem 0; padding-left: 1.4rem; position: relative; }
+    .checklist li::before { content: '☐'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+    .checklist li.done::before { content: '☑'; color: #059669; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>学習スケジュール（高3向け）</h1>
+    <div class="subtitle">令和9年度入試（2027年4月入学）｜2026年9月は出願と過去問演習の月</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">← 進路ガイドに戻る</a></div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <div class="warn-box">
+      <strong>2026年9月時点：</strong>共通テスト本試験は<strong>2027年1月16日（土）・17日（日）</strong>。Web出願の登録は<strong>9月15日〜10月2日17:00</strong>、検定料支払いは<strong>10月2日23:59まで</strong>。登録後は<strong>10月9日10:00〜16日17:00</strong>の確認・訂正期間に教科・住所を再確認します。まだマイページ未作成なら、学校の指示と<a href="https://www.dnc.ac.jp/kyotsu/web_syutugan.html" target="_blank" rel="noopener">出願サイト案内</a>を今週中に確認してください。
+    </div>
+
+    <!-- ========== 2026年9月からの残り時間 ========== -->
+    <section class="card">
+      <h2>2027年入試までの残り時間</h2>
+      <p>4〜8月の計画はすでに過去です。ここからは<strong>2026年9月8日を起点</strong>に、出願を落とさず、基礎の穴を絞って本番得点へ変える計画に切り替えます。</p>
+
+      <div class="phase-card phase-c">
+        <h3>📊 9月8日〜10月2日｜出願＋現状診断</h3>
+        <p style="margin:0;font-size:.9rem">Web出願を完了し、共通テスト1年分を本番時間で解く。結果から「今後伸ばす2科目」と「維持する科目」を決める。</p>
+      </div>
+      <div class="phase-card phase-b">
+        <h3>🔥 10月3日〜11月30日｜基礎穴埋め＋志望校別演習</h3>
+        <p style="margin:0;font-size:.9rem">難問より標準問題の取りこぼしを減らす。大学群は模試得点で上位挑戦・本命・確保に組み直す。</p>
+      </div>
+      <div class="phase-card phase-d">
+        <h3>🎯 12月1日〜2027年1月15日｜共通テスト得点化</h3>
+        <p style="margin:0;font-size:.9rem">週1回の実戦セット、復習、時間配分の固定。新しい参考書には手を広げない。</p>
+      </div>
+      <div class="phase-card phase-e">
+        <h3>🏁 1月16日〜3月｜本試験＋個別入試</h3>
+        <p style="margin:0;font-size:.9rem">1月16・17日が共通テスト。翌日から私大・国公立二次へ切り替え、合格済みの進路を確保しながら上位校に挑戦する。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>最初の4週間（9月8日〜10月4日）</h2>
+      <div class="month-row"><span class="month-badge">9/8〜14</span>共通テスト出願サイトのマイページ、顔写真、受験教科、メールアドレスを確認。共通テスト1年分を本番時間で解き、科目別得点を記録。</div>
+      <div class="month-row"><span class="month-badge">9/15〜20</span>Web出願登録と検定料支払い。自己採点から弱点を「知識不足／解法不足／時間不足／ミス」に分類。総合型選抜を使う場合は担任へ即相談。</div>
+      <div class="month-row"><span class="month-badge">9/21〜27</span>最低得点の2科目を基礎問題へ戻して補修。英語は毎日、数学は隔日以上。確保校2校・本命校2校・挑戦校1校の仮リストを作る。</div>
+      <div class="month-row"><span class="month-badge">9/28〜10/4</span>10月2日までに出願完了を再確認。別年度の共通テストを解き、4週間前との差を見る。改善しない科目は教材を増やさず、範囲を狭める。</div>
+      <div class="ok-box"><strong>10月初めの到達目標：</strong>出願完了／科目別の実得点が分かる／志望校が「上位挑戦・本命・確保」に分かれる／毎週の復習日が固定されている。</div>
+    </section>
+
+    <!-- ========== 9〜11月 ========== -->
+    <section class="card">
+      <h2>10〜11月：得点を伸ばし、出願校を現実化する</h2>
+      <p style="font-size:.9rem">現在の学力が限られる場合、全科目を同じ強度で伸ばそうとすると間に合いません。<strong>一般私大で使う2〜3科目を優先</strong>し、国公立を本気で受ける場合だけ共通テスト全科目を維持します。</p>
+
+      <div class="month-row"><span class="month-badge">10月</span>大学ごとの2027年度募集要項で、科目・出願日・試験日・専願/併願を確認。確保校の過去問で合格最低点との差を見る。総合型・学校推薦型が使えるなら一般入試一本に限定しない。</div>
+      <div class="month-row"><span class="month-badge">11月</span>プレ共通テスト等を本番時間で受験。判定だけでなく科目別得点で出願校を再編。確保校の一般選抜を最低2方式、本命校を2校程度まで具体化する。</div>
+
+      <h3>10〜11月の1日配分例（平日3.5〜4時間）</h3>
+      <div class="daily-bar"><span class="daily-label">弱点科目</span><div class="daily-block blk-niji" style="width:38%">90m（基礎〜標準）</div></div>
+      <div class="daily-bar"><span class="daily-label">数学/理科</span><div class="daily-block blk-math" style="width:30%">70m（受験科目優先）</div></div>
+      <div class="daily-bar"><span class="daily-label">英語</span><div class="daily-block blk-eng" style="width:25%">60m（毎日継続）</div></div>
+      <div class="daily-bar"><span class="daily-label">復習・暗記</span><div class="daily-block blk-other" style="width:15%">30〜40m</div></div>
+
+      <div class="ok-box"><strong>11月末チェック：</strong>確保校の過去問で合格最低点付近に届く／出願方式と費用を家族と確認済み／本命校と確保校の試験日が重なっていない。</div>
+    </section>
+
+    <!-- ========== フェーズ4 ========== -->
+    <section class="card">
+      <h2>12月〜1月15日：共通テスト直前期</h2>
+      <p style="font-size:.9rem">この時期は新しい範囲を広げず、取れる問題を確実に取る段階です。私大専願の場合は共通テストだけに偏らず、一般入試の受験科目を優先します。</p>
+
+      <div class="month-row"><span class="month-badge">12月</span>受験票を12月4日からマイページで取得し、紙に印刷。試験会場・時間割を確認。新問題集は開かない（例外なし）。共通テスト過去問（直近5年）を1日1〜2教科のペースで見直す。間違えた問題のみ解き直す。</div>
+      <div class="month-row"><span class="month-badge">12月末</span>年末年始もペースを落とさない（むしろライバルが緩む時期）。1日の勉強量を少し減らしてでも「毎日継続」を優先。睡眠7時間必須。</div>
+      <div class="month-row"><span class="month-badge">1月1〜2週</span>共通テスト当日のシミュレーション（何時に起きる→何を食べる→何時に会場着）を決める。時間配分の最終確認。新しい暗記事項は入れない。</div>
+
+      <ul class="checklist">
+        <li>間違えた問題に印をつけて解き直した（新問題集は開いていない）</li>
+        <li>時間配分が安定し、英語リーディングを80分以内に最後まで確認できる</li>
+        <li>試験会場への行き方を事前に確認した</li>
+        <li>体調管理（7時間睡眠・手洗い・夜12時前就寝）を習慣にした</li>
+      </ul>
+
+      <div class="warn-box"><strong>直前期のNG：</strong>「まだ不安だから新しい参考書を買う」——直前に新しいことを始めると、今まで覚えたことが上書きされて混乱します。今できることを完璧にする方が確実に点数につながります。</div>
+    </section>
+
+    <!-- ========== フェーズ5 ========== -->
+    <section class="card">
+      <h2>2027年1月16日以降：共通テスト本番〜3月</h2>
+      <p style="font-size:.9rem">共通テストが終わったらすぐに<strong>切り替えが大切</strong>です。燃え尽きている場合ではありません。共通テストから国公立前期試験まで約40日あります。</p>
+
+      <div class="month-row"><span class="month-badge">共テ翌日</span>自己採点を行う。各予備校の「自己採点集計」に入力し、合否ラインとの比較をする。担任の先生と相談し、前期・後期の出願校を確認する。</div>
+      <div class="month-row"><span class="month-badge">1月末</span>国公立大学の出願（多くの大学で1月25日〜2月3日）を締め切りまでに提出。私立一般入試の出願も並行して確認。共通テストのことは忘れて二次対策に集中。</div>
+      <div class="month-row"><span class="month-badge">2月</span>私立一般入試が始まる（各大学の日程で異なる）。本番に慣れるためにも積極的に受験する。体力と集中力を維持する。国公立前期（<strong>2027年は2月25日（木）以降</strong>）に向けた二次対策を最優先。</div>
+      <div class="month-row"><span class="month-badge">3月</span>国公立前期合格発表（3月上旬）。不合格の場合は後期試験（<strong>3月12日（金）以降</strong>）へ。合格後は入学手続き（期限厳守）。</div>
+
+      <h3>共通テスト後の1日配分例</h3>
+      <div class="daily-bar"><span class="daily-label">数学</span><div class="daily-block blk-math" style="width:37%">3h（二次対策）</div></div>
+      <div class="daily-bar"><span class="daily-label">物理</span><div class="daily-block blk-phys" style="width:25%">2h（記述演習）</div></div>
+      <div class="daily-bar"><span class="daily-label">英語</span><div class="daily-block blk-eng" style="width:19%">1.5h（英作文）</div></div>
+      <div class="daily-bar"><span class="daily-label">化学・国語</span><div class="daily-block blk-chem" style="width:10%">1h</div></div>
+
+      <div class="ok-box"><strong>共通テスト後は「二次の人間」になる。</strong>共通テストの点数（良くても悪くても）を引きずらない。前期試験の当日まで毎日続ける人が最後に笑います。</div>
+    </section>
+
+    <!-- ========== 模試の使い方 ========== -->
+    <section class="card">
+      <h2>模試の正しい使い方</h2>
+      <p style="font-size:.9rem">模試は「受けっぱなし」では意味がありません。<strong>成績表が来てからが本番</strong>です。</p>
+      <ol style="padding-left:1.2rem;font-size:.9rem">
+        <li><strong>受ける前：</strong>今どこができてどこができないかを予測してから受ける（仮説を立てる習慣）</li>
+        <li><strong>受けた直後（当日）：</strong>解けなかった問題の原因を4分類でメモ——「①知識がない」「②解法を知らない」「③時間不足」「④ケアレスミス」</li>
+        <li><strong>成績表が来たら：</strong>偏差値・判定より<strong>「分野別で何点落としたか」</strong>を見る。伸びしろが大きい分野を次週の勉強に反映</li>
+        <li><strong>翌週：</strong>①②に分類した問題を解き直す。解法を知らなかった問題は該当分野の問題集に戻る</li>
+        <li><strong>記録：</strong>模試ごとの得点・偏差値・分野別成績をノートに記録。3ヶ月単位でトレンドを見る</li>
+      </ol>
+      <div class="warn-box"><strong>判定だけで進路を決めない。</strong>E判定なら挑戦校として残すことはできますが、本命・確保校を別に用意する必要があります。「どこが伸ばせるか」と「現時点で合格を確保できるか」を両方見てください。</div>
+    </section>
+
+    <!-- ========== 勉強場所 ========== -->
+    <section class="card">
+      <h2>勉強場所・環境の選び方</h2>
+      <div class="table-wrap">
+        <table style="font-size:.88rem">
+          <thead><tr><th>場所</th><th>向いている勉強</th><th>注意点</th></tr></thead>
+          <tbody>
+            <tr><td>学校の自習室</td><td>演習・過去問（集中が必要な問題）</td><td>定期試験前後や休日は混みやすい。朝早めに確保</td></tr>
+            <tr><td>図書館</td><td>長時間の読み込み・暗記系</td><td>飲食不可が多い。疲れたら外に出る</td></tr>
+            <tr><td>家の自室</td><td>ノートまとめ・英語リスニング</td><td>スマホを別部屋に置く。15分おきに立つ</td></tr>
+            <tr><td>塾・予備校の自習室</td><td>わからない問題をその場で質問できる</td><td>週3〜4回が現実的。費用も考慮</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.88rem;color:var(--text-sub);margin-top:.5rem"><strong>睡眠7時間以上は絶対に守る。</strong>睡眠不足で勉強しても記憶に定着しない。夜12時以降の勉強は効率が半分以下と言われています。体を壊したら全てが終わりです。</p>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="nyushi-qa.html">入試の仕組み・よくある疑問（共通テスト流れ・出願回数Q&A）</a></li>
+        <li><a href="https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/" target="_blank" rel="noopener">大学入試センター 令和9年度試験（公式・日程）</a></li>
+        <li><a href="https://www.dnc.ac.jp/kyotsu/web_syutugan.html" target="_blank" rel="noopener">共通テスト Web出願の手順</a></li>
+        <li><a href="https://passnavi.obunsha.co.jp/univ/0490/subject/" target="_blank" rel="noopener">名古屋大学 入試科目（パスナビ）</a></li>
+        <li><a href="https://www.nitech.ac.jp/examination/gakubu/test.html" target="_blank" rel="noopener">名古屋工業大学 過去問題</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">スケジュールは個人の状況・学校行事に合わせて調整。担任・進路指導の先生とも相談してください。</footer>
+</body>
+</html>
+
+
