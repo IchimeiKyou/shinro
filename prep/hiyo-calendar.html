@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>費用の支払いカレンダー（保護者向け） | 2027年度入試</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .money { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .total-row td { background: #dbeafe !important; font-weight: 700; }
+    .now-row td { background: #fef2f2 !important; }
+    .checklist { list-style:none; padding:0; }
+    .checklist li { padding:.5rem 0; border-bottom:1px solid var(--border); }
+    .checklist li::before { content:"□"; margin-right:.6rem; font-size:1.15rem; }
+    @media print { .nav-back,.site-footer { display:none; } body { background:#fff; } .card { box-shadow:none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>費用の支払いカレンダー</h1>
+    <div class="subtitle">保護者向け｜いつ・いくら・どこへ払うか｜確認日 2026-11-25</div>
+    <div class="breadcrumb"><a href="../shinro-guide.html">進路ガイド</a> / 費用と手続き</div>
+  </header>
+  <main class="container">
+    <a class="nav-back" href="../shinro-guide.html">← 進路ガイドに戻る</a>
+
+    <div class="insight insight-warn">
+      <strong>このページの使い方：</strong>4年間の総額は<a href="hiyo-shogakukin.html">費用・奨学金</a>にまとめていますが、家計が実際に詰まるのは<strong>支払いが重なる時期</strong>です。ここでは「いつ、いくら、どこへ払うか」だけを時系列で並べます。金額は公開情報に基づく<strong>目安</strong>で、実際の額は必ず各大学の2027年度募集要項で確認してください。
+    </div>
+
+    <section class="card">
+      <h2>時系列の支払い一覧</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>時期</th><th>支払うもの</th><th>目安金額</th><th>支払先・方法</th></tr></thead>
+          <tbody>
+            <tr><td>2026年9〜10月<br>（終了）</td><td>共通テスト検定料<br><span style="font-size:.78rem;color:var(--text-sub)">登録9/15〜10/2 17:00／支払10/2 23:59まで</span></td><td class="money">18,000円<br><span style="font-size:.78rem;color:var(--text-sub)">3教科以上／2教科以下は12,000円</span></td><td>Web出願時にクレジットカード・コンビニ・Pay-easy</td></tr>
+            <tr><td>2026年10月<br>（終了）</td><td>私大・総合型の検定料</td><td class="money">1校 30,000〜35,000円<br><span style="font-size:.78rem;color:var(--text-sub)">併願割引で2校目以降が減額される方式も</span></td><td>各大学のWeb出願サイト</td></tr>
+            <tr class="now-row"><td><strong>2026年11月下旬〜12月</strong><br>（今ここ）</td><td>受験票の印刷代・写真代<br>共通テスト用の持ち物</td><td class="money">1,000〜3,000円</td><td>コンビニ印刷・証明写真機</td></tr>
+            <tr><td>2027年1月上旬</td><td>私大 一般方式の検定料<br>（中部大・愛知工業大など）</td><td class="money">中部大 30,000円<br>愛知工業大 35,000円<br><span style="font-size:.78rem;color:var(--text-sub)">併願割引で2校目以降が減額（愛知工業大は2専攻目以降20,000円）</span></td><td>各大学のWeb出願サイト<br><strong>出願期間：中部大 1/8〜1/20<br>愛知工業大 1/6〜1/19</strong></td></tr>
+            <tr><td>2027年1月下旬〜2月上旬</td><td>国公立大 一般選抜の検定料</td><td class="money">前期 17,000円<br>後期 17,000円<br><span style="font-size:.78rem;color:var(--text-sub)">同一大学で前期・後期を併願する場合は減額あり</span></td><td>国公立大Web出願システム<br><strong>出願期間：1/25〜2/3</strong></td></tr>
+            <tr><td>2027年2月中旬〜3月上旬</td><td>私大の入学手続金（一次）</td><td class="money">約 60万〜75万円<br><span style="font-size:.78rem;color:var(--text-sub)">入学金（平均240,365円）＋前期授業料（年額平均968,069円の半額）。合格発表から1〜2週間が期限</span></td><td>各大学指定の振込先<br><strong>ここが家計の最大の山</strong></td></tr>
+            <tr><td>2027年3月上旬〜中旬</td><td>国公立大の入学手続金（一次）</td><td class="money">約 55万円<br><span style="font-size:.78rem;color:var(--text-sub)">入学料282,000円＋前期授業料267,900円（年額535,800円の半額）</span></td><td>各大学指定の振込先<br><strong>前期日程の手続締切は3/15</strong></td></tr>
+            <tr><td>2027年3月下旬</td><td>私大の入学手続金（二次）<br>後期日程合格者の手続き</td><td class="money">前期授業料の残額<br>＋施設費・諸会費</td><td>各大学指定の振込先</td></tr>
+            <tr class="total-row"><td colspan="2">入試関連の支払い合計（共テ＋私大2校＋国公立前期後期の例）</td><td class="money">約 12万〜15万円</td><td>入学手続金は別枠</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.8rem;color:var(--text-sub);margin-top:.5rem">※ 検定料・入学料は文部科学省の標準額と各大学公表額による目安。私立大の入学金は20万〜30万円程度が中心です。</p>
+    </section>
+
+    <section class="card">
+      <h2>家計が詰まる3つのポイント</h2>
+      <div class="step-card">
+        <h3><span class="step-num">1</span>合格発表から手続期限までが短い</h3>
+        <p>私大の入学手続期限は<strong>合格発表から1〜2週間</strong>のことが多く、書類の郵送＋振込の両方が必要です。第一志望の国公立前期の結果（3月上旬）より前に、確保校の手続期限が来るのが典型的なパターンです。<strong>「手続金を払ってでも押さえるか、捨てるか」を合格発表前に家族で決めておく</strong>必要があります。</p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-num">2</span>入学辞退しても全額は戻らない</h3>
+        <p>入学手続をしてから辞退した場合、<strong>入学金は原則返還されません</strong>。授業料等は所定の期限までに辞退届を出せば返還されるのが一般的です。「いくら捨てることになるか」を大学ごとに要項で確認し、表に書き込んでください。</p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-num">3</span>2月に私大・3月に国公立が重なる</h3>
+        <p>私大の一次手続（2月中旬〜）と国公立の出願（1/25〜2/3）・前期試験（2/25〜）が連続します。<strong>1月末から3月上旬は現金の出入りが最も大きい</strong>ので、12月のうちに「どの口座から、いつ引き出すか」を決めておくと安心です。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>今からできる準備（11月下旬〜12月）</h2>
+      <ul class="checklist">
+        <li>受験予定校すべての<strong>検定料・入学金・授業料・手続期限</strong>を1枚の表に転記した</li>
+        <li>合格発表日と手続期限日をカレンダー（紙）に書き込んだ</li>
+        <li>入学辞退時の返還条件（入学金は返らない等）を要項で確認した</li>
+        <li>支払い用の口座を決め、振込可能な残高を確認した</li>
+        <li>日本学生支援機構の予約採用に申込済みか担任に確認した</li>
+        <li>高校独自の奨学金・自治体の給付制度の締切を調べた</li>
+        <li>「手続金を払って押さえる上限額」を家族で決めた</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>よくある質問</h2>
+      <h3>1. 検定料はいつまでに払えばいい？</h3>
+      <p>共通テストは<strong>出願期間内（登録10/2 17:00・支払10/2 23:59まで／すでに終了）</strong>、私大は各方式の出願期間最終日、国公立は<strong>2/3まで</strong>が目安です。ただし支払完了から出願確定までに時間がかかるので、<strong>締切3日前</strong>を家庭内の締切にしてください。</p>
+      <h3>2. 併願すると検定料は安くなる？</h3>
+      <p>私大では「2校目以降を減額」する制度や、同一大学内の複数学部を併願すると割引になる制度があります。国公立も前期・後期を同一大学で併願すると減額される場合があります。<strong>金額は大学ごとに違う</strong>ため要項で確認が必要です。</p>
+      <h3>3. 入学金を払った後に国公立に合格したら？</h3>
+      <p>私大の入学手続を済ませた後で国公立前期に合格した場合、私大を辞退することになります。<strong>入学金は戻らないのが原則</strong>ですが、授業料等は辞退届の期限までに出せば返還されます。この「二重払いリスク」を見込んで、手続金の上限を決めておくのが実務的です。</p>
+      <h3>4. 奨学金はいつ申し込む？</h3>
+      <p>日本学生支援機構の<strong>予約採用は進学前年（高校3年）の4月下旬から校内で申込が始まり</strong>、募集は年2回（1回目は5〜6月頃、2回目は秋頃）です。すでに申込済みかどうかを担任に確認し、未申込なら入学後の「在学採用」の手続きを入学直後に取ります。給付型は学内選考があるため、入学後の掲示を必ず見てください。<span style="font-size:.8rem;color:var(--text-sub)">（時期は高校ごとに異なるため、必ず進路担当の案内に従ってください）</span></p>
+      <h3>5. 入学手続に必要な書類は？</h3>
+      <p>入学手続時に「奨学金希望調査」を出す大学が多く、そのほか住民票・保証人の署名・写真などが必要です。合格発表から期限までが短いので、<strong>合格前から書類リストを要項で確認</strong>しておいてください。</p>
+    </section>
+
+    <section class="card">
+      <h2>参考リンク</h2>
+      <ul class="ref-list">
+        <li><a href="https://www.dnc.ac.jp/kyotsu/shiken_jouhou/r9/" target="_blank" rel="noopener">令和9年度 共通テスト 実施要項（検定料）</a></li>
+        <li><a href="https://www.jasso.go.jp/" target="_blank" rel="noopener">日本学生支援機構（JASSO）公式</a></li>
+        <li><a href="hiyo-shogakukin.html">費用・奨学金（4年間総額）</a></li>
+        <li><a href="shutsugan-checklist.html">出願チェックリスト</a></li>
+        <li><a href="jiko-saiten.html">自己採点 → 出願校決定</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">金額は公開情報に基づく目安です。実際の額・期限は各大学の2027年度募集要項と合格通知で確認してください。</footer>
+</body>
+</html>
