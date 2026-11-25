@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
-    "updated_at": "2026-09-09",
-    "description": "理系進路向け大学データ（受験情報は必ず最新募集要項で確認）"
+    "version": "1.1.0",
+    "updated_at": "2026-11-25",
+    "description": "理系進路向け大学データ（2027年度入試情報つき。受験情報は必ず最新募集要項で確認）"
   },
   "universities": [
     {
@@ -19,12 +19,23 @@
       "science_faculties": [
         {
           "name": "理学部",
-          "departments": ["数学科", "物理学科", "化学科", "生命理学科", "地球惑星科学科"],
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "生命理学科",
+            "地球惑星科学科"
+          ],
           "description": "基礎科学を重視し、少人数教育と研究室配属で理論と実験を深く学ぶ。"
         },
         {
           "name": "工学部",
-          "departments": ["機械・航空宇宙工学科", "電気電子情報工学科", "化学・生物工学科", "環境土木・建築学科"],
+          "departments": [
+            "機械・航空宇宙工学科",
+            "電気電子情報工学科",
+            "化学・生物工学科",
+            "環境土木・建築学科"
+          ],
           "description": "東海圏の産業基盤と連動し、研究開発志向の工学教育を展開。"
         }
       ],
@@ -35,16 +46,52 @@
         "notes": "配点や科目は年度更新されるため、必ず最新募集要項を確認。"
       },
       "exam_methods": [
-        { "name": "一般選抜（前期・後期）", "description": "共通テストと個別試験で総合判定。理系は数学・理科の比重が高い。" },
-        { "name": "学校推薦型選抜", "description": "共通テストを課す方式が中心。学部ごとに条件が異なる。" }
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "共通テストと個別試験で総合判定。理系は数学・理科の比重が高い。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "共通テストを課す方式が中心。学部ごとに条件が異なる。"
+        }
       ],
       "features": "旧帝大の中核大学で、理学・工学ともに研究環境が非常に充実している。学部段階から研究室活動に触れやすく、探究型学習との相性が良い。東山キャンパスは理系学部が集積していて連携しやすい。",
       "career": "大学院進学率が高く、メーカー・研究開発職・データサイエンス職への就職が強い。",
       "references": [
-        { "title": "名古屋大学 公式サイト", "url": "https://www.nagoya-u.ac.jp/" },
-        { "title": "名古屋大学 入試情報", "url": "https://www.nagoya-u.ac.jp/admissions/" },
-        { "title": "パスナビ 名古屋大学", "url": "https://passnavi.obunsha.co.jp/univ/0490/top/" }
-      ]
+        {
+          "title": "名古屋大学 公式サイト",
+          "url": "https://www.nagoya-u.ac.jp/"
+        },
+        {
+          "title": "名古屋大学 入試情報",
+          "url": "https://www.nagoya-u.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 名古屋大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0490/top/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年度 一般選抜：前期10学部1,738人・後期は医学部医学科のみ",
+        "points": [
+          "前期の募集人員は工学部620人、理学部215人、経済学部165人、農学部136人、保健学科126人、情報学部121人、文学部110人、法学部105人、医学部医学科85人、教育学部55人。後期日程は医学部医学科だけで5人。",
+          "インターネット出願の登録・検定料納入は2027年1月22日〜2月2日、出願期間は1月25日〜2月3日。前期の個別学力検査は2月25日・26日（医学科は27日に面接）、合格発表は3月10日。",
+          "医学部医学科の前期は、共通テスト950点中650点以上を第1段階選抜の基準とする。",
+          "2026年度入試ではほぼ全学科で合格最低点が前年を下回った。情報学部コンピュータ科学科は74.1%→67.6%、工学部機械・航空宇宙工学科は71.0%→64.0%。最低点が下がった翌年は反動で上がることもあるため、前年値に安心しないこと。",
+          "学生募集要項は11月下旬公表予定。医学科は入学定員の増員を申請中。"
+        ],
+        "sources": [
+          {
+            "title": "名古屋大学 令和9年度入学者選抜要項",
+            "url": "https://www.nagoya-u.ac.jp/admissions/exam/upload/r9_senbatsuyoko.pdf"
+          },
+          {
+            "title": "YUKU NEWS 2027年度一般選抜の解説",
+            "url": "https://yuku.co.jp/news/20261114121000-0c3ad1d2/"
+          }
+        ]
+      }
     },
     {
       "id": "kyoto-u",
@@ -58,8 +105,25 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0560/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["理学科"], "description": "入学後に専門を深める自由度が高く、理論系研究も強い。" },
-        { "name": "工学部", "departments": ["地球工学科", "建築学科", "物理工学科", "電気電子工学科", "情報学科", "工業化学科"], "description": "学科横断の研究が多く、大学院接続が強い。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "理学科"
+          ],
+          "description": "入学後に専門を深める自由度が高く、理論系研究も強い。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "地球工学科",
+            "建築学科",
+            "物理工学科",
+            "電気電子工学科",
+            "情報学科",
+            "工業化学科"
+          ],
+          "description": "学科横断の研究が多く、大学院接続が強い。"
+        }
       ],
       "exam_general": {
         "common_test": "理系は6〜7教科8〜9科目型が中心。",
@@ -68,16 +132,45 @@
         "notes": "自由記述中心で思考力重視。"
       },
       "exam_methods": [
-        { "name": "一般選抜（前期）", "description": "共通テスト＋二次記述。最難関水準。" },
-        { "name": "特色入試", "description": "学部により活動実績・探究実績を評価。" }
+        {
+          "name": "一般選抜（前期）",
+          "description": "共通テスト＋二次記述。最難関水準。"
+        },
+        {
+          "name": "特色入試",
+          "description": "学部により活動実績・探究実績を評価。"
+        }
       ],
       "features": "研究第一の文化が強く、理系でも学問的な深さを重視する学生に向く。基礎科学から応用まで層が厚く、ノーベル賞級の研究基盤がある。自律的に学ぶ姿勢が求められる大学。",
       "career": "大学院進学と研究職比率が高く、理系は研究開発・IT・コンサルに幅広く進む。",
       "references": [
-        { "title": "京都大学 公式", "url": "https://www.kyoto-u.ac.jp/" },
-        { "title": "京都大学 学部入試", "url": "https://www.kyoto-u.ac.jp/ja/admissions/undergrad" },
-        { "title": "パスナビ 京都大学", "url": "https://passnavi.obunsha.co.jp/univ/0560/top/" }
-      ]
+        {
+          "title": "京都大学 公式",
+          "url": "https://www.kyoto-u.ac.jp/"
+        },
+        {
+          "title": "京都大学 学部入試",
+          "url": "https://www.kyoto-u.ac.jp/ja/admissions/undergrad"
+        },
+        {
+          "title": "パスナビ 京都大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0560/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期日程中心。特色入試の募集区分を継続",
+        "points": [
+          "前期日程は2月25日・26日（医学部医学科は面接あり）。",
+          "特色入試（総合型）は学部ごとに募集。理系は数学・理科の筆記と面接を組み合わせる。",
+          "2026年度は理系学部で合格最低点が低下した学科がある。"
+        ],
+        "sources": [
+          {
+            "title": "京都大学 入試情報",
+            "url": "https://www.kyoto-u.ac.jp/ja/admissions"
+          }
+        ]
+      }
     },
     {
       "id": "osaka-u",
@@ -91,8 +184,27 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0590/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物科学科"], "description": "基礎科学に強く、研究室での実践機会が多い。" },
-        { "name": "工学部", "departments": ["応用自然科学科", "応用理工学科", "電子情報工学科", "環境・エネルギー工学科", "地球総合工学科"], "description": "産学連携と研究設備が豊富。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "生物科学科"
+          ],
+          "description": "基礎科学に強く、研究室での実践機会が多い。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "応用自然科学科",
+            "応用理工学科",
+            "電子情報工学科",
+            "環境・エネルギー工学科",
+            "地球総合工学科"
+          ],
+          "description": "産学連携と研究設備が豊富。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型が中心。",
@@ -101,16 +213,45 @@
         "notes": "記述対策と計算力の両立が必要。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期中心で高配点の記述試験。" },
-        { "name": "総合型・学校推薦型選抜", "description": "学部により実施。活動歴と学力双方を見る。" }
+        {
+          "name": "一般選抜",
+          "description": "前期中心で高配点の記述試験。"
+        },
+        {
+          "name": "総合型・学校推薦型選抜",
+          "description": "学部により実施。活動歴と学力双方を見る。"
+        }
       ],
       "features": "理学・工学・基礎工学の層が厚く、研究分野の選択肢が広い。関西圏で研究・医工連携・企業連携を同時に体験しやすい。難関だが学習環境は非常に整っている。",
       "career": "大学院進学が多く、大手メーカー・インフラ・IT研究職に強い。",
       "references": [
-        { "title": "大阪大学 公式", "url": "https://www.osaka-u.ac.jp/" },
-        { "title": "大阪大学 入試案内", "url": "https://www.osaka-u.ac.jp/ja/admissions" },
-        { "title": "パスナビ 大阪大学", "url": "https://passnavi.obunsha.co.jp/univ/0590/top/" }
-      ]
+        {
+          "title": "大阪大学 公式",
+          "url": "https://www.osaka-u.ac.jp/"
+        },
+        {
+          "title": "大阪大学 入試案内",
+          "url": "https://www.osaka-u.ac.jp/ja/admissions"
+        },
+        {
+          "title": "パスナビ 大阪大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0590/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期の2日程。理学部・工学部は数学理科重視",
+        "points": [
+          "前期日程は2月25日・26日。後期は3月12日以降。",
+          "理学部・工学部は個別試験で数学・理科の配点が高い。",
+          "共テは5教科7〜8科目型。情報科目の扱いを要項で確認。"
+        ],
+        "sources": [
+          {
+            "title": "大阪大学 入試情報",
+            "url": "https://www.osaka-u.ac.jp/ja/admissions"
+          }
+        ]
+      }
     },
     {
       "id": "tohoku-u",
@@ -124,8 +265,28 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0100/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学系", "物理系", "化学系", "地球科学系", "生物系"], "description": "研究第一の伝統で基礎科学を深く学べる。" },
-        { "name": "工学部", "departments": ["機械知能・航空工学科", "電気情報物理工学科", "化学・バイオ工学科", "材料科学総合学科", "建築・社会環境工学科"], "description": "材料・機械・情報分野に特に強い。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学系",
+            "物理系",
+            "化学系",
+            "地球科学系",
+            "生物系"
+          ],
+          "description": "研究第一の伝統で基礎科学を深く学べる。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "機械知能・航空工学科",
+            "電気情報物理工学科",
+            "化学・バイオ工学科",
+            "材料科学総合学科",
+            "建築・社会環境工学科"
+          ],
+          "description": "材料・機械・情報分野に特に強い。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目（700点満点例）を課す方式が中心。",
@@ -134,16 +295,45 @@
         "notes": "理科2科目の完成度が重要。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期で実施。後期は募集人数が少ない。" },
-        { "name": "総合型選抜（旧AO入試）", "description": "学部別に実施し、探究活動を重視。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期で実施。後期は募集人数が少ない。"
+        },
+        {
+          "name": "総合型選抜（旧AO入試）",
+          "description": "学部別に実施し、探究活動を重視。"
+        }
       ],
       "features": "研究第一・門戸開放の理念があり、理系の研究志向に非常に適した大学。理工系の研究設備が充実し、材料・半導体・情報系の実績が高い。大学院を見据えた学習設計がしやすい。",
       "career": "大学院進学率が高く、技術系総合職・研究開発職・公的研究機関への進路が太い。",
       "references": [
-        { "title": "東北大学 公式", "url": "https://www.tohoku.ac.jp/" },
-        { "title": "東北大学 入試センター", "url": "https://www.tnc.tohoku.ac.jp/" },
-        { "title": "パスナビ 東北大学", "url": "https://passnavi.obunsha.co.jp/univ/0100/top/" }
-      ]
+        {
+          "title": "東北大学 公式",
+          "url": "https://www.tohoku.ac.jp/"
+        },
+        {
+          "title": "東北大学 入試センター",
+          "url": "https://www.tnc.tohoku.ac.jp/"
+        },
+        {
+          "title": "パスナビ 東北大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0100/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜前期は5教科7科目型。AO入試（総合型）を理系でも実施",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "AO入試（総合型）は理学部・工学部でも実施し、課題論文と面接を課す。",
+          "2026年度は理系の合格最低点が大きく下がった学科がある。"
+        ],
+        "sources": [
+          {
+            "title": "東北大学 入試情報",
+            "url": "https://www.tohoku.ac.jp/japanese/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "kyushu-u",
@@ -157,8 +347,28 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0820/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["物理学科", "化学科", "地球惑星科学科", "数学科", "生物学科"], "description": "理学基礎と先端研究の接続が強い。" },
-        { "name": "工学部", "departments": ["機械工学科", "電気情報工学科", "物質科学工学科", "地球環境工学科", "建築学科"], "description": "伊都キャンパスで分野横断の学びが可能。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "物理学科",
+            "化学科",
+            "地球惑星科学科",
+            "数学科",
+            "生物学科"
+          ],
+          "description": "理学基礎と先端研究の接続が強い。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "機械工学科",
+            "電気情報工学科",
+            "物質科学工学科",
+            "地球環境工学科",
+            "建築学科"
+          ],
+          "description": "伊都キャンパスで分野横断の学びが可能。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型を基本に学部で配点設定。",
@@ -167,16 +377,45 @@
         "notes": "出願前に学部別配点表の確認が必須。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期主体。後期や特色方式は学部限定。" },
-        { "name": "総合型選抜", "description": "学部により面接・書類・課題を実施。" }
+        {
+          "name": "一般選抜",
+          "description": "前期主体。後期や特色方式は学部限定。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "学部により面接・書類・課題を実施。"
+        }
       ],
       "features": "指定国立大学で、工学・情報・理学の研究基盤が厚い。伊都キャンパスへの集約が進み、学際連携がしやすい。地方中核ながら全国・海外志向の学生に向く。",
       "career": "大学院進学後にメーカー・インフラ・IT・公的機関へ進む流れが強い。",
       "references": [
-        { "title": "九州大学 公式", "url": "https://www.kyushu-u.ac.jp/" },
-        { "title": "九州大学 入試情報", "url": "https://www.kyushu-u.ac.jp/ja/admission" },
-        { "title": "パスナビ 九州大学", "url": "https://passnavi.obunsha.co.jp/univ/0820/top/" }
-      ]
+        {
+          "title": "九州大学 公式",
+          "url": "https://www.kyushu-u.ac.jp/"
+        },
+        {
+          "title": "九州大学 入試情報",
+          "url": "https://www.kyushu-u.ac.jp/ja/admission"
+        },
+        {
+          "title": "パスナビ 九州大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0820/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。工学部は学科別配点を継続",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。理科2科目必須。",
+          "2026年度は理系の最低点が大きく低下。反動で上がる可能性あり。"
+        ],
+        "sources": [
+          {
+            "title": "九州大学 入試情報",
+            "url": "https://www.kyushu-u.ac.jp/ja/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "hokkaido-u",
@@ -190,8 +429,27 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0010/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物科学科", "地球惑星科学科"], "description": "総合入試からの進級で適性を見極めやすい。" },
-        { "name": "工学部", "departments": ["応用理工系", "情報エレクトロニクス系", "機械知能工学系", "環境社会工学系"], "description": "幅広い工学分野を北海道の拠点で学べる。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "生物科学科",
+            "地球惑星科学科"
+          ],
+          "description": "総合入試からの進級で適性を見極めやすい。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "応用理工系",
+            "情報エレクトロニクス系",
+            "機械知能工学系",
+            "環境社会工学系"
+          ],
+          "description": "幅広い工学分野を北海道の拠点で学べる。"
+        }
       ],
       "exam_general": {
         "common_test": "総合入試理系は6〜7教科8〜9科目型が主流。",
@@ -200,16 +458,45 @@
         "notes": "総合入試の仕組みと進級条件の確認が重要。"
       },
       "exam_methods": [
-        { "name": "一般選抜（総合入試）", "description": "文系・理系枠で入学し、後に学部移行。" },
-        { "name": "学校推薦型選抜", "description": "一部学部で実施。" }
+        {
+          "name": "一般選抜（総合入試）",
+          "description": "文系・理系枠で入学し、後に学部移行。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "一部学部で実施。"
+        }
       ],
       "features": "総合入試制度で、入学後に進路を柔軟に決めたい理系生徒に向く。基礎科学・農学・工学の連携が強く、広いキャンパスで研究に集中できる。生活コスト面でも首都圏より抑えやすい。",
       "career": "大学院進学率が高く、北海道内外の企業研究職や公務技術職に強い。",
       "references": [
-        { "title": "北海道大学 公式", "url": "https://www.hokudai.ac.jp/" },
-        { "title": "北海道大学 入試", "url": "https://www.hokudai.ac.jp/admission/" },
-        { "title": "パスナビ 北海道大学", "url": "https://passnavi.obunsha.co.jp/univ/0010/top/" }
-      ]
+        {
+          "title": "北海道大学 公式",
+          "url": "https://www.hokudai.ac.jp/"
+        },
+        {
+          "title": "北海道大学 入試",
+          "url": "https://www.hokudai.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 北海道大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0010/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。総合型選抜（AO）を理系で拡大",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "総合型選抜は理学部・工学部・農学部でも実施。",
+          "共テは5教科7科目型が基本。"
+        ],
+        "sources": [
+          {
+            "title": "北海道大学 入試情報",
+            "url": "https://www.hokudai.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "tokyo-u",
@@ -223,8 +510,33 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0220/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学科", "情報科学科", "物理学科", "天文学科", "地球惑星物理学科", "地球惑星環境学科", "化学科", "生物化学科", "生物学科"], "description": "進学振分け後に専門を選び、研究密度が高い。" },
-        { "name": "工学部", "departments": ["機械工学科", "電気電子工学科", "計数工学科", "物理工学科", "化学システム工学科", "建築学科"], "description": "基礎力と先端分野を両立した教育が特徴。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学科",
+            "情報科学科",
+            "物理学科",
+            "天文学科",
+            "地球惑星物理学科",
+            "地球惑星環境学科",
+            "化学科",
+            "生物化学科",
+            "生物学科"
+          ],
+          "description": "進学振分け後に専門を選び、研究密度が高い。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "機械工学科",
+            "電気電子工学科",
+            "計数工学科",
+            "物理工学科",
+            "化学システム工学科",
+            "建築学科"
+          ],
+          "description": "基礎力と先端分野を両立した教育が特徴。"
+        }
       ],
       "exam_general": {
         "common_test": "文理とも6〜7教科8〜9科目。第一段階選抜に活用。",
@@ -233,16 +545,45 @@
         "notes": "最難関のため高完成度の総合学力が必要。"
       },
       "exam_methods": [
-        { "name": "一般選抜（前期）", "description": "共通テスト＋二次記述の一発勝負型。" },
-        { "name": "学校推薦型選抜", "description": "学部別に実施。活動実績と学術適性を重視。" }
+        {
+          "name": "一般選抜（前期）",
+          "description": "共通テスト＋二次記述の一発勝負型。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "学部別に実施。活動実績と学術適性を重視。"
+        }
       ],
       "features": "国内最高峰の研究環境で、基礎から最先端まで学習資源が圧倒的に多い。教養課程から専門課程へ移る制度により、広い視野で理系進路を設計できる。学問への主体性が求められる。",
       "career": "大学院進学、研究職、外資・コンサル・官公庁など進路の幅が非常に広い。",
       "references": [
-        { "title": "東京大学 公式", "url": "https://www.u-tokyo.ac.jp/" },
-        { "title": "東京大学 入試", "url": "https://www.u-tokyo.ac.jp/ja/admissions/index.html" },
-        { "title": "パスナビ 東京大学", "url": "https://passnavi.obunsha.co.jp/univ/0220/top/" }
-      ]
+        {
+          "title": "東京大学 公式",
+          "url": "https://www.u-tokyo.ac.jp/"
+        },
+        {
+          "title": "東京大学 入試",
+          "url": "https://www.u-tokyo.ac.jp/ja/admissions/index.html"
+        },
+        {
+          "title": "パスナビ 東京大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0220/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。理科は2科目必須、情報科目の扱いに注意",
+        "points": [
+          "前期日程は2月25日・26日。後期は3月12日以降。",
+          "共テは6教科8科目型（情報を含む）。",
+          "学校推薦型選抜は共通テストを課す方式。"
+        ],
+        "sources": [
+          {
+            "title": "東京大学 入試情報",
+            "url": "https://www.u-tokyo.ac.jp/ja/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "science-tokyo",
@@ -256,8 +597,27 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0280/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学院", "departments": ["数学系", "物理学系", "化学系", "地球惑星科学系"], "description": "旧東工大の理学教育を継承し基礎科学が強い。" },
-        { "name": "工学院", "departments": ["機械系", "システム制御系", "電気電子系", "情報通信系", "経営工学系"], "description": "理工融合と産学連携を重視。" }
+        {
+          "name": "理学院",
+          "departments": [
+            "数学系",
+            "物理学系",
+            "化学系",
+            "地球惑星科学系"
+          ],
+          "description": "旧東工大の理学教育を継承し基礎科学が強い。"
+        },
+        {
+          "name": "工学院",
+          "departments": [
+            "機械系",
+            "システム制御系",
+            "電気電子系",
+            "情報通信系",
+            "経営工学系"
+          ],
+          "description": "理工融合と産学連携を重視。"
+        }
       ],
       "exam_general": {
         "common_test": "理工系は共通テスト＋個別試験の組み合わせ。",
@@ -266,16 +626,45 @@
         "notes": "統合後の制度変更があるため年度要項必須。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "学院ごとに選抜。理工系は記述力重視。" },
-        { "name": "総合型選抜", "description": "理工探究や課題研究経験を評価する方式あり。" }
+        {
+          "name": "一般選抜",
+          "description": "学院ごとに選抜。理工系は記述力重視。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "理工探究や課題研究経験を評価する方式あり。"
+        }
       ],
       "features": "旧東京工業大学と旧東京医科歯科大学の統合で、理工・医工連携の新しい環境が強み。数学・物理ベースの工学を深めたい生徒に向く。研究志向の高い学習者に適した大学。",
       "career": "大学院進学後に研究開発・IT・半導体・医工連携分野で高い就職実績。",
       "references": [
-        { "title": "東京科学大学 公式", "url": "https://www.isct.ac.jp/" },
-        { "title": "東京科学大学 入試情報", "url": "https://www.isct.ac.jp/ja/admissions" },
-        { "title": "パスナビ 東京科学大学", "url": "https://passnavi.obunsha.co.jp/univ/0280/top/" }
-      ]
+        {
+          "title": "東京科学大学 公式",
+          "url": "https://www.isct.ac.jp/"
+        },
+        {
+          "title": "東京科学大学 入試情報",
+          "url": "https://www.isct.ac.jp/ja/admissions"
+        },
+        {
+          "title": "パスナビ 東京科学大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0280/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。学院・系の区分に沿って募集",
+        "points": [
+          "東京工業大学と東京医科歯科大学の統合（2024年10月）後の区分で募集。",
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。数学・理科の配点が高い。"
+        ],
+        "sources": [
+          {
+            "title": "東京科学大学 入試情報",
+            "url": "https://www.isct.ac.jp/ja/admissions"
+          }
+        ]
+      }
     },
     {
       "id": "tsukuba-u",
@@ -289,8 +678,27 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0160/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理工学群", "departments": ["数学類", "物理学類", "化学類", "応用理工学類", "工学システム学類", "社会工学類"], "description": "学群制で専門選択の幅が広い。" },
-        { "name": "生命環境学群", "departments": ["生物学類", "生物資源学類", "地球学類"], "description": "理学と応用分野の橋渡しがしやすい。" }
+        {
+          "name": "理工学群",
+          "departments": [
+            "数学類",
+            "物理学類",
+            "化学類",
+            "応用理工学類",
+            "工学システム学類",
+            "社会工学類"
+          ],
+          "description": "学群制で専門選択の幅が広い。"
+        },
+        {
+          "name": "生命環境学群",
+          "departments": [
+            "生物学類",
+            "生物資源学類",
+            "地球学類"
+          ],
+          "description": "理学と応用分野の橋渡しがしやすい。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目を基本に学群別設定。",
@@ -299,16 +707,45 @@
         "notes": "総合選抜区分の条件確認が重要。"
       },
       "exam_methods": [
-        { "name": "一般選抜（前期・後期）", "description": "学群・学類ごとに試験内容が異なる。" },
-        { "name": "総合選抜", "description": "入学後の進路選択に柔軟性がある方式。" }
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "学群・学類ごとに試験内容が異なる。"
+        },
+        {
+          "name": "総合選抜",
+          "description": "入学後の進路選択に柔軟性がある方式。"
+        }
       ],
       "features": "研究学園都市の立地を活かし、理系分野の外部連携が非常に豊富。学群・学類制度により、進路を段階的に絞れる点が理系高校生に好相性。情報・理工・生命分野のバランスが良い。",
       "career": "大学院進学と企業就職の両ルートが強く、情報系・研究職への接続が良い。",
       "references": [
-        { "title": "筑波大学 公式", "url": "https://www.tsukuba.ac.jp/" },
-        { "title": "筑波大学 入試情報", "url": "https://www.tsukuba.ac.jp/admission/" },
-        { "title": "パスナビ 筑波大学", "url": "https://passnavi.obunsha.co.jp/univ/0160/top/" }
-      ]
+        {
+          "title": "筑波大学 公式",
+          "url": "https://www.tsukuba.ac.jp/"
+        },
+        {
+          "title": "筑波大学 入試情報",
+          "url": "https://www.tsukuba.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 筑波大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0160/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。理工学群は学類単位で募集",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "理工学群は学類（数学類・物理学類・化学類・工学システム学類等）単位で募集。",
+          "共テは5教科7科目型。"
+        ],
+        "sources": [
+          {
+            "title": "筑波大学 入試情報",
+            "url": "https://www.tsukuba.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "kobe-u",
@@ -322,8 +759,28 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0620/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物学科", "惑星学科"], "description": "基礎科学教育と少人数指導に定評。" },
-        { "name": "工学部", "departments": ["建築学科", "市民工学科", "電気電子工学科", "機械工学科", "応用化学科"], "description": "都市・社会課題に近い工学教育が特色。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "生物学科",
+            "惑星学科"
+          ],
+          "description": "基礎科学教育と少人数指導に定評。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "建築学科",
+            "市民工学科",
+            "電気電子工学科",
+            "機械工学科",
+            "応用化学科"
+          ],
+          "description": "都市・社会課題に近い工学教育が特色。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型中心。",
@@ -332,16 +789,45 @@
         "notes": "後期の募集は限定的。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期主体。学部で科目・配点差あり。" },
-        { "name": "総合型選抜", "description": "学部別に実施し、学力と適性を総合評価。" }
+        {
+          "name": "一般選抜",
+          "description": "前期主体。学部で科目・配点差あり。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "学部別に実施し、学力と適性を総合評価。"
+        }
       ],
       "features": "旧商大系の強みを持ちながら理工・海洋・情報まで幅広い総合大学。都市圏で研究と実社会接続を同時に学びやすい。理系でも社会実装志向の学びを取り入れやすい。",
       "career": "大学院進学後のメーカー・インフラ・IT就職に強く、関西圏ネットワークが太い。",
       "references": [
-        { "title": "神戸大学 公式", "url": "https://www.kobe-u.ac.jp/" },
-        { "title": "神戸大学 入試情報", "url": "https://www.kobe-u.ac.jp/ja/admissions/" },
-        { "title": "パスナビ 神戸大学", "url": "https://passnavi.obunsha.co.jp/univ/0620/top/" }
-      ]
+        {
+          "title": "神戸大学 公式",
+          "url": "https://www.kobe-u.ac.jp/"
+        },
+        {
+          "title": "神戸大学 入試情報",
+          "url": "https://www.kobe-u.ac.jp/ja/admissions/"
+        },
+        {
+          "title": "パスナビ 神戸大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0620/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。理学部・工学部は数学理科重視",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。",
+          "推薦入試（学校推薦型）は共通テストを課す方式が中心。"
+        ],
+        "sources": [
+          {
+            "title": "神戸大学 入試情報",
+            "url": "https://www.kobe-u.ac.jp/ja/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "yokohama-nu",
@@ -355,8 +841,24 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0340/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理工学部", "departments": ["機械・材料・海洋系学科群", "化学・生命系学科群", "数物・電子情報系学科群"], "description": "学科群制で分野選択の柔軟性がある。" },
-        { "name": "都市科学部", "departments": ["建築学科", "都市基盤学科", "環境リスク共生学科"], "description": "都市課題と工学を結び付けた教育。"}
+        {
+          "name": "理工学部",
+          "departments": [
+            "機械・材料・海洋系学科群",
+            "化学・生命系学科群",
+            "数物・電子情報系学科群"
+          ],
+          "description": "学科群制で分野選択の柔軟性がある。"
+        },
+        {
+          "name": "都市科学部",
+          "departments": [
+            "建築学科",
+            "都市基盤学科",
+            "環境リスク共生学科"
+          ],
+          "description": "都市課題と工学を結び付けた教育。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型を中心に学部で設定。",
@@ -365,16 +867,45 @@
         "notes": "出願時に学科群ごとの条件確認が必須。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期で実施。後期は高倍率になりやすい。" },
-        { "name": "学校推薦型選抜", "description": "理工で実施区分あり。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期で実施。後期は高倍率になりやすい。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "理工で実施区分あり。"
+        }
       ],
       "features": "首都圏国立の中で理工学部の評価が高く、難易度も高い。情報・電子・材料系に強く、都市系との接続もある。研究と就職のバランスを取りたい理系に向く。",
       "career": "大学院進学、首都圏メーカー・IT・インフラ企業への就職実績が高い。",
       "references": [
-        { "title": "横浜国立大学 公式", "url": "https://www.ynu.ac.jp/" },
-        { "title": "横浜国立大学 入試", "url": "https://www.ynu.ac.jp/admission/" },
-        { "title": "パスナビ 横浜国立大学", "url": "https://passnavi.obunsha.co.jp/univ/0340/top/" }
-      ]
+        {
+          "title": "横浜国立大学 公式",
+          "url": "https://www.ynu.ac.jp/"
+        },
+        {
+          "title": "横浜国立大学 入試",
+          "url": "https://www.ynu.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 横浜国立大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0340/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。理工学部は数学・理科の配点が高い",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。",
+          "都市科学部など文理融合の学部もある。"
+        ],
+        "sources": [
+          {
+            "title": "横浜国立大学 入試情報",
+            "url": "https://www.ynu.ac.jp/exam/"
+          }
+        ]
+      }
     },
     {
       "id": "osaka-metropolitan-u",
@@ -388,8 +919,31 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/1205/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物学科", "地球学科"], "description": "公立大として研究規模が大きく理系教育が手厚い。" },
-        { "name": "工学部", "departments": ["航空宇宙工学科", "海洋システム工学科", "機械工学科", "電子物理工学科", "情報工学科", "化学工学科", "建築学科", "都市学科"], "description": "旧大阪市立大・府立大の工学資源を統合。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "生物学科",
+            "地球学科"
+          ],
+          "description": "公立大として研究規模が大きく理系教育が手厚い。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "航空宇宙工学科",
+            "海洋システム工学科",
+            "機械工学科",
+            "電子物理工学科",
+            "情報工学科",
+            "化学工学科",
+            "建築学科",
+            "都市学科"
+          ],
+          "description": "旧大阪市立大・府立大の工学資源を統合。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型を基本。",
@@ -398,16 +952,45 @@
         "notes": "公立大のため共通テスト比率が高い学部もある。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期で実施。学部により科目差あり。" },
-        { "name": "学校推薦型選抜", "description": "一部学部で実施。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期で実施。学部により科目差あり。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "一部学部で実施。"
+        }
       ],
       "features": "統合後の大型公立大で、理系分野の選択肢が非常に広い。学費面の優位性と研究規模を両立できる点が魅力。関西でコストを抑えつつ高水準を狙う受験生に適している。",
       "career": "大学院進学や関西圏メーカー・自治体技術職への進路が強い。",
       "references": [
-        { "title": "大阪公立大学 公式", "url": "https://www.omu.ac.jp/" },
-        { "title": "大阪公立大学 入試", "url": "https://www.omu.ac.jp/admissions/" },
-        { "title": "パスナビ 大阪公立大学", "url": "https://passnavi.obunsha.co.jp/univ/1205/top/" }
-      ]
+        {
+          "title": "大阪公立大学 公式",
+          "url": "https://www.omu.ac.jp/"
+        },
+        {
+          "title": "大阪公立大学 入試",
+          "url": "https://www.omu.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 大阪公立大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/1205/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・中期・後期。理学部・工学部は学科別配点",
+        "points": [
+          "大阪府立大学と大阪市立大学の統合（2022年4月）後の体制で募集。",
+          "前期日程は2月25日・26日。中期日程も実施。",
+          "共テは5教科7科目型。"
+        ],
+        "sources": [
+          {
+            "title": "大阪公立大学 入試情報",
+            "url": "https://www.omu.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "tus",
@@ -421,8 +1004,28 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2880/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部第一部", "departments": ["数学科", "物理学科", "化学科", "応用数学科", "応用化学科"], "description": "理学教育の伝統が強く、学力要求水準が高い。" },
-        { "name": "工学部・創域理工学部・先進工学部", "departments": ["機械工学科", "電気工学科", "情報工学科", "建築学科", "生命システム工学科"], "description": "私大理工系の中で研究志向が強い。" }
+        {
+          "name": "理学部第一部",
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "応用数学科",
+            "応用化学科"
+          ],
+          "description": "理学教育の伝統が強く、学力要求水準が高い。"
+        },
+        {
+          "name": "工学部・創域理工学部・先進工学部",
+          "departments": [
+            "機械工学科",
+            "電気工学科",
+            "情報工学科",
+            "建築学科",
+            "生命システム工学科"
+          ],
+          "description": "私大理工系の中で研究志向が強い。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式（A方式）と個別試験（B方式）を併用。",
@@ -431,16 +1034,45 @@
         "notes": "方式が多いため併願設計が重要。"
       },
       "exam_methods": [
-        { "name": "一般選抜B方式", "description": "個別学力試験中心の方式。" },
-        { "name": "共通テスト利用A方式", "description": "共テ成績で判定する方式。" }
+        {
+          "name": "一般選抜B方式",
+          "description": "個別学力試験中心の方式。"
+        },
+        {
+          "name": "共通テスト利用A方式",
+          "description": "共テ成績で判定する方式。"
+        }
       ],
       "features": "私立理工系の中でも学修密度が高く、基礎学力を厳しく鍛える大学として有名。理系科目で勝負したい受験生に向く。研究室配属後の伸びが大きい。",
       "career": "大学院進学率が高く、技術職・研究職での企業評価が安定して高い。",
       "references": [
-        { "title": "東京理科大学 公式", "url": "https://www.tus.ac.jp/" },
-        { "title": "東京理科大学 入試情報", "url": "https://www.tus.ac.jp/admissions/" },
-        { "title": "パスナビ 東京理科大学", "url": "https://passnavi.obunsha.co.jp/univ/2880/top/" }
-      ]
+        {
+          "title": "東京理科大学 公式",
+          "url": "https://www.tus.ac.jp/"
+        },
+        {
+          "title": "東京理科大学 入試情報",
+          "url": "https://www.tus.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 東京理科大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/2880/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜はA方式・B方式・共通テスト利用型。理学部・工学部は数学理科重視",
+        "points": [
+          "A方式（個別試験型）は2月上旬〜中旬に複数日程。",
+          "B方式（共通テスト利用型）は共テの結果のみで判定。",
+          "理学部第一部・工学部は数学・理科の配点が高い。"
+        ],
+        "sources": [
+          {
+            "title": "東京理科大学 入試情報",
+            "url": "https://www.tus.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "waseda",
@@ -454,8 +1086,29 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3190/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "基幹理工学部", "departments": ["数学科", "応用数理学科", "情報理工学科", "機械科学・航空宇宙学科", "電子物理システム学科", "表現工学科"], "description": "理論から情報・機械まで幅広く高水準。" },
-        { "name": "創造理工学部・先進理工学部", "departments": ["建築学科", "総合機械工学科", "電気・情報生命工学科", "応用化学科", "生命医科学科"], "description": "理工系3学部体制で選択肢が非常に多い。" }
+        {
+          "name": "基幹理工学部",
+          "departments": [
+            "数学科",
+            "応用数理学科",
+            "情報理工学科",
+            "機械科学・航空宇宙学科",
+            "電子物理システム学科",
+            "表現工学科"
+          ],
+          "description": "理論から情報・機械まで幅広く高水準。"
+        },
+        {
+          "name": "創造理工学部・先進理工学部",
+          "departments": [
+            "建築学科",
+            "総合機械工学科",
+            "電気・情報生命工学科",
+            "応用化学科",
+            "生命医科学科"
+          ],
+          "description": "理工系3学部体制で選択肢が非常に多い。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式と一般方式を併用。",
@@ -464,16 +1117,45 @@
         "notes": "理工は数学・理科・英語の完成度が鍵。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "学部独自問題で合否判定。" },
-        { "name": "共通テスト利用入試", "description": "共通テスト＋学部条件で判定。" }
+        {
+          "name": "一般選抜",
+          "description": "学部独自問題で合否判定。"
+        },
+        {
+          "name": "共通テスト利用入試",
+          "description": "共通テスト＋学部条件で判定。"
+        }
       ],
       "features": "私立難関として理工系の研究規模が大きく、学部数が多い。首都圏の産業界との接続が強く、就職ネットワークも広い。学際領域に関心がある理系生徒にも適する。",
       "career": "大学院進学と大手企業就職の双方に強く、IT・メーカー・コンサル進路が目立つ。",
       "references": [
-        { "title": "早稲田大学 公式", "url": "https://www.waseda.jp/" },
-        { "title": "早稲田大学 入学センター", "url": "https://www.waseda.jp/inst/admission/" },
-        { "title": "パスナビ 早稲田大学", "url": "https://passnavi.obunsha.co.jp/univ/3190/top/" }
-      ]
+        {
+          "title": "早稲田大学 公式",
+          "url": "https://www.waseda.jp/"
+        },
+        {
+          "title": "早稲田大学 入学センター",
+          "url": "https://www.waseda.jp/inst/admission/"
+        },
+        {
+          "title": "パスナビ 早稲田大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3190/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は学部別。基幹理工・創造理工・先進理工は数学理科重視",
+        "points": [
+          "一般選抜は学部ごとに試験日・科目が異なる（2月上旬〜中旬）。",
+          "理工3学部は数学・理科（物理・化学）の配点が高い。",
+          "共通テスト利用型も実施。"
+        ],
+        "sources": [
+          {
+            "title": "早稲田大学 入試情報",
+            "url": "https://www.waseda.jp/inst/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "keio",
@@ -487,8 +1169,26 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2370/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理工学部", "departments": ["機械工学科", "電気情報工学科", "応用化学科", "管理工学科", "物理情報工学科", "生命情報学科"], "description": "理工融合型で研究・産業接続が強い。" },
-        { "name": "薬学部", "departments": ["薬学科", "薬科学科"], "description": "医療系・創薬系進路に強み。" }
+        {
+          "name": "理工学部",
+          "departments": [
+            "機械工学科",
+            "電気情報工学科",
+            "応用化学科",
+            "管理工学科",
+            "物理情報工学科",
+            "生命情報学科"
+          ],
+          "description": "理工融合型で研究・産業接続が強い。"
+        },
+        {
+          "name": "薬学部",
+          "departments": [
+            "薬学科",
+            "薬科学科"
+          ],
+          "description": "医療系・創薬系進路に強み。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用は学部限定。一般は学部独自。",
@@ -497,16 +1197,45 @@
         "notes": "方式ごと傾向差が大きい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "学部別問題で判定。" },
-        { "name": "学校推薦型・総合型", "description": "学部によって実施。" }
+        {
+          "name": "一般選抜",
+          "description": "学部別問題で判定。"
+        },
+        {
+          "name": "学校推薦型・総合型",
+          "description": "学部によって実施。"
+        }
       ],
       "features": "私学トップ層として理工・経済・医学系の連携が強い。学部横断で実践プロジェクトに参加しやすく、研究と社会実装を同時に経験できる。難易度は高いが、進路の広さが魅力。",
       "career": "理工系は大学院進学と大手企業就職の双方で高実績を維持。",
       "references": [
-        { "title": "慶應義塾大学 公式", "url": "https://www.keio.ac.jp/" },
-        { "title": "慶應義塾大学 入試情報", "url": "https://www.keio.ac.jp/ja/admissions/" },
-        { "title": "パスナビ 慶應義塾大学", "url": "https://passnavi.obunsha.co.jp/univ/2370/top/" }
-      ]
+        {
+          "title": "慶應義塾大学 公式",
+          "url": "https://www.keio.ac.jp/"
+        },
+        {
+          "title": "慶應義塾大学 入試情報",
+          "url": "https://www.keio.ac.jp/ja/admissions/"
+        },
+        {
+          "title": "パスナビ 慶應義塾大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/2370/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は学部別。理工学部は数学・理科・英語",
+        "points": [
+          "一般選抜は学部ごとに試験日が異なる（2月中旬）。",
+          "理工学部は数学・物理・化学・英語の4科目。",
+          "医学部は共テ＋個別試験。"
+        ],
+        "sources": [
+          {
+            "title": "慶應義塾大学 入試情報",
+            "url": "https://www.keio.ac.jp/ja/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "nitech",
@@ -520,7 +1249,17 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0510/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "工学部", "departments": ["生命・応用化学科", "物理工学科", "電気・機械工学科", "情報工学科", "社会工学科"], "description": "工学特化型で理系に集中しやすい。" }
+        {
+          "name": "工学部",
+          "departments": [
+            "生命・応用化学科",
+            "物理工学科",
+            "電気・機械工学科",
+            "情報工学科",
+            "社会工学科"
+          ],
+          "description": "工学特化型で理系に集中しやすい。"
+        }
       ],
       "exam_general": {
         "common_test": "6教科8科目（450点換算例）を課す方式が中心。",
@@ -529,16 +1268,45 @@
         "notes": "愛知県内理系志望の第一志望・併願先として人気。"
       },
       "exam_methods": [
-        { "name": "一般選抜（前期・後期）", "description": "前期は個別比重、後期は共テ重視傾向。" },
-        { "name": "学校推薦型選抜", "description": "共テを課す方式中心。" }
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "前期は個別比重、後期は共テ重視傾向。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "共テを課す方式中心。"
+        }
       ],
       "features": "工学単科系のため、理系科目で勝負しやすい。研究室配属後の実践機会が多く、ものづくり志向に向く。地元企業との連携も非常に強い。",
       "career": "工学系の大学院進学と、自動車・電機・素材系への就職の双方に実績がある。学科別の進学率・就職先は大学公式資料で確認。",
       "references": [
-        { "title": "名古屋工業大学 公式", "url": "https://www.nitech.ac.jp/" },
-        { "title": "名古屋工業大学 入試", "url": "https://www.nitech.ac.jp/admission/" },
-        { "title": "パスナビ 名古屋工業大学", "url": "https://passnavi.obunsha.co.jp/univ/0510/top/" }
-      ]
+        {
+          "title": "名古屋工業大学 公式",
+          "url": "https://www.nitech.ac.jp/"
+        },
+        {
+          "title": "名古屋工業大学 入試",
+          "url": "https://www.nitech.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 名古屋工業大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0510/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 工学部（2026年度から学科を再編）。前期・後期で募集",
+        "points": [
+          "2026年度入試から学科再編を実施（工学部の学科構成が変更）。",
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。数学・理科の配点が高い。"
+        ],
+        "sources": [
+          {
+            "title": "名古屋工業大学 入試日程",
+            "url": "https://www.nitech.ac.jp/examination/gakubu/schedule.html"
+          }
+        ]
+      }
     },
     {
       "id": "gifu-u",
@@ -551,8 +1319,25 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0460/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "工学部", "departments": ["社会基盤工学科", "機械工学科", "電気電子・情報工学科", "化学・生命工学科"], "description": "地域課題と連動した実学志向。" },
-        { "name": "応用生物科学部", "departments": ["応用生命化学科", "食農生命科学科", "生物圏環境科学科"], "description": "生物・化学系の進路に適する。" }
+        {
+          "name": "工学部",
+          "departments": [
+            "社会基盤工学科",
+            "機械工学科",
+            "電気電子・情報工学科",
+            "化学・生命工学科"
+          ],
+          "description": "地域課題と連動した実学志向。"
+        },
+        {
+          "name": "応用生物科学部",
+          "departments": [
+            "応用生命化学科",
+            "食農生命科学科",
+            "生物圏環境科学科"
+          ],
+          "description": "生物・化学系の進路に適する。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型中心。",
@@ -561,16 +1346,45 @@
         "notes": "後期募集は人数が少ない。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期で実施。" },
-        { "name": "学校推薦型選抜", "description": "学部ごとに条件が異なる。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期で実施。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "学部ごとに条件が異なる。"
+        }
       ],
       "features": "東海圏の国立としてバランスが良く、学費と教育水準の両立がしやすい。工学・生物系の進路選択肢が豊富で、地元志向の理系受験生に向く。落ち着いた学習環境がある。",
       "career": "東海圏企業・公務技術職・大学院進学の実績が安定。",
       "references": [
-        { "title": "岐阜大学 公式", "url": "https://www.gifu-u.ac.jp/" },
-        { "title": "岐阜大学 入試", "url": "https://www.gifu-u.ac.jp/admission/" },
-        { "title": "パスナビ 岐阜大学", "url": "https://passnavi.obunsha.co.jp/univ/0460/top/" }
-      ]
+        {
+          "title": "岐阜大学 公式",
+          "url": "https://www.gifu-u.ac.jp/"
+        },
+        {
+          "title": "岐阜大学 入試",
+          "url": "https://www.gifu-u.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 岐阜大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0460/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。工学部・応用生物科学部は数学理科重視",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。",
+          "2027年度の変更点は河合塾Kei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "岐阜大学 入試情報",
+            "url": "https://www.gifu-u.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "shizuoka-u",
@@ -583,8 +1397,28 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0470/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理学部", "departments": ["数学科", "物理学科", "化学科", "生物科学科", "地球科学科"], "description": "理学基礎を体系的に学べる。" },
-        { "name": "工学部", "departments": ["機械工学科", "電気電子工学科", "電子物質科学科", "化学バイオ工学科", "数理システム工学科"], "description": "浜松地域の産業と連携が強い。" }
+        {
+          "name": "理学部",
+          "departments": [
+            "数学科",
+            "物理学科",
+            "化学科",
+            "生物科学科",
+            "地球科学科"
+          ],
+          "description": "理学基礎を体系的に学べる。"
+        },
+        {
+          "name": "工学部",
+          "departments": [
+            "機械工学科",
+            "電気電子工学科",
+            "電子物質科学科",
+            "化学バイオ工学科",
+            "数理システム工学科"
+          ],
+          "description": "浜松地域の産業と連携が強い。"
+        }
       ],
       "exam_general": {
         "common_test": "6〜7教科8科目型。",
@@ -593,16 +1427,45 @@
         "notes": "学部により後期実施あり。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期の複数方式。" },
-        { "name": "学校推薦型選抜", "description": "学科別に実施。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期の複数方式。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "学科別に実施。"
+        }
       ],
       "features": "理学部と工学部の距離が近く、基礎と応用の往復がしやすい。浜松の工学教育は実践色が強く、就職にも直結しやすい。地方国立としてコストパフォーマンスが高い。",
       "career": "製造業・インフラ・情報系の就職に強く、大学院進学も一定数ある。",
       "references": [
-        { "title": "静岡大学 公式", "url": "https://www.shizuoka.ac.jp/" },
-        { "title": "静岡大学 入試", "url": "https://www.shizuoka.ac.jp/admissions/" },
-        { "title": "パスナビ 静岡大学", "url": "https://passnavi.obunsha.co.jp/univ/0470/top/" }
-      ]
+        {
+          "title": "静岡大学 公式",
+          "url": "https://www.shizuoka.ac.jp/"
+        },
+        {
+          "title": "静岡大学 入試",
+          "url": "https://www.shizuoka.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 静岡大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0470/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。理学部・工学部は学科別配点",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型。",
+          "静岡大学は2027年度の入試変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "静岡大学 入試情報",
+            "url": "https://www.shizuoka.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "aichi-edu",
@@ -615,7 +1478,16 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0500/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "教育学部（理科・数学系）", "departments": ["義務教育専攻 理科専修", "義務教育専攻 算数・数学専修", "高等学校教育専攻 理科専修", "高等学校教育専攻 数学専修"], "description": "理科・数学の教員養成に特化した学び。" }
+        {
+          "name": "教育学部（理科・数学系）",
+          "departments": [
+            "義務教育専攻 理科専修",
+            "義務教育専攻 算数・数学専修",
+            "高等学校教育専攻 理科専修",
+            "高等学校教育専攻 数学専修"
+          ],
+          "description": "理科・数学の教員養成に特化した学び。"
+        }
       ],
       "exam_general": {
         "common_test": "教員養成課程で6教科型中心。",
@@ -624,16 +1496,45 @@
         "notes": "教員志望の明確さが重要。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "専攻別試験で選抜。" },
-        { "name": "学校推薦型選抜", "description": "面接・書類中心の方式あり。" }
+        {
+          "name": "一般選抜",
+          "description": "専攻別試験で選抜。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "面接・書類中心の方式あり。"
+        }
       ],
       "features": "教員養成に強い大学で、理科・数学教員を目指す理系生徒に適している。教育実習・学校現場連携が豊富で、教職志望に必要な経験を積みやすい。研究より教育実践寄りの環境。",
       "career": "教員採用試験への進路が中心。自治体学校現場への就職実績が高い。",
       "references": [
-        { "title": "愛知教育大学 公式", "url": "https://www.aichi-edu.ac.jp/" },
-        { "title": "愛知教育大学 入試", "url": "https://www.aichi-edu.ac.jp/exam/" },
-        { "title": "パスナビ 愛知教育大学", "url": "https://passnavi.obunsha.co.jp/univ/0500/top/" }
-      ]
+        {
+          "title": "愛知教育大学 公式",
+          "url": "https://www.aichi-edu.ac.jp/"
+        },
+        {
+          "title": "愛知教育大学 入試",
+          "url": "https://www.aichi-edu.ac.jp/exam/"
+        },
+        {
+          "title": "パスナビ 愛知教育大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/0500/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は前期・後期。学校教育教員養成課程は面接を課す",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "共テは5教科7科目型が基本。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "愛知教育大学 入試情報",
+            "url": "https://www.aichi-edu.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "meijo-u",
@@ -644,10 +1545,35 @@
       "official_url": "https://www.meijo-u.ac.jp/",
       "admissions_url": "https://www.meijo-u.ac.jp/admission/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3850/top/",
-      "koromodai_record": { "r7": 1, "r6": 3, "r5": 2, "total": 6 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 3,
+        "r5": 2,
+        "total": 6
+      },
       "science_faculties": [
-        { "name": "理工学部", "departments": ["数学科", "電気電子工学科", "材料機能工学科", "機械工学科", "交通機械工学科", "メカトロニクス工学科", "社会基盤デザイン工学科", "環境創造工学科", "建築学科"], "description": "私大理工系として学科数が多い。" },
-        { "name": "情報工学部", "departments": ["情報工学科"], "description": "情報系を集中的に学べる。" }
+        {
+          "name": "理工学部",
+          "departments": [
+            "数学科",
+            "電気電子工学科",
+            "材料機能工学科",
+            "機械工学科",
+            "交通機械工学科",
+            "メカトロニクス工学科",
+            "社会基盤デザイン工学科",
+            "環境創造工学科",
+            "建築学科"
+          ],
+          "description": "私大理工系として学科数が多い。"
+        },
+        {
+          "name": "情報工学部",
+          "departments": [
+            "情報工学科"
+          ],
+          "description": "情報系を集中的に学べる。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式あり。",
@@ -656,16 +1582,53 @@
         "notes": "方式数が多いため受験戦略を立てやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期中心で複数日程。" },
-        { "name": "共通テスト利用", "description": "科目型を選択して判定。" }
+        {
+          "name": "一般選抜",
+          "description": "前期中心で複数日程。"
+        },
+        {
+          "name": "共通テスト利用",
+          "description": "科目型を選択して判定。"
+        }
       ],
       "features": "東海私大理工系の中核で、理工・情報の規模が大きい。実験設備や就職支援が充実し、地元就職にも強い。現実的な難易度で理系学部を狙える。",
       "career": "地元メーカー・建設・情報系企業への就職実績が高い。",
       "references": [
-        { "title": "名城大学 公式", "url": "https://www.meijo-u.ac.jp/" },
-        { "title": "名城大学 入試", "url": "https://www.meijo-u.ac.jp/admission/" },
-        { "title": "パスナビ 名城大学", "url": "https://passnavi.obunsha.co.jp/univ/3850/top/" }
-      ]
+        {
+          "title": "名城大学 公式",
+          "url": "https://www.meijo-u.ac.jp/"
+        },
+        {
+          "title": "名城大学 入試",
+          "url": "https://www.meijo-u.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 名城大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3850/top/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年度から一般選抜が大きく変わる（試験日4日間・数学重視型を新設）",
+        "points": [
+          "一般選抜の試験日が3日間から4日間（2月1日〜2月4日）に拡大し、最大4日連続で受験できる。",
+          "試験会場が全国18会場に拡大し、新たに岐阜会場が加わった。",
+          "共通テスト利用型C方式（前期）に4教科型を新設（従来は3教科型・5教科型）。",
+          "理系学部（都市情報・情報工・理工・農・薬）を対象に「数学重視型」を新設。スタンダード方式は数学と国語のみで受験でき、数学の配点が国語の2倍。",
+          "全学部で新しい総合型選抜がスタート（理工は数学実績評価、農は探究活動プレゼンテーション、薬は研究成果発表など）。",
+          "東海4県（愛知・岐阜・三重・静岡）以外の在住者向けに「きたれ！創造型実学応援校友会奨学金」（月3万円の家賃補助）を新設。"
+        ],
+        "sources": [
+          {
+            "title": "名城大学 受験しやすくなった新一般選抜",
+            "url": "https://www.meijo-u.ac.jp/admissions/ippan2027/"
+          },
+          {
+            "title": "河合塾 Kei-Net 2027年度 名城大学 入試変更点",
+            "url": "https://www.keinet.ne.jp/exam/2027/change/private/2462.html"
+          }
+        ]
+      }
     },
     {
       "id": "chukyo-u",
@@ -678,7 +1641,16 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3690/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "工学部", "departments": ["機械システム工学科", "電気電子工学科", "情報工学科", "メディア工学科"], "description": "情報系・工学系の実践教育を重視。" }
+        {
+          "name": "工学部",
+          "departments": [
+            "機械システム工学科",
+            "電気電子工学科",
+            "情報工学科",
+            "メディア工学科"
+          ],
+          "description": "情報系・工学系の実践教育を重視。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式あり。",
@@ -687,16 +1659,45 @@
         "notes": "併願しやすい制度設計。"
       },
       "exam_methods": [
-        { "name": "一般選抜（A/M方式）", "description": "教科型を選んで受験できる。" },
-        { "name": "共通テスト利用", "description": "2〜5科目型など複数。"}
+        {
+          "name": "一般選抜（A/M方式）",
+          "description": "教科型を選んで受験できる。"
+        },
+        {
+          "name": "共通テスト利用",
+          "description": "2〜5科目型など複数。"
+        }
       ],
       "features": "私立総合大の中で工学分野の選択肢があり、文理混在環境で幅広い刺激を受けられる。情報工学・メディア工学を志望する受験生に向く。通学圏内で現実的に狙える難易度帯。",
       "career": "情報・製造・サービス業へ広く就職。資格支援や就職支援が手厚い。",
       "references": [
-        { "title": "中京大学 公式", "url": "https://www.chukyo-u.ac.jp/" },
-        { "title": "中京大学 入試情報", "url": "https://nc.chukyo-u.ac.jp/admissions/" },
-        { "title": "パスナビ 中京大学", "url": "https://passnavi.obunsha.co.jp/univ/3690/top/" }
-      ]
+        {
+          "title": "中京大学 公式",
+          "url": "https://www.chukyo-u.ac.jp/"
+        },
+        {
+          "title": "中京大学 入試情報",
+          "url": "https://nc.chukyo-u.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 中京大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3690/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は3教科型が中心。情報工学部は数学の配点が高い",
+        "points": [
+          "前期日程は2月1日以降に複数日程。併願しやすい。",
+          "情報工学部・総合政策学部は数学の比重が大きい方式がある。",
+          "共通テスト利用型は3教科型が基本。"
+        ],
+        "sources": [
+          {
+            "title": "中京大学 入試情報",
+            "url": "https://www.chukyo-u.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "aichi-u",
@@ -709,7 +1710,13 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3600/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "社会情報学部", "departments": ["社会情報学科"], "description": "データ・情報活用を社会科学と接続して学ぶ。" }
+        {
+          "name": "社会情報学部",
+          "departments": [
+            "社会情報学科"
+          ],
+          "description": "データ・情報活用を社会科学と接続して学ぶ。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式は2〜5科目型。",
@@ -718,16 +1725,50 @@
         "notes": "理工色は弱く、情報活用寄り。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "最高得点重視方式など複数方式。" },
-        { "name": "共通テスト利用", "description": "科目数を選択して受験。" }
+        {
+          "name": "一般選抜",
+          "description": "最高得点重視方式など複数方式。"
+        },
+        {
+          "name": "共通テスト利用",
+          "description": "科目数を選択して受験。"
+        }
       ],
       "features": "純粋理工系よりは社会情報系に強く、情報活用を実務につなげたい受験生に向く。名古屋立地で通学しやすい。併願しやすい入試制度が整っている。",
       "career": "一般企業の情報職・企画職・営業職への就職実績が中心。",
       "references": [
-        { "title": "愛知大学 公式", "url": "https://www.aichi-u.ac.jp/" },
-        { "title": "愛知大学 入試", "url": "https://www.aichi-u.ac.jp/examination" },
-        { "title": "パスナビ 愛知大学", "url": "https://passnavi.obunsha.co.jp/univ/3600/top/" }
-      ]
+        {
+          "title": "愛知大学 公式",
+          "url": "https://www.aichi-u.ac.jp/"
+        },
+        {
+          "title": "愛知大学 入試",
+          "url": "https://www.aichi-u.ac.jp/examination"
+        },
+        {
+          "title": "パスナビ 愛知大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3600/top/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年4月 名古屋キャンパスに「社会情報学部」を新設（定員185名）",
+        "points": [
+          "経済学部・経営学部の社会科学系教育を土台に、統計学・AI・情報科学を組み合わせた「社会情報学部（社会情報学科）」を2027年4月に開設する。",
+          "入学定員185名、修業年限4年、学位は学士（社会情報学）。文部科学省への設置届出が受理され、開設が正式決定した。",
+          "1年次は経済学・経営学の基礎に加え、統計学やAI分野の情報科学の基礎を網羅的に学ぶ。"
+        ],
+        "sources": [
+          {
+            "title": "愛知大学 社会情報学部の2027年度開設決定",
+            "url": "https://www.aichi-u.ac.jp/news/96206"
+          },
+          {
+            "title": "東愛知新聞 社会情報学部開設の報道",
+            "url": "https://higashiaichi.jp/news/detail.php?id=27527"
+          }
+        ]
+      }
     },
     {
       "id": "nanzan-u",
@@ -740,7 +1781,16 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3820/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理工学部", "departments": ["ソフトウェア工学科", "データサイエンス学科", "電子情報工学科", "機械システム工学科"], "description": "近年の再編で情報系を強化。" }
+        {
+          "name": "理工学部",
+          "departments": [
+            "ソフトウェア工学科",
+            "データサイエンス学科",
+            "電子情報工学科",
+            "機械システム工学科"
+          ],
+          "description": "近年の再編で情報系を強化。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ併用型あり。",
@@ -749,16 +1799,45 @@
         "notes": "英語重視型が多いが理工は数学重要。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "全学統一と学部個別を併用。" },
-        { "name": "共テ併用", "description": "共テ得点を加味する方式。" }
+        {
+          "name": "一般選抜",
+          "description": "全学統一と学部個別を併用。"
+        },
+        {
+          "name": "共テ併用",
+          "description": "共テ得点を加味する方式。"
+        }
       ],
       "features": "語学系イメージが強いが、理工学部は情報・工学分野をしっかり学べる。都市型キャンパスで学習環境が整っている。私大中堅上位として併願価値が高い。",
       "career": "IT・メーカー・サービス業へ幅広く就職。語学力を活かす進路も取りやすい。",
       "references": [
-        { "title": "南山大学 公式", "url": "https://www.nanzan-u.ac.jp/" },
-        { "title": "南山大学 入試", "url": "https://www.nanzan-u.ac.jp/admission/" },
-        { "title": "パスナビ 南山大学", "url": "https://passnavi.obunsha.co.jp/univ/3820/top/" }
-      ]
+        {
+          "title": "南山大学 公式",
+          "url": "https://www.nanzan-u.ac.jp/"
+        },
+        {
+          "title": "南山大学 入試",
+          "url": "https://www.nanzan-u.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 南山大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3820/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は3教科型。理工学部は数学・理科の配点が高い",
+        "points": [
+          "理工学部は数学・理科・英語の3教科型が中心。",
+          "共通テスト利用型は3〜5教科型から選択。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "南山大学 入試情報",
+            "url": "https://www.nanzan-u.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "dormy-u",
@@ -772,8 +1851,26 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3990/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理工学部", "departments": ["インテリジェント情報工学科", "情報システムデザイン学科", "電気工学科", "機械理工学科", "機能分子・生命化学科"], "description": "関関同立の中でも理工系の評価が高い。" },
-        { "name": "生命医科学部", "departments": ["医情報学科", "医工学科", "医生命システム学科"], "description": "医工連携を学べる。"}
+        {
+          "name": "理工学部",
+          "departments": [
+            "インテリジェント情報工学科",
+            "情報システムデザイン学科",
+            "電気工学科",
+            "機械理工学科",
+            "機能分子・生命化学科"
+          ],
+          "description": "関関同立の中でも理工系の評価が高い。"
+        },
+        {
+          "name": "生命医科学部",
+          "departments": [
+            "医情報学科",
+            "医工学科",
+            "医生命システム学科"
+          ],
+          "description": "医工連携を学べる。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式あり。",
@@ -782,16 +1879,45 @@
         "notes": "理工は数学・理科の安定得点が必要。"
       },
       "exam_methods": [
-        { "name": "一般選抜（全学部・学部個別）", "description": "複数日程で受験機会を確保しやすい。" },
-        { "name": "共通テスト利用", "description": "共テ成績で出願可能。" }
+        {
+          "name": "一般選抜（全学部・学部個別）",
+          "description": "複数日程で受験機会を確保しやすい。"
+        },
+        {
+          "name": "共通テスト利用",
+          "description": "共テ成績で出願可能。"
+        }
       ],
       "features": "関西私大上位で理工・生命医科学の研究環境が整う。大学のブランド力と理系教育のバランスが良く、上位私大志望の本命・併願に適している。キャンパス設備が新しい。",
       "career": "大学院進学と大手企業就職の両方で実績。関西圏就職に特に強い。",
       "references": [
-        { "title": "同志社大学 公式", "url": "https://www.doshisha.ac.jp/" },
-        { "title": "同志社大学 入試", "url": "https://www.doshisha.ac.jp/admissions/" },
-        { "title": "パスナビ 同志社大学", "url": "https://passnavi.obunsha.co.jp/univ/3990/top/" }
-      ]
+        {
+          "title": "同志社大学 公式",
+          "url": "https://www.doshisha.ac.jp/"
+        },
+        {
+          "title": "同志社大学 入試",
+          "url": "https://www.doshisha.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 同志社大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3990/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は学部別日程。理工学部は数学・理科重視",
+        "points": [
+          "理工学部は数学・理科・英語の3教科型。",
+          "共通テスト利用型は3教科型が中心。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "同志社大学 入試情報",
+            "url": "https://www.doshisha.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "ritsumeikan",
@@ -804,9 +1930,32 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/4050/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "理工学部", "departments": ["数学物理系", "電気電子工学系", "機械工学系", "建築都市デザイン系"], "description": "びわこ・くさつキャンパスを中心に理工教育を展開。" },
-        { "name": "情報理工学部", "departments": ["情報理工学科"], "description": "情報系の人気が高い。"},
-        { "name": "生命科学部", "departments": ["応用化学科", "生物工学科", "生命情報学科"], "description": "生命系研究に強い。"}
+        {
+          "name": "理工学部",
+          "departments": [
+            "数学物理系",
+            "電気電子工学系",
+            "機械工学系",
+            "建築都市デザイン系"
+          ],
+          "description": "びわこ・くさつキャンパスを中心に理工教育を展開。"
+        },
+        {
+          "name": "情報理工学部",
+          "departments": [
+            "情報理工学科"
+          ],
+          "description": "情報系の人気が高い。"
+        },
+        {
+          "name": "生命科学部",
+          "departments": [
+            "応用化学科",
+            "生物工学科",
+            "生命情報学科"
+          ],
+          "description": "生命系研究に強い。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ方式・共テ併用方式あり。",
@@ -815,16 +1964,45 @@
         "notes": "受験方式が非常に多い。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "全学統一と学部個別を併用。" },
-        { "name": "共通テスト利用・併用", "description": "共テ結果を活用した方式が豊富。" }
+        {
+          "name": "一般選抜",
+          "description": "全学統一と学部個別を併用。"
+        },
+        {
+          "name": "共通テスト利用・併用",
+          "description": "共テ結果を活用した方式が豊富。"
+        }
       ],
       "features": "関西私大大規模校で、理工・情報・生命の3軸が揃う。受験方式が多く、実力に合わせた受験戦略を立てやすい。研究・就職の両面で安定した実績がある。",
       "career": "情報・メーカー・インフラ・公務分野まで幅広い就職実績。",
       "references": [
-        { "title": "立命館大学 公式", "url": "https://www.ritsumei.ac.jp/" },
-        { "title": "立命館大学 入試", "url": "https://www.ritsumei.ac.jp/admission/" },
-        { "title": "パスナビ 立命館大学", "url": "https://passnavi.obunsha.co.jp/univ/4050/top/" }
-      ]
+        {
+          "title": "立命館大学 公式",
+          "url": "https://www.ritsumei.ac.jp/"
+        },
+        {
+          "title": "立命館大学 入試",
+          "url": "https://www.ritsumei.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 立命館大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/4050/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は学部別日程。理工学部は数学・理科重視",
+        "points": [
+          "理工学部・情報理工学部は数学・理科・英語の3教科型。",
+          "共通テスト利用型は3〜5教科型。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "立命館大学 入試情報",
+            "url": "https://www.ritsumei.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "kansai-u",
@@ -837,9 +2015,33 @@
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/4240/top/",
       "koromodai_record": null,
       "science_faculties": [
-        { "name": "システム理工学部", "departments": ["数学科", "物理・応用物理学科", "機械工学科", "電気電子情報工学科"], "description": "基礎理学と工学を一体的に学べる。" },
-        { "name": "環境都市工学部", "departments": ["建築学科", "都市システム工学科", "エネルギー環境・化学工学科"], "description": "都市・環境課題に強い。" },
-        { "name": "化学生命工学部", "departments": ["化学・物質工学科", "生命・生物工学科"], "description": "化学・バイオ系進路に対応。"}
+        {
+          "name": "システム理工学部",
+          "departments": [
+            "数学科",
+            "物理・応用物理学科",
+            "機械工学科",
+            "電気電子情報工学科"
+          ],
+          "description": "基礎理学と工学を一体的に学べる。"
+        },
+        {
+          "name": "環境都市工学部",
+          "departments": [
+            "建築学科",
+            "都市システム工学科",
+            "エネルギー環境・化学工学科"
+          ],
+          "description": "都市・環境課題に強い。"
+        },
+        {
+          "name": "化学生命工学部",
+          "departments": [
+            "化学・物質工学科",
+            "生命・生物工学科"
+          ],
+          "description": "化学・バイオ系進路に対応。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ併用型・利用型あり。",
@@ -848,16 +2050,45 @@
         "notes": "科目型選択の自由度が高い。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期中心で複数方式。" },
-        { "name": "共通テスト併用", "description": "共テ得点を活用して合格可能性を広げる。" }
+        {
+          "name": "一般選抜",
+          "description": "前期中心で複数方式。"
+        },
+        {
+          "name": "共通テスト併用",
+          "description": "共テ得点を活用して合格可能性を広げる。"
+        }
       ],
       "features": "関関同立の中で受験方式が多く、戦略的に受けやすい。理工系3学部で分野が明確に分かれ、志望に合わせやすい。大阪圏で通学利便性も高い。",
       "career": "関西圏のメーカー・建設・IT・公務への就職実績が豊富。",
       "references": [
-        { "title": "関西大学 公式", "url": "https://www.kansai-u.ac.jp/" },
-        { "title": "関西大学 入試情報", "url": "https://www.kansai-u.ac.jp/nyushi/" },
-        { "title": "パスナビ 関西大学", "url": "https://passnavi.obunsha.co.jp/univ/4240/top/" }
-      ]
+        {
+          "title": "関西大学 公式",
+          "url": "https://www.kansai-u.ac.jp/"
+        },
+        {
+          "title": "関西大学 入試情報",
+          "url": "https://www.kansai-u.ac.jp/nyushi/"
+        },
+        {
+          "title": "パスナビ 関西大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/4240/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は3教科型。システム理工学部は数学重視",
+        "points": [
+          "システム理工学部・環境都市工学部は数学・理科・英語。",
+          "共通テスト利用型は3教科型が中心。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "関西大学 入試情報",
+            "url": "https://www.kansai-u.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "tokai-gakuen-u",
@@ -868,10 +2099,27 @@
       "official_url": "https://www.tokaigakuen-u.ac.jp/",
       "admissions_url": "https://www.tokaigakuen-u.ac.jp/admission/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3715/top/",
-      "koromodai_record": { "r7": 3, "r6": 2, "r5": 9, "total": 14 },
+      "koromodai_record": {
+        "r7": 3,
+        "r6": 2,
+        "r5": 9,
+        "total": 14
+      },
       "science_faculties": [
-        { "name": "スポーツ健康科学部", "departments": ["スポーツ健康科学科"], "description": "健康科学やスポーツ科学を実践的に学ぶ。" },
-        { "name": "健康栄養学部", "departments": ["管理栄養学科"], "description": "理科系基礎を活かせる医療・栄養分野。" }
+        {
+          "name": "スポーツ健康科学部",
+          "departments": [
+            "スポーツ健康科学科"
+          ],
+          "description": "健康科学やスポーツ科学を実践的に学ぶ。"
+        },
+        {
+          "name": "健康栄養学部",
+          "departments": [
+            "管理栄養学科"
+          ],
+          "description": "理科系基礎を活かせる医療・栄養分野。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テストプラス方式を含む。",
@@ -880,16 +2128,45 @@
         "notes": "基礎学力型で受験しやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・中期・後期で複数方式。" },
-        { "name": "学校推薦型選抜", "description": "指定校・公募推薦を実施。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・中期・後期で複数方式。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "指定校・公募推薦を実施。"
+        }
       ],
       "features": "地元私大として受験しやすく、学習支援が丁寧。スポーツ・健康分野への進路を考える理系生徒に適している。通学負担を抑えながら大学進学を確保しやすい。",
       "career": "地元企業就職と資格系進路が中心。教職・健康関連の進路もある。",
       "references": [
-        { "title": "東海学園大学 公式", "url": "https://www.tokaigakuen-u.ac.jp/" },
-        { "title": "東海学園大学 入試", "url": "https://www.tokaigakuen-u.ac.jp/admission/" },
-        { "title": "パスナビ 東海学園大学", "url": "https://passnavi.obunsha.co.jp/univ/3715/top/" }
-      ]
+        {
+          "title": "東海学園大学 公式",
+          "url": "https://www.tokaigakuen-u.ac.jp/"
+        },
+        {
+          "title": "東海学園大学 入試",
+          "url": "https://www.tokaigakuen-u.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 東海学園大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3715/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜2教科型。面接を課す方式あり",
+        "points": [
+          "1〜2教科型で受験科目を絞れる。",
+          "共通テスト利用型と個別型の併用可。",
+          "募集人員が小さいため出願動向に注意。"
+        ],
+        "sources": [
+          {
+            "title": "東海学園大学 入試情報",
+            "url": "https://www.tokaigakuen-u.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "aichi-toho-u",
@@ -900,10 +2177,28 @@
       "official_url": "https://www.aichi-toho.ac.jp/",
       "admissions_url": "https://www.aichi-toho.ac.jp/admissions/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3717/top/",
-      "koromodai_record": { "r7": 1, "r6": 6, "r5": 0, "total": 7 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 6,
+        "r5": 0,
+        "total": 7
+      },
       "science_faculties": [
-        { "name": "経営学部", "departments": ["ビジネス学科", "コミュニケーション・デザイン学科"], "description": "データ活用やデザインを含む実践教育。"},
-        { "name": "人間健康学部", "departments": ["人間健康学科"], "description": "健康分野で理科基礎を活かせる。" }
+        {
+          "name": "経営学部",
+          "departments": [
+            "ビジネス学科",
+            "コミュニケーション・デザイン学科"
+          ],
+          "description": "データ活用やデザインを含む実践教育。"
+        },
+        {
+          "name": "人間健康学部",
+          "departments": [
+            "人間健康学科"
+          ],
+          "description": "健康分野で理科基礎を活かせる。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式あり。",
@@ -912,16 +2207,45 @@
         "notes": "基礎重視で受験しやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・中期・後期の分散日程。" },
-        { "name": "総合型選抜", "description": "面接・課題型中心。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・中期・後期の分散日程。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "面接・課題型中心。"
+        }
       ],
       "features": "少人数教育で学習フォローが厚く、基礎から学び直しやすい。通学しやすい立地で、地元進学の確保校として機能する。実務系科目が多い。",
       "career": "地元企業就職、公務員対策、資格取得支援を活用した進路が中心。",
       "references": [
-        { "title": "愛知東邦大学 公式", "url": "https://www.aichi-toho.ac.jp/" },
-        { "title": "愛知東邦大学 入試情報", "url": "https://www.aichi-toho.ac.jp/admissions/" },
-        { "title": "パスナビ 愛知東邦大学", "url": "https://passnavi.obunsha.co.jp/univ/3717/top/" }
-      ]
+        {
+          "title": "愛知東邦大学 公式",
+          "url": "https://www.aichi-toho.ac.jp/"
+        },
+        {
+          "title": "愛知東邦大学 入試情報",
+          "url": "https://www.aichi-toho.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 愛知東邦大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3717/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜2教科型。少人数・面倒見型",
+        "points": [
+          "1〜2教科型で基礎学力を判定。",
+          "面接を課す方式あり。",
+          "募集人員が小さいため要項を早めに確認。"
+        ],
+        "sources": [
+          {
+            "title": "愛知東邦大学 入試情報",
+            "url": "https://www.aichi-toho.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "ncu",
@@ -932,9 +2256,21 @@
       "official_url": "https://www.nucba.ac.jp/",
       "admissions_url": "https://www.nucba.ac.jp/ug/admission/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3790/top/",
-      "koromodai_record": { "r7": 3, "r6": 3, "r5": 2, "total": 8 },
+      "koromodai_record": {
+        "r7": 3,
+        "r6": 3,
+        "r5": 2,
+        "total": 8
+      },
       "science_faculties": [
-        { "name": "経営学部・経済学部", "departments": ["経営学科", "経済学科"], "description": "ケースメソッド型授業で実践力を重視。" }
+        {
+          "name": "経営学部・経済学部",
+          "departments": [
+            "経営学科",
+            "経済学科"
+          ],
+          "description": "ケースメソッド型授業で実践力を重視。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式あり。",
@@ -943,16 +2279,45 @@
         "notes": "英語・数学を使える方式を選びやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "学部・方式別で複数日程。" },
-        { "name": "学校推薦型選抜", "description": "公募推薦・指定校推薦あり。" }
+        {
+          "name": "一般選抜",
+          "description": "学部・方式別で複数日程。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "公募推薦・指定校推薦あり。"
+        }
       ],
       "features": "経営系が中心で理工色は弱いが、データ活用やビジネス志向には適している。英語教育や国際プログラムを活用しやすい。確保校として進学先を確保しやすい。",
       "career": "営業・企画・金融・サービス業などビジネス系就職が中心。",
       "references": [
-        { "title": "名古屋商科大学 公式", "url": "https://www.nucba.ac.jp/" },
-        { "title": "名古屋商科大学 学部入試", "url": "https://www.nucba.ac.jp/ug/admission/" },
-        { "title": "パスナビ 名古屋商科大学", "url": "https://passnavi.obunsha.co.jp/univ/3790/top/" }
-      ]
+        {
+          "title": "名古屋商科大学 公式",
+          "url": "https://www.nucba.ac.jp/"
+        },
+        {
+          "title": "名古屋商科大学 学部入試",
+          "url": "https://www.nucba.ac.jp/ug/admission/"
+        },
+        {
+          "title": "パスナビ 名古屋商科大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3790/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は2教科型中心。経営・情報系に特化",
+        "points": [
+          "2教科型（国語・英語・数学から選択）が中心。",
+          "共通テスト利用型あり。",
+          "少人数・英語教育重視のカリキュラム。"
+        ],
+        "sources": [
+          {
+            "title": "名古屋商科大学 入試情報",
+            "url": "https://www.nucba.ac.jp/admissions/"
+          }
+        ]
+      }
     },
     {
       "id": "ngu",
@@ -963,10 +2328,28 @@
       "official_url": "https://www.ngu.jp/",
       "admissions_url": "https://www.ngu.jp/exam/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3760/top/",
-      "koromodai_record": { "r7": 1, "r6": 0, "r5": 1, "total": 2 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 0,
+        "r5": 1,
+        "total": 2
+      },
       "science_faculties": [
-        { "name": "スポーツ健康学部", "departments": ["スポーツ健康学科"], "description": "健康・スポーツ科学寄りの学び。" },
-        { "name": "リハビリテーション学部", "departments": ["理学療法学科", "作業療法学科"], "description": "医療系志向に対応。" }
+        {
+          "name": "スポーツ健康学部",
+          "departments": [
+            "スポーツ健康学科"
+          ],
+          "description": "健康・スポーツ科学寄りの学び。"
+        },
+        {
+          "name": "リハビリテーション学部",
+          "departments": [
+            "理学療法学科",
+            "作業療法学科"
+          ],
+          "description": "医療系志向に対応。"
+        }
       ],
       "exam_general": {
         "common_test": "共テプラス方式を実施。",
@@ -975,16 +2358,45 @@
         "notes": "受験方式が多い。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・中期・後期を実施。" },
-        { "name": "総合型選抜", "description": "自己推薦型などを実施。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・中期・後期を実施。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "自己推薦型などを実施。"
+        }
       ],
       "features": "基礎から学びやすい環境で、地元進学の確保校として使いやすい。医療・健康系学部では理科基礎を活かせる。入試方式の自由度が高い。",
       "career": "地域企業就職や資格系進路が中心。",
       "references": [
-        { "title": "名古屋学院大学 公式", "url": "https://www.ngu.jp/" },
-        { "title": "名古屋学院大学 入試", "url": "https://www.ngu.jp/exam/" },
-        { "title": "パスナビ 名古屋学院大学", "url": "https://passnavi.obunsha.co.jp/univ/3760/top/" }
-      ]
+        {
+          "title": "名古屋学院大学 公式",
+          "url": "https://www.ngu.jp/"
+        },
+        {
+          "title": "名古屋学院大学 入試",
+          "url": "https://www.ngu.jp/exam/"
+        },
+        {
+          "title": "パスナビ 名古屋学院大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3760/top/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2028年4月 金城学院大学と統合予定（金城学院大学は共学化）",
+        "points": [
+          "2028年4月に名古屋学院大学と金城学院大学が統合する予定で、金城学院大学は共学化する。",
+          "統合後の学部構成・入試方式は確定次第公表される見込み。2027年度入試は現行体制で実施される。"
+        ],
+        "sources": [
+          {
+            "title": "ナレッジステーション 名古屋学院大学の統合情報",
+            "url": "https://daigakugakkou.net/update-chiiki/23_%E6%84%9B%E7%9F%A5%E7%9C%8C/page/2/"
+          }
+        ]
+      }
     },
     {
       "id": "aichi-gakuin-u",
@@ -995,10 +2407,27 @@
       "official_url": "https://www.agu.ac.jp/",
       "admissions_url": "https://www.agu.ac.jp/examination/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3620/top/",
-      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 1,
+        "r5": 0,
+        "total": 2
+      },
       "science_faculties": [
-        { "name": "健康科学部", "departments": ["健康科学科"], "description": "健康・心理・医療周辺領域に対応。" },
-        { "name": "薬学部", "departments": ["医療薬学科"], "description": "薬学志望向け（難易度は別途確認）。" }
+        {
+          "name": "健康科学部",
+          "departments": [
+            "健康科学科"
+          ],
+          "description": "健康・心理・医療周辺領域に対応。"
+        },
+        {
+          "name": "薬学部",
+          "departments": [
+            "医療薬学科"
+          ],
+          "description": "薬学志望向け（難易度は別途確認）。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式を実施。",
@@ -1007,16 +2436,45 @@
         "notes": "学部ごとに難易度差が大きい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "学部別の日程・方式。" },
-        { "name": "学校推薦型選抜", "description": "公募・指定校を実施。" }
+        {
+          "name": "一般選抜",
+          "description": "学部別の日程・方式。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "公募・指定校を実施。"
+        }
       ],
       "features": "総合大学として学部数が多く、進路変更がしやすい。理工系志望には直接学部が少ないため、健康・薬系を検討する際に有効。地元通学型の確保校として活用しやすい。",
       "career": "医療・福祉系、一般企業、公務員など学部に応じた進路。",
       "references": [
-        { "title": "愛知学院大学 公式", "url": "https://www.agu.ac.jp/" },
-        { "title": "愛知学院大学 入試情報", "url": "https://www.agu.ac.jp/examination/" },
-        { "title": "パスナビ 愛知学院大学", "url": "https://passnavi.obunsha.co.jp/univ/3620/top/" }
-      ]
+        {
+          "title": "愛知学院大学 公式",
+          "url": "https://www.agu.ac.jp/"
+        },
+        {
+          "title": "愛知学院大学 入試情報",
+          "url": "https://www.agu.ac.jp/examination/"
+        },
+        {
+          "title": "パスナビ 愛知学院大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3620/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 共通テスト利用型は3〜4教科型。学部別に方式が分かれる",
+        "points": [
+          "共通テスト利用型は3〜4教科型（400点満点）が中心。",
+          "一般選抜は学部別日程で3教科型。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "愛知学院大学 入試情報",
+            "url": "https://navi.agu.ac.jp/examination/"
+          }
+        ]
+      }
     },
     {
       "id": "chubu-u",
@@ -1027,10 +2485,33 @@
       "official_url": "https://www.chubu.ac.jp/",
       "admissions_url": "https://www.chubu.ac.jp/admissions/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3710/top/",
-      "koromodai_record": { "r7": 2, "r6": 1, "r5": 0, "total": 3 },
+      "koromodai_record": {
+        "r7": 2,
+        "r6": 1,
+        "r5": 0,
+        "total": 3
+      },
       "science_faculties": [
-        { "name": "工学部", "departments": ["機械工学科", "電気電子システム工学科", "応用化学科", "情報工学科", "ロボット理工学科"], "description": "私大工学として学科の幅が広い。" },
-        { "name": "理工学部", "departments": ["数理・物理サイエンス学科", "AIロボティクス学科", "宇宙航空学科"], "description": "理工融合分野を扱う。" }
+        {
+          "name": "工学部",
+          "departments": [
+            "機械工学科",
+            "電気電子システム工学科",
+            "応用化学科",
+            "情報工学科",
+            "ロボット理工学科"
+          ],
+          "description": "私大工学として学科の幅が広い。"
+        },
+        {
+          "name": "理工学部",
+          "departments": [
+            "数理・物理サイエンス学科",
+            "AIロボティクス学科",
+            "宇宙航空学科"
+          ],
+          "description": "理工融合分野を扱う。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式あり。",
@@ -1039,16 +2520,45 @@
         "notes": "奨学生入試なども併用可能。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "複数日程で実施。" },
-        { "name": "学校推薦型選抜", "description": "公募推薦を実施。" }
+        {
+          "name": "一般選抜",
+          "description": "複数日程で実施。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "公募推薦を実施。"
+        }
       ],
       "features": "工学・理工分野の学科が多く、理系進学先として扱いやすい。学習支援・資格支援が比較的手厚い。地元通学で工学系を確保したい場合の確保校候補。",
       "career": "東海圏メーカー・IT・インフラ企業への就職が中心。",
       "references": [
-        { "title": "中部大学 公式", "url": "https://www.chubu.ac.jp/" },
-        { "title": "中部大学 入試", "url": "https://www.chubu.ac.jp/admissions/" },
-        { "title": "パスナビ 中部大学", "url": "https://passnavi.obunsha.co.jp/univ/3710/top/" }
-      ]
+        {
+          "title": "中部大学 公式",
+          "url": "https://www.chubu.ac.jp/"
+        },
+        {
+          "title": "中部大学 入試",
+          "url": "https://www.chubu.ac.jp/admissions/"
+        },
+        {
+          "title": "パスナビ 中部大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3710/top/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年4月 現代教育学部を「教育学部」に名称変更",
+        "points": [
+          "現代教育学部を2027年4月に「教育学部」へ名称変更する。",
+          "学部名称の変更に伴い、募集区分・入試方式の表記も変わる可能性があるため、2027年度募集要項で確認すること。"
+        ],
+        "sources": [
+          {
+            "title": "ナレッジステーション 中部大学の名称変更情報",
+            "url": "https://daigakugakkou.net/update-chiiki/23_%E6%84%9B%E7%9F%A5%E7%9C%8C/"
+          }
+        ]
+      }
     },
     {
       "id": "daido-u",
@@ -1059,11 +2569,38 @@
       "official_url": "https://www.daido-it.ac.jp/",
       "admissions_url": "https://www.daido-it.ac.jp/exam/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3680/top/",
-      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 1,
+        "r5": 0,
+        "total": 2
+      },
       "science_faculties": [
-        { "name": "工学部", "departments": ["機械工学科", "機械システム工学科", "電気電子工学科"], "description": "実習重視の工学教育。" },
-        { "name": "情報学部", "departments": ["情報システム学科", "情報デザイン学科", "総合情報学科"], "description": "情報系を多面的に学べる。" },
-        { "name": "建築学部", "departments": ["建築学科"], "description": "建築系進路に対応。"}
+        {
+          "name": "工学部",
+          "departments": [
+            "機械工学科",
+            "機械システム工学科",
+            "電気電子工学科"
+          ],
+          "description": "実習重視の工学教育。"
+        },
+        {
+          "name": "情報学部",
+          "departments": [
+            "情報システム学科",
+            "情報デザイン学科",
+            "総合情報学科"
+          ],
+          "description": "情報系を多面的に学べる。"
+        },
+        {
+          "name": "建築学部",
+          "departments": [
+            "建築学科"
+          ],
+          "description": "建築系進路に対応。"
+        }
       ],
       "exam_general": {
         "common_test": "共通テスト利用方式あり。",
@@ -1072,16 +2609,45 @@
         "notes": "基礎学力で合格を狙いやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期中心に複数方式。" },
-        { "name": "総合型選抜", "description": "面接・課題方式あり。" }
+        {
+          "name": "一般選抜",
+          "description": "前期中心に複数方式。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "面接・課題方式あり。"
+        }
       ],
       "features": "実学主義を掲げ、工学・情報の基礎を実践的に学べる。設備利用機会が多く、ものづくり志向に向く。確保校として工学系進学先を確保しやすい。",
       "career": "製造業・設備・IT運用系への就職が中心。",
       "references": [
-        { "title": "大同大学 公式", "url": "https://www.daido-it.ac.jp/" },
-        { "title": "大同大学 入試", "url": "https://www.daido-it.ac.jp/exam/" },
-        { "title": "パスナビ 大同大学", "url": "https://passnavi.obunsha.co.jp/univ/3680/top/" }
-      ]
+        {
+          "title": "大同大学 公式",
+          "url": "https://www.daido-it.ac.jp/"
+        },
+        {
+          "title": "大同大学 入試",
+          "url": "https://www.daido-it.ac.jp/exam/"
+        },
+        {
+          "title": "パスナビ 大同大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3680/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は2〜3教科型。工学単科で数学・理科重視",
+        "points": [
+          "工学部は数学・理科・英語の3教科型が中心。",
+          "共通テスト利用型あり。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "大同大学 入試情報",
+            "url": "https://www.daido-it.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "tokoha-u",
@@ -1092,10 +2658,29 @@
       "official_url": "https://www.tokoha-u.ac.jp/",
       "admissions_url": "https://www.tokoha-u.ac.jp/admission/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3580/top/",
-      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 1,
+        "r5": 0,
+        "total": 2
+      },
       "science_faculties": [
-        { "name": "社会環境学部", "departments": ["社会環境学科"], "description": "環境・防災系を扱う実践学習。" },
-        { "name": "健康科学部・保健医療学部", "departments": ["看護学科", "理学療法学科", "作業療法学科"], "description": "医療系理科基礎を活かせる。" }
+        {
+          "name": "社会環境学部",
+          "departments": [
+            "社会環境学科"
+          ],
+          "description": "環境・防災系を扱う実践学習。"
+        },
+        {
+          "name": "健康科学部・保健医療学部",
+          "departments": [
+            "看護学科",
+            "理学療法学科",
+            "作業療法学科"
+          ],
+          "description": "医療系理科基礎を活かせる。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式あり。",
@@ -1104,16 +2689,45 @@
         "notes": "基礎力型で受験しやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期で実施。" },
-        { "name": "学校推薦型選抜", "description": "公募・指定校を実施。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期で実施。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "公募・指定校を実施。"
+        }
       ],
       "features": "静岡県内で進学を完結させたい場合の有力な確保校。キャンパス分散だが学部選択肢は多い。健康・環境系の進路を検討する理系に適している。",
       "career": "地域医療・教育・一般企業への就職が中心。",
       "references": [
-        { "title": "常葉大学 公式", "url": "https://www.tokoha-u.ac.jp/" },
-        { "title": "常葉大学 入試情報", "url": "https://www.tokoha-u.ac.jp/admission/" },
-        { "title": "パスナビ 常葉大学", "url": "https://passnavi.obunsha.co.jp/univ/3580/top/" }
-      ]
+        {
+          "title": "常葉大学 公式",
+          "url": "https://www.tokoha-u.ac.jp/"
+        },
+        {
+          "title": "常葉大学 入試情報",
+          "url": "https://www.tokoha-u.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 常葉大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3580/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜3教科型。学部別日程で併願しやすい",
+        "points": [
+          "1〜3教科型で受験科目を選べる。",
+          "共通テスト利用型あり。",
+          "保健医療学部は理科の選択が有利。"
+        ],
+        "sources": [
+          {
+            "title": "常葉大学 入試情報",
+            "url": "https://www.tokoha-u.ac.jp/admission/"
+          }
+        ]
+      }
     },
     {
       "id": "aichi-sangyo-u",
@@ -1124,10 +2738,28 @@
       "official_url": "https://www.asu.ac.jp/",
       "admissions_url": "https://www.asu.ac.jp/admission/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3645/top/",
-      "koromodai_record": { "r7": 1, "r6": 1, "r5": 1, "total": 3 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 1,
+        "r5": 1,
+        "total": 3
+      },
       "science_faculties": [
-        { "name": "造形学部", "departments": ["スマートデザイン学科", "建築学科"], "description": "デザインと工学基礎を横断する学び。" },
-        { "name": "経営学部", "departments": ["総合経営学科"], "description": "実務寄り経営教育。"}
+        {
+          "name": "造形学部",
+          "departments": [
+            "スマートデザイン学科",
+            "建築学科"
+          ],
+          "description": "デザインと工学基礎を横断する学び。"
+        },
+        {
+          "name": "経営学部",
+          "departments": [
+            "総合経営学科"
+          ],
+          "description": "実務寄り経営教育。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式あり。",
@@ -1136,16 +2768,51 @@
         "notes": "建築系志望の確保校として使いやすい。合格保証ではないため、複数方式を確認。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "前期・後期で実施。" },
-        { "name": "総合型選抜", "description": "面接や作品・課題評価方式あり。" }
+        {
+          "name": "一般選抜",
+          "description": "前期・後期で実施。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "面接や作品・課題評価方式あり。"
+        }
       ],
       "features": "造形・建築系を地元で学びたい受験生に向く。少人数指導で学習支援を受けやすい。入試難易度は比較的穏やかで確保校として機能しやすい。",
       "career": "建築・デザイン関連、地域企業、一般事務系への就職が中心。",
       "references": [
-        { "title": "愛知産業大学 公式", "url": "https://www.asu.ac.jp/" },
-        { "title": "愛知産業大学 入試", "url": "https://www.asu.ac.jp/admission/" },
-        { "title": "パスナビ 愛知産業大学", "url": "https://passnavi.obunsha.co.jp/univ/3645/top/" }
-      ]
+        {
+          "title": "愛知産業大学 公式",
+          "url": "https://www.asu.ac.jp/"
+        },
+        {
+          "title": "愛知産業大学 入試",
+          "url": "https://www.asu.ac.jp/admission/"
+        },
+        {
+          "title": "パスナビ 愛知産業大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3645/top/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年4月 「情報学部」「建築学部」の2学部体制へ（定員260→185名）",
+        "points": [
+          "造形学部・経営学部の2学部3学科体制から、情報学部（知能情報学科・総合情報学科）と建築学部（建築学科）の2学部3学科体制へ移行する。",
+          "入学定員は合計260名から185名へ75名減る。",
+          "文部科学省「大学・高専機能強化支援事業」の学部再編等（支援1）に令和6年度選定。",
+          "※2025年8月時点の発表では仮称・設置構想中。確定情報は大学公式で確認すること。"
+        ],
+        "sources": [
+          {
+            "title": "愛知産業大学 2027年4月 2学部体制で始動",
+            "url": "https://univ-journal.jp/990124/"
+          },
+          {
+            "title": "ナレッジステーション 愛知産業大学の新設情報",
+            "url": "https://daigakugakkou.net/update/0-1255/"
+          }
+        ]
+      }
     },
     {
       "id": "aichi-tech-u",
@@ -1156,10 +2823,31 @@
       "official_url": "https://www.ait.ac.jp/",
       "admissions_url": "https://www.ait.ac.jp/examination/",
       "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3640/top/",
-      "koromodai_record": { "r7": 1, "r6": 1, "r5": 0, "total": 2 },
+      "koromodai_record": {
+        "r7": 1,
+        "r6": 1,
+        "r5": 0,
+        "total": 2
+      },
       "science_faculties": [
-        { "name": "工学部", "departments": ["機械学科", "電気学科", "応用化学科", "建築学科", "土木工学系"], "description": "工学基礎を広く学べる。" },
-        { "name": "情報科学部", "departments": ["情報科学科"], "description": "情報系の人気が高い。" }
+        {
+          "name": "工学部",
+          "departments": [
+            "機械学科",
+            "電気学科",
+            "応用化学科",
+            "建築学科",
+            "土木工学系"
+          ],
+          "description": "工学基礎を広く学べる。"
+        },
+        {
+          "name": "情報科学部",
+          "departments": [
+            "情報科学科"
+          ],
+          "description": "情報系の人気が高い。"
+        }
       ],
       "exam_general": {
         "common_test": "共テ利用方式あり。",
@@ -1168,16 +2856,1030 @@
         "notes": "工学系私大として受験戦略を立てやすい。"
       },
       "exam_methods": [
-        { "name": "一般選抜", "description": "複数方式で実施。" },
-        { "name": "共通テスト利用", "description": "共テ＋独自加点方式あり。" }
+        {
+          "name": "一般選抜",
+          "description": "複数方式で実施。"
+        },
+        {
+          "name": "共通テスト利用",
+          "description": "共テ＋独自加点方式あり。"
+        }
       ],
       "features": "東海圏私立工大として実績があり、工学・情報進学先として安定。学科選択肢が多く、衣台高校からは上位挑戦〜本命として使いやすい。実験実習設備も比較的充実している。",
       "career": "製造業・建設業・IT企業への就職が中心。地元企業ネットワークが強い。",
       "references": [
-        { "title": "愛知工業大学 公式", "url": "https://www.ait.ac.jp/" },
-        { "title": "愛知工業大学 入試情報", "url": "https://www.ait.ac.jp/examination/" },
-        { "title": "パスナビ 愛知工業大学", "url": "https://passnavi.obunsha.co.jp/univ/3640/top/" }
-      ]
+        {
+          "title": "愛知工業大学 公式",
+          "url": "https://www.ait.ac.jp/"
+        },
+        {
+          "title": "愛知工業大学 入試情報",
+          "url": "https://www.ait.ac.jp/examination/"
+        },
+        {
+          "title": "パスナビ 愛知工業大学",
+          "url": "https://passnavi.obunsha.co.jp/univ/3640/top/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は2〜3教科型。工学部は数学・理科重視",
+        "points": [
+          "工学部は数学・理科・英語の3教科型が中心。",
+          "共通テスト利用型あり。",
+          "2027年度の変更点をKei-Netで公表。"
+        ],
+        "sources": [
+          {
+            "title": "愛知工業大学 入試情報",
+            "url": "https://www.aitech.ac.jp/admission/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nagoya-city-u",
+      "name": "名古屋市立大学",
+      "name_en": "Nagoya City University",
+      "tier": "CHALLENGE",
+      "type": "公立",
+      "location": "愛知県名古屋市瑞穂区",
+      "official_url": "https://www.nagoya-cu.ac.jp/",
+      "admissions_url": "https://www.nagoya-cu.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0530/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "理学部（2027年4月 総合生命理学部から名称変更）",
+          "departments": [
+            "数理科学科",
+            "物理学科",
+            "化学科",
+            "生物学科",
+            "生命環境理学科"
+          ],
+          "description": "2027年度から名称変更・定員90名へ拡大。2年次以降は田辺通キャンパスへ移転。"
+        },
+        {
+          "name": "薬学部",
+          "departments": [
+            "薬学科（6年制）",
+            "生命薬科学科（4年制）"
+          ],
+          "description": "公立で薬学部を持ち、医療系就職に強い。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "理学部は5教科7〜8科目型。国語・地歴公民・数学2・理科2・外国語が基本。",
+        "second_exam": "個別試験は数学・理科・英語が中心（学科により配点が異なる）。",
+        "ratio": "共通テストと個別試験の比率は学科・日程で異なる。",
+        "notes": "2027年度から前期日程40名を新設し、後期40名と並行実施。必ず最新募集要項を確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "2027年度から前期日程を新設。後期のみだった従来より受験機会が増える。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "2027年度から10名に拡大。"
+        }
+      ],
+      "features": "名古屋市内にあり通学しやすい公立大。理学部は2027年度に田辺通キャンパスへ移転し、新棟で研究設備が強化される。国公私立を併願しやすい学費水準も魅力。",
+      "career": "薬学部は薬剤師国家試験、理学部は大学院進学・メーカー研究職が主な進路。",
+      "references": [
+        {
+          "title": "名古屋市立大学 公式サイト",
+          "url": "https://www.nagoya-cu.ac.jp/"
+        },
+        {
+          "title": "理学部 2027年度入試変更点（PDF）",
+          "url": "https://www.nagoya-cu.ac.jp/media/R9_nyushi_rigaku_henkou_2.pdf"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年4月 総合生命理学部→理学部に名称変更、定員43→90名・前期日程を新設",
+        "points": [
+          "2027年4月、総合生命理学部を「理学部」に名称変更する。",
+          "2年次以降のキャンパスを滝子キャンパスから田辺通キャンパス（薬学部と同じ）へ移転し、新棟を建設する。",
+          "入学定員を43名から90名へ拡大する。",
+          "入試は従来の後期日程40名を維持しつつ、前期日程40名を新設。学校推薦型選抜も10名に拡大する。"
+        ],
+        "sources": [
+          {
+            "title": "名古屋市立大学 総合生命理学部の変更について",
+            "url": "https://www.nagoya-cu.ac.jp/press-news/202410161000-02/"
+          },
+          {
+            "title": "大学ジャーナル 理学部への名称変更・移転",
+            "url": "https://univ-journal.jp/996965/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aichi-pu",
+      "name": "愛知県立大学",
+      "name_en": "Aichi Prefectural University",
+      "tier": "MATCH",
+      "type": "公立",
+      "location": "愛知県長久手市（三河・西三河寄り）",
+      "official_url": "https://www.aichi-pu.ac.jp/",
+      "admissions_url": "https://www.aichi-pu.ac.jp/prospective/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0535/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "情報科学部",
+          "departments": [
+            "情報科学科"
+          ],
+          "description": "プログラミング・データサイエンス・情報システムを学ぶ。定員は小規模で少人数教育。"
+        },
+        {
+          "name": "看護学部・健康科学部",
+          "departments": [
+            "看護学科",
+            "食健康科学科"
+          ],
+          "description": "医療・健康分野。理系から文系寄りまで選択肢がある。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "情報科学部は5教科7科目型（国語・地歴公民・数学2・理科2・外国語）。",
+        "second_exam": "個別試験は数学・英語・理科から。学科により科目が異なる。",
+        "ratio": "共通テストと個別試験の比率は学科ごとに設定。",
+        "notes": "2027年度は教育福祉学部教育発達学科で募集人員・方式が変更（後期日程廃止）。情報科学部の編入学試験は令和10年度以降廃止予定。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期）",
+          "description": "情報科学部は前期日程が中心。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "共通テストを課す方式が中心。評定要件が高い。"
+        }
+      ],
+      "features": "愛知県内の公立大で学費が安く、情報科学部は少人数で教員との距離が近い。2028年4月には社会イノベーション学類（仮称）の設置が構想されている。",
+      "career": "情報系は県内SIer・メーカーIT部門、看護・健康系は医療機関への就職が中心。",
+      "references": [
+        {
+          "title": "愛知県立大学 公式サイト",
+          "url": "https://www.aichi-pu.ac.jp/"
+        },
+        {
+          "title": "入学者選抜の変更点",
+          "url": "https://www.aichi-pu.ac.jp/prospective/undergraduate/changepoint.html"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年度 教育福祉学部教育発達学科の募集人員・方式を変更（後期日程廃止）",
+        "points": [
+          "教育発達学科の募集人員は、前期29名・後期2名・学校推薦型9名から、前期22名・学校推薦型8名・総合型10名に変更。",
+          "小学校教育・保育幼児教育の後期日程を廃止する。",
+          "小学校教育で総合型選抜（共通テストを課す選抜・10名）を新規実施する。",
+          "学校推薦型選抜の全国枠（共通テストを課す選抜）を廃止する。",
+          "情報科学部情報科学科の編入学試験は令和10年度（2028年度）以降廃止予定。2028年4月には社会イノベーション学類（仮称）の設置を構想中。"
+        ],
+        "sources": [
+          {
+            "title": "愛知県立大学 入学者選抜の変更点",
+            "url": "https://www.aichi-pu.ac.jp/prospective/undergraduate/changepoint.html"
+          },
+          {
+            "title": "河合塾 Kei-Net 2027年度 愛知県立大学 入試変更点",
+            "url": "https://www.keinet.ne.jp/exam/2027/change/national/1575.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tut",
+      "name": "豊橋技術科学大学",
+      "name_en": "Toyohashi University of Technology",
+      "tier": "CHALLENGE",
+      "type": "国立",
+      "location": "愛知県豊橋市天伯町",
+      "official_url": "https://www.tut.ac.jp/",
+      "admissions_url": "https://www.tut.ac.jp/exam/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0515/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "工学部（2027年度 学際共創課程へ改組）",
+          "departments": [
+            "学際共創課程"
+          ],
+          "description": "2027年度入試から従来5課程（機械／電気・電子情報／情報・知能／応用化学・生命／建築・都市システム）を統合し、学際共創課程に改組。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "5教科7科目型。数学・理科の比重が高い。",
+        "second_exam": "数学（記述）・理科・英語。数学の大問4題が特徴で記述力が問われる。",
+        "ratio": "共通テストと個別試験を合わせて判定。",
+        "notes": "2027年度は課程改組の初年度。募集単位・配点は必ず募集要項で確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期）",
+          "description": "前期日程が中心。数学の記述対策が必須。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "高専・工業高校からの推薦枠も多い。"
+        }
+      ],
+      "features": "工学単科の国立大で、実践的技術者教育（技術科学）を掲げる。高専からの編入学受け入れが多く、実験・実習設備が充実。豊橋という立地は下宿前提になりやすい。",
+      "career": "メーカー技術職への就職が中心。大学院進学率が高い。",
+      "references": [
+        {
+          "title": "豊橋技術科学大学 公式サイト",
+          "url": "https://www.tut.ac.jp/"
+        },
+        {
+          "title": "入試案内",
+          "url": "https://www.tut.ac.jp/exam/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年度 工学部が5課程を「学際共創課程」に統合",
+        "points": [
+          "2026年度までの機械工学課程・電気電子情報工学課程・情報知能工学課程・応用化学生命工学課程・建築都市システム学課程の5課程を、2027年度から「学際共創課程」に改組する。",
+          "課程の枠を越えて分野横断的に学ぶ体制になるため、志望分野の確認は新課程のカリキュラムで行うこと。",
+          "前期個別試験は数学（記述）の配点が高く、記述力が合否を分ける。"
+        ],
+        "sources": [
+          {
+            "title": "河合塾 Kei-Net 豊橋技術科学大学 入試変更点",
+            "url": "https://search.keinet.ne.jp/1245/general/exam_changes"
+          },
+          {
+            "title": "豊橋技術科学大学 入試案内",
+            "url": "https://www.tut.ac.jp/exam/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "toyota-ti",
+      "name": "豊田工業大学",
+      "name_en": "Toyota Technological Institute",
+      "tier": "MATCH",
+      "type": "私立",
+      "location": "愛知県名古屋市天白区",
+      "official_url": "https://www.toyota-ti.ac.jp/",
+      "admissions_url": "https://www.toyota-ti.ac.jp/admissions/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2430/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "工学部",
+          "departments": [
+            "機械システム工学科",
+            "電子情報工学科",
+            "情報工学科"
+          ],
+          "description": "1学年定員約100名の少人数。トヨタ自動車の支援で学費が私立としては極端に安い。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "共通テストを課す方式と課さない方式がある。",
+        "second_exam": "数学・物理・英語が中心。記述式。",
+        "ratio": "方式ごとに異なる。",
+        "notes": "高専卒業予定者向けの特別選抜（第3年次編入学）も実施。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜",
+          "description": "数学・理科・英語の記述試験。"
+        },
+        {
+          "name": "特別選抜（高専対象 3年次編入学）",
+          "description": "高等専門学校卒業予定者が対象。"
+        }
+      ],
+      "features": "1学年100名規模の工学単科大。企業からの研究費・寄付が厚く、学費は年額100万円未満と私立では破格。少人数で教員1人あたりの学生数が少ない。",
+      "career": "トヨタ系を中心にメーカー技術職へ。大学院進学率が高い。",
+      "references": [
+        {
+          "title": "豊田工業大学 公式サイト",
+          "url": "https://www.toyota-ti.ac.jp/"
+        },
+        {
+          "title": "高専対象 特別選抜",
+          "url": "https://www.toyota-ti.ac.jp/admissions/info/gakubu/kosen.html"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 高専卒業予定者対象の第3年次編入学特別選抜を実施",
+        "points": [
+          "工学部の一般選抜は数学・理科・英語の記述式。",
+          "高専卒業予定者向け特別選抜（3年次編入学）を実施。",
+          "1学年約100名の少人数。学費は年額100万円未満。"
+        ],
+        "sources": [
+          {
+            "title": "豊田工業大学 入試情報",
+            "url": "https://www.toyota-ti.ac.jp/admissions/"
+          },
+          {
+            "title": "高専対象 特別選抜",
+            "url": "https://www.toyota-ti.ac.jp/admissions/info/gakubu/kosen.html"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aichi-kosen",
+      "name": "豊田工業高等専門学校（専攻科）",
+      "name_en": "National Institute of Technology, Toyota College",
+      "tier": "MATCH",
+      "type": "国立",
+      "location": "愛知県豊田市栄生町",
+      "official_url": "https://www.toyota-ct.ac.jp/",
+      "admissions_url": "https://www.toyota-ct.ac.jp/entrance/",
+      "passnavi_url": "https://www.toyota-ct.ac.jp/entrance/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "本科（5年一貫）",
+          "departments": [
+            "機械工学科",
+            "電気・電子システム工学科",
+            "情報工学科",
+            "環境都市工学科",
+            "建築学科"
+          ],
+          "description": "各学科40名。中学卒業後5年間で専門と一般教養を一貫して学ぶ。"
+        },
+        {
+          "name": "専攻科（2年）",
+          "departments": [
+            "機械システム工学専攻",
+            "電気電子システム工学専攻",
+            "情報工学専攻",
+            "環境都市工学専攻",
+            "建築工学専攻"
+          ],
+          "description": "本科卒業後に2年間。修了で学士（工学）取得。大学3年次編入と並ぶ進路。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "高専本科入試は中学入試型（学力検査＋面接）。大学共通テストは課さない。",
+        "second_exam": "本科入試は国語・社会・数学・理科・英語の学力検査。専攻科入試は推薦・学力（第1回／第2回）・社会人。",
+        "ratio": "専攻科は面接・口述・筆記を総合判定。",
+        "notes": "本科4年次への高校卒業者編入枠もある。詳細は募集案内で確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "本科入試（推薦・学力）",
+          "description": "中学からの進学。内申と学力検査。"
+        },
+        {
+          "name": "本科4年次編入学",
+          "description": "高校卒業者を対象に若干名。"
+        },
+        {
+          "name": "専攻科入学試験",
+          "description": "推薦・学力（第1回・第2回）・社会人枠。"
+        }
+      ],
+      "features": "トヨタ自動車のお膝元・豊田市にある国立高専。企業との連携が非常に強く、実験・実習の設備が充実。本科卒業で就職する道と、専攻科・大学編入で学士を取る道の両方がある。",
+      "career": "本科卒業者の多くがトヨタ系・自動車部品メーカーへ。専攻科修了者・編入者は技術系総合職へ。",
+      "references": [
+        {
+          "title": "豊田高専 公式サイト",
+          "url": "https://www.toyota-ct.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.toyota-ct.ac.jp/entrance/"
+        },
+        {
+          "title": "専攻科生募集案内",
+          "url": "https://www.toyota-ct.ac.jp/entrance/nyuushi_senkouka/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "専攻科入試は推薦・学力（第1回／第2回）・社会人の3区分",
+        "points": [
+          "専攻科（2年）の入学試験は推薦・学力（第1回）・学力（第2回）・社会人の区分で実施される。",
+          "本科卒業後に専攻科へ進むと学士（工学）を取得でき、大学3年次編入と並ぶ選択肢になる。編入先は豊橋技術科学大学を中心に名古屋大学・名古屋工業大学など。",
+          "2027年度の本科入試は推薦・学力の日程が公開されている。詳細は募集案内で確認。"
+        ],
+        "sources": [
+          {
+            "title": "豊田高専 専攻科生募集案内",
+            "url": "https://www.toyota-ct.ac.jp/entrance/nyuushi_senkouka/"
+          },
+          {
+            "title": "豊田高専 入試情報",
+            "url": "https://www.toyota-ct.ac.jp/entrance/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gifu-shotoku",
+      "name": "岐阜聖徳学園大学",
+      "name_en": "Gifu Shotoku Gakuen University",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "岐阜県岐阜市・羽島市",
+      "official_url": "https://www.shotoku.ac.jp/",
+      "admissions_url": "https://www.shotoku.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2260/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "教育学部",
+          "departments": [
+            "学校教育課程",
+            "幼児教育課程"
+          ],
+          "description": "教員免許取得を軸にした学部。理数系の教員志望に向く。"
+        },
+        {
+          "name": "経済情報学部",
+          "departments": [
+            "経済学科",
+            "情報学科"
+          ],
+          "description": "経済と情報を組み合わせた学び。データ処理・プログラミングの基礎を扱う。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "2〜3教科型が中心。国語・英語・数学から選択する方式が多い。",
+        "second_exam": "個別試験は2〜3科目。マーク式中心で基礎学力を見る。",
+        "ratio": "共通テスト利用型と個別日程型の両方あり。",
+        "notes": "方式が細かく分かれるため、募集要項で自分の得意科目が使える方式を探すこと。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "2〜3教科型。複数日程で受験機会が多い。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型・学校推薦型",
+          "description": "面接・書類中心。教育学部は志望理由が重視される。"
+        }
+      ],
+      "features": "岐阜市と羽島市にキャンパスを持つ中規模私大。教育・保育系の就職に強く、東海圏の学校現場に卒業生が多い。情報系は文系寄りの実務教育。",
+      "career": "教員・保育士・公務員・一般企業。教育系は採用試験対策のサポートがある。",
+      "references": [
+        {
+          "title": "岐阜聖徳学園大学 公式サイト",
+          "url": "https://www.shotoku.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.shotoku.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年度 東海圏の私立大で新設・改組が相次ぐ（志望校選びの目安）",
+        "points": [
+          "2027年4月は東海圏で新設・改組が多い年。愛知大学の社会情報学部、金城学院大学の心理学部、日本福祉大学の総合政策学部、藤田医科大学の医工共創学科（医学部）などが予定される。",
+          "一方で愛知工科大学・愛知文教大学は令和9（2027）年度以降の入学者募集を停止する。",
+          "新設学部は初年度の倍率が読みにくいため、過去問が存在しない点を前提に、共通テスト利用型など複数方式を併用して備えること。"
+        ],
+        "sources": [
+          {
+            "title": "ナレッジステーション 愛知県の新設・募集停止情報",
+            "url": "https://daigakugakkou.net/update-chiiki/23_%E6%84%9B%E7%9F%A5%E7%9C%8C/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gifu-kyoiku",
+      "name": "岐阜大学（教育学部・地域科学部）",
+      "name_en": "Gifu University",
+      "tier": "MATCH",
+      "type": "国立",
+      "location": "岐阜県岐阜市柳戸",
+      "official_url": "https://www.gifu-u.ac.jp/",
+      "admissions_url": "https://www.gifu-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/0580/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "教育学部",
+          "departments": [
+            "学校教育教員養成課程（理数系コース含む）"
+          ],
+          "description": "小学校・中学校・高校の教員養成。理数教育のコースがある。"
+        },
+        {
+          "name": "地域科学部",
+          "departments": [
+            "地域政策学科",
+            "地域環境学科"
+          ],
+          "description": "文理融合型。地域環境学科では自然環境・データ分析を扱う。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "前期は5教科7科目型が基本。教育学部は教科別の配点差が大きい。",
+        "second_exam": "個別試験は教科専門＋面接（教育学部）。地域科学部は小論文を含む方式がある。",
+        "ratio": "共通テストと個別試験の比率は学部で異なる。",
+        "notes": "教育学部は実技・面接があるため、日程と内容を早めに確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "前期が中心。教育学部は後期の募集が小さい。"
+        },
+        {
+          "name": "学校推薦型選抜",
+          "description": "教育学部は推薦枠が大きい。面接・小論文を課す。"
+        }
+      ],
+      "features": "岐阜県の基幹国立大。工学部・応用生物科学部が理系の中心で、教育学部は県内教員の主要供給源。柳戸キャンパスに大部分の学部が集まる。",
+      "career": "県内教員・公務員・メーカー。工学部は東海圏製造業への就職が安定。",
+      "references": [
+        {
+          "title": "岐阜大学 公式サイト",
+          "url": "https://www.gifu-u.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.gifu-u.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 前期は5教科7科目型。教育学部は推薦枠が大きい",
+        "points": [
+          "前期日程は2月25日・26日。",
+          "教育学部は教科専門＋面接を課す。",
+          "地域科学部は小論文を含む方式あり。"
+        ],
+        "sources": [
+          {
+            "title": "岐阜大学 入試情報",
+            "url": "https://www.gifu-u.ac.jp/admission/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shizuoka-sangyo",
+      "name": "静岡産業大学",
+      "name_en": "Shizuoka Sangyo University",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "静岡県磐田市・藤枝市",
+      "official_url": "https://www.ssu.ac.jp/",
+      "admissions_url": "https://www.ssu.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2380/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "情報学部",
+          "departments": [
+            "情報デザイン学科",
+            "情報システム学科"
+          ],
+          "description": "プログラミング・ネットワーク・データ活用を実務寄りに学ぶ。"
+        },
+        {
+          "name": "スポーツ科学部",
+          "departments": [
+            "スポーツ科学科",
+            "スポーツ経営学科"
+          ],
+          "description": "スポーツとデータ分析を組み合わせた学び。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "1〜3教科型。得意科目1科目から受験できる方式がある。",
+        "second_exam": "個別試験は基礎レベル中心。面接を課す方式もある。",
+        "ratio": "共通テスト利用型は複数科目の組み合わせを選べる。",
+        "notes": "受験科目が少ない方式が多く、苦手科目を避けやすい。要項で確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "1〜3教科型。複数日程で受験しやすい。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型選抜",
+          "description": "書類・面接・プレゼン。スポーツ実績を評価する枠もある。"
+        }
+      ],
+      "features": "静岡県西部（磐田）と中部（藤枝）にキャンパス。情報とスポーツを柱にした実学系私大で、地元企業との連携授業が多い。",
+      "career": "県内中小企業・スポーツ関連・情報サービス。就職支援は面倒見型。",
+      "references": [
+        {
+          "title": "静岡産業大学 公式サイト",
+          "url": "https://www.ssu.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.ssu.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜3教科型。得意科目1科目から受験可",
+        "points": [
+          "1〜3教科型で苦手科目を避けられる。",
+          "共通テスト利用型は科目の組み合わせを選べる。",
+          "総合型選抜でスポーツ実績を評価する枠あり。"
+        ],
+        "sources": [
+          {
+            "title": "静岡産業大学 入試情報",
+            "url": "https://www.ssu.ac.jp/admission/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "shizuoka-eiwa",
+      "name": "静岡英和学院大学",
+      "name_en": "Shizuoka Eiwa Gakuen University",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "静岡県静岡市葵区",
+      "official_url": "https://www.shizuoka-eiwa.ac.jp/",
+      "admissions_url": "https://www.shizuoka-eiwa.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/2410/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "人間社会学部",
+          "departments": [
+            "人間社会学科（情報・ビジネスコース）"
+          ],
+          "description": "情報処理・簿記・地域ビジネスを文系から学ぶ。"
+        },
+        {
+          "name": "短期大学部",
+          "departments": [
+            "現代コミュニケーション学科"
+          ],
+          "description": "2年制。情報・ビジネス実務の基礎を学ぶ。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "1〜2教科型が中心。国語・英語の組み合わせが多い。",
+        "second_exam": "個別試験は基礎学力＋面接。",
+        "ratio": "共通テスト利用型と個別型の併用可。",
+        "notes": "募集人員が小さいため、出願動向を早めに確認すること。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜",
+          "description": "1〜2教科型。面接を課す方式あり。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型・推薦",
+          "description": "書類・面接中心。"
+        }
+      ],
+      "features": "静岡市葵区の小規模私大。少人数教育で面倒見がよく、地域の企業・団体との連携がある。理系分野は情報・データ処理の基礎レベル。",
+      "career": "県内企業の事務・営業・情報処理職。短期大学部からの編入も可能。",
+      "references": [
+        {
+          "title": "静岡英和学院大学 公式サイト",
+          "url": "https://www.shizuoka-eiwa.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.shizuoka-eiwa.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜2教科型。少人数・面接重視",
+        "points": [
+          "1〜2教科型（国語・英語中心）。",
+          "面接を課す方式あり。",
+          "募集人員が小さいため出願動向に注意。"
+        ],
+        "sources": [
+          {
+            "title": "静岡英和学院大学 入試情報",
+            "url": "https://www.shizuoka-eiwa.ac.jp/admission/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kinjo-gakuin",
+      "name": "金城学院大学",
+      "name_en": "Kinjo Gakuin University",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市守山区",
+      "official_url": "https://www.kinjo-u.ac.jp/",
+      "admissions_url": "https://www.kinjo-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3300/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "心理学部（2027年4月新設）",
+          "departments": [
+            "多元心理学科"
+          ],
+          "description": "2027年4月開設。実験・データ分析を含む心理学の新学部。"
+        },
+        {
+          "name": "生活環境学部",
+          "departments": [
+            "生活マネジメント学科",
+            "環境デザイン学科"
+          ],
+          "description": "生活科学系。住環境・食・データ活用を扱う。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "2〜3教科型。国語・英語・数学・理科から選択。",
+        "second_exam": "個別試験は基礎学力中心。面接を課す方式あり。",
+        "ratio": "共通テスト利用型は科目の組み合わせを選べる。",
+        "notes": "2027年4月の心理学部新設に伴い募集区分が変わる。要項必読。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "2〜3教科型。複数日程。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型・推薦",
+          "description": "書類・面接・小論文。"
+        }
+      ],
+      "features": "名古屋市守山区の女子大（2028年4月に名古屋学院大学と統合し共学化予定）。生活科学・心理・薬学など実学系が中心。データ分析を含む心理学教育を2027年度から開始。",
+      "career": "医療・福祉・製薬・一般企業。薬学部は薬剤師国家試験対策が手厚い。",
+      "references": [
+        {
+          "title": "金城学院大学 公式サイト",
+          "url": "https://www.kinjo-u.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.kinjo-u.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "year": "2027年度",
+        "headline": "2027年4月 「心理学部（多元心理学科）」を新設",
+        "points": [
+          "2027年4月、心理学部（多元心理学科）を開設する。",
+          "同じ2027年4月に、藤田医科大学は医学部に医工共創学科を、日本福祉大学は総合政策学部を開設予定。東海圏の私立大で新設が相次ぐ年になる。",
+          "2028年4月には名古屋学院大学と統合し、共学化する予定。"
+        ],
+        "sources": [
+          {
+            "title": "ナレッジステーション 金城学院大学の新設情報",
+            "url": "https://daigakugakkou.net/update-chiiki/23_%E6%84%9B%E7%9F%A5%E7%9C%8C/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sugiyama",
+      "name": "椙山女学園大学",
+      "name_en": "Sugiyama Jogakuen University",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市千種区",
+      "official_url": "https://www.sugiyama-u.ac.jp/",
+      "admissions_url": "https://www.sugiyama-u.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3310/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "生活科学部",
+          "departments": [
+            "食生活科学科",
+            "生活環境デザイン学科"
+          ],
+          "description": "食品・栄養・住環境を実験中心で学ぶ。"
+        },
+        {
+          "name": "看護学部",
+          "departments": [
+            "看護学科"
+          ],
+          "description": "医療系。名古屋市内の病院実習が充実。"
+        },
+        {
+          "name": "人間関係学部",
+          "departments": [
+            "人間関係学科（心理・情報コース）"
+          ],
+          "description": "心理と情報処理の基礎を扱う。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "2〜3教科型。国語・英語・数学・理科から選択。",
+        "second_exam": "個別試験は基礎学力。看護・生活科学は理科の選択が有利。",
+        "ratio": "共通テスト利用型と個別型の併用可。",
+        "notes": "理科（化学基礎・生物基礎）を使える方式を要項で確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜（前期・後期）",
+          "description": "2〜3教科型。複数日程。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型・推薦",
+          "description": "書類・面接・小論文。"
+        }
+      ],
+      "features": "名古屋市千種区の女子大。生活科学・看護・教育など実学系に強く、管理栄養士・看護師の養成で実績がある。理系科目（化学・生物）を使う入試方式がある。",
+      "career": "医療・福祉・食品・教育。管理栄養士・看護師の国家試験合格率が高い。",
+      "references": [
+        {
+          "title": "椙山女学園大学 公式サイト",
+          "url": "https://www.sugiyama-u.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.sugiyama-u.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は2〜3教科型。生活科学・看護は理科が有利",
+        "points": [
+          "2〜3教科型（国語・英語・数学・理科から選択）。",
+          "生活科学部・看護学部は理科（化学基礎・生物基礎）を使える方式あり。",
+          "共通テスト利用型と個別型の併用可。"
+        ],
+        "sources": [
+          {
+            "title": "椙山女学園大学 入試情報",
+            "url": "https://www.sugiyama-u.ac.jp/admission/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aichi-mizuno",
+      "name": "愛知みずほ大学",
+      "name_en": "Aichi Mizuho College",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県名古屋市瑞穂区（名古屋キャンパス）",
+      "official_url": "https://www.aichi-mizuho.ac.jp/",
+      "admissions_url": "https://www.aichi-mizuho.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3440/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "人間科学部",
+          "departments": [
+            "心身健康科学科",
+            "食健康科学科"
+          ],
+          "description": "健康・栄養・心理を柱にした実学系。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "1〜2教科型。国語・英語・数学・理科から選択。",
+        "second_exam": "個別試験は基礎学力＋面接。",
+        "ratio": "共通テスト利用型と個別型の併用可。",
+        "notes": "募集人員が小さいため、出願期間と方式を早めに確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜",
+          "description": "1〜2教科型。面接を課す方式あり。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型・推薦",
+          "description": "書類・面接中心。"
+        }
+      ],
+      "features": "名古屋市瑞穂区の小規模私大。健康・栄養・心理分野に特化し、管理栄養士養成課程を持つ。少人数で面倒見がよい。",
+      "career": "医療・福祉・食品・スポーツ関連。管理栄養士・健康運動指導士などの資格取得を支援。",
+      "references": [
+        {
+          "title": "愛知みずほ大学 公式サイト",
+          "url": "https://www.aichi-mizuho.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.aichi-mizuho.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜2教科型。健康・栄養分野に特化",
+        "points": [
+          "1〜2教科型（国語・英語・数学・理科から選択）。",
+          "面接を課す方式あり。",
+          "管理栄養士養成課程は理科の選択が有利。"
+        ],
+        "sources": [
+          {
+            "title": "愛知みずほ大学 入試情報",
+            "url": "https://www.aichi-mizuho.ac.jp/admission/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "aichi-gakusen",
+      "name": "愛知学泉大学",
+      "name_en": "Aichi Gakusen University",
+      "tier": "SAFE",
+      "type": "私立",
+      "location": "愛知県岡崎市・豊田市",
+      "official_url": "https://www.aichi-gakusen.ac.jp/",
+      "admissions_url": "https://www.aichi-gakusen.ac.jp/admission/",
+      "passnavi_url": "https://passnavi.obunsha.co.jp/univ/3430/top/",
+      "koromodai_record": null,
+      "science_faculties": [
+        {
+          "name": "家政学部",
+          "departments": [
+            "家政学科（食生活・生活デザイン）"
+          ],
+          "description": "栄養・調理・住居を実験実習中心で学ぶ。"
+        },
+        {
+          "name": "経営学部",
+          "departments": [
+            "経営学科（情報・会計コース）"
+          ],
+          "description": "簿記・会計・情報処理の実務教育。"
+        }
+      ],
+      "exam_general": {
+        "common_test": "1〜2教科型。国語・英語・数学から選択。",
+        "second_exam": "個別試験は基礎学力＋面接。",
+        "ratio": "共通テスト利用型と個別型の併用可。",
+        "notes": "短期大学部からの編入枠もある。要項で確認。"
+      },
+      "exam_methods": [
+        {
+          "name": "一般選抜",
+          "description": "1〜2教科型。複数日程。"
+        },
+        {
+          "name": "共通テスト利用型",
+          "description": "共通テストの結果のみで判定。"
+        },
+        {
+          "name": "総合型・推薦",
+          "description": "書類・面接中心。"
+        }
+      ],
+      "features": "岡崎市と豊田市にキャンパスを持つ小規模私大。西三河の産業圏に位置し、家政（栄養）と経営（会計・情報）が二本柱。地元企業への就職に強い。",
+      "career": "食品・給食・小売・製造業の事務職。西三河の企業への就職が中心。",
+      "references": [
+        {
+          "title": "愛知学泉大学 公式サイト",
+          "url": "https://www.aichi-gakusen.ac.jp/"
+        },
+        {
+          "title": "入試情報",
+          "url": "https://www.aichi-gakusen.ac.jp/admission/"
+        }
+      ],
+      "latest_news": {
+        "headline": "2027年度 一般選抜は1〜2教科型。西三河の地元就職に強い",
+        "points": [
+          "1〜2教科型（国語・英語・数学から選択）。",
+          "短期大学部からの編入枠あり。",
+          "共通テスト利用型と個別型の併用可。"
+        ],
+        "sources": [
+          {
+            "title": "愛知学泉大学 入試情報",
+            "url": "https://www.aichi-gakusen.ac.jp/admission/"
+          }
+        ]
+      }
     }
   ]
 }

@@ -91,9 +91,50 @@ p { margin-bottom: .75rem; }
 .badge.match { background: var(--match); }
 .badge.safe { background: var(--safe); }
 .badge.national { background: var(--navy); }
-.badge.challenge { background: var(--challenge); }
-.badge.match { background: var(--match); }
-.badge.safe { background: var(--safe); }
+.badge.news {
+  background: #0f766e;
+  font-size: .68rem;
+  padding: .12rem .5rem;
+  margin-left: .35rem;
+  vertical-align: middle;
+}
+
+/* --- 2027年度 最新情報ブロック --- */
+.news-card {
+  border-left: 4px solid #0f766e;
+  background: #f0fdfa;
+}
+.news-card h2 {
+  margin-top: 0;
+  color: #0f766e;
+}
+.news-headline {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: .25rem 0 .6rem;
+}
+.news-list {
+  margin: 0 0 .6rem;
+  padding-left: 1.25rem;
+  font-size: .9rem;
+  line-height: 1.75;
+}
+.news-list li { margin-bottom: .2rem; }
+.news-sources {
+  font-size: .8rem;
+  color: var(--text-sub);
+  margin: .35rem 0;
+  word-break: break-all;
+}
+.news-sources a { color: #0f766e; }
+.news-note {
+  font-size: .78rem;
+  color: var(--text-sub);
+  margin: .5rem 0 0;
+  padding-top: .5rem;
+  border-top: 1px dashed var(--border);
+}
 
 .table-wrap {
   overflow-x: auto;
